@@ -3,31 +3,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
-		.txtName{
+	
 		
-			
-		}
-		div{
-			background-color:blue;
-			color:darkblue;
-			display: inline;
-			width: 250px;
-			padding: 20px 20px 20px 20px;
-		
-		}
-		label{
-			
-		}
-  form{
-  	border: 500px 500px 500px 500px;
-  	background-color:lightblue;
-  }
-  input .txtAge {
-  	padding-right: 1000px;
-
-  }
-	</style>
+	<link rel="stylesheet" type="text/css" href="online-library-management-system-\CSS">
 	<title></title>
 </head>
 <body>
