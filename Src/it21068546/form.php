@@ -1,18 +1,24 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
-	
-		
+	<!--css link -->
 	<link rel="stylesheet" type="text/css" href="online-library-management-system-\CSS">
-	<title></title>
+
+	<title> My Web Page</title>
 </head>
 <body>
+
+	<!--calculator Form -->
 	 <div >
+	 	<!--Form  -->
 		<form method="get" >
-			Enter  Frist Number:<input id="txtName"class="txtName" name="txtName" type="number" value="0"></input><br>
-			<label>Enter Second Number:</label><input id="txtAge"class="txtAge" name="txtAge" type="Number" value="0"></input><br>
+			<!--number input felid  -->
+			<label>Enter  Frist Number:</label>
+			<input id="txtName"class="txtName" name="txtName" type="number" value="0"></input><br>
+			<!--number input felid  -->
+			<label>Enter Second Number:</label>
+			<input id="txtAge"class="txtAge" name="txtAge" type="Number" value="0"></input><br>
+             <!--drop-Doun  felid  -->
 			<label>Select operator    :</label>
 			<select id="txt"class="txt" name="op">
 				<option>+</option>
@@ -20,32 +26,47 @@
 				<option>*</option>
 				<option>/</option>
 			</select><br>
+
+			<!--Submit  -->
+
 			<input id="btnS"class="btnS" name="btnS" type="Submit"></input>
 
-		</form></div>
-	 </body>
+		</form>
+		<!-- End Form  -->
+	</div>
+	<!--End Form Componet  -->
+
+
+</body>
 </html>
+
+
+<!--PHP -->
 <?php 
-$a;
+//check index
 if(isset($_GET["btnS"])){
-
-$n1=$_GET["txtName"];
-$n2=$_GET["txtAge"];
-$o=$_GET["op"];
-
+		//get value form Form
+		$n1=$_GET["txtName"];
+		$n2=$_GET["txtAge"];
+		$o=$_GET["op"];
+		
+//check opration
 if($o=='-'){
-$a= $n1-$n2;
-echo "Answer is:".$a;
+	//body
+		$a= $n1-$n2;
+		echo "Answer is:".$a;
 } else if($o=='+'){
-$a= $n1+$n2;
-echo "Answer is:".$a;
+	//body
+		$a= $n1+$n2;
+		echo "Answer is:".$a;
 } else if($o=='*'){
-
-$a= $n1*$n2;
-echo "Answer is:".$a;
+	//body
+		$a= $n1*$n2;
+		echo "Answer is:".$a;
 } else if($o=='/'){
-$a= $n1/$n2;
-echo "Answer is:".$a;
+	//body
+		$a= $n1/$n2;
+		echo "Answer is:".$a;
 } 
 
 }
