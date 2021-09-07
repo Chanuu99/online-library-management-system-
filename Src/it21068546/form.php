@@ -11,7 +11,7 @@
 	<!--calculator Form -->
 	 <div >
 	 	<!--Form  -->
-		<form method="get" action=" form.php" >
+		<form method="post" action=" form.php" >
 			<!--number input field   -->
 			<label>Enter  Frist Number:</label>
 			<input id="txtName"class="txtName" name="txtName" type="number" value="0"></input><br>
@@ -44,11 +44,11 @@
 <!--PHP -->
 <?php 
 //check index
-if(isset($_GET["btnS"])){
+if(isset($_POST["btnS"])){
 		//get value form Form
-		$n1=$_GET["txtName"];
-		$n2=$_GET["txtAge"];
-		$o=$_GET["op"];
+		$n1=$_POST["txtName"];
+		$n2=$_POST["txtAge"];
+		$o=$_POST["op"];
 
 //check opration
 if($o=='-'){
