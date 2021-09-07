@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!--css link -->
+	<!--Css link CSS/main.css -->
 	<link rel="stylesheet" type="text/css" href="online-library-management-system-\CSS">
 
 	<title> My Web Page</title>
@@ -11,14 +11,14 @@
 	<!--calculator Form -->
 	 <div >
 	 	<!--Form  -->
-		<form method="get" >
-			<!--number input felid  -->
+		<form method="get" action=" form.php" >
+			<!--number input field   -->
 			<label>Enter  Frist Number:</label>
 			<input id="txtName"class="txtName" name="txtName" type="number" value="0"></input><br>
-			<!--number input felid  -->
+			<!--number input field   -->
 			<label>Enter Second Number:</label>
 			<input id="txtAge"class="txtAge" name="txtAge" type="Number" value="0"></input><br>
-            <!--drop-Doun  felid  -->
+            <!--drop-Down  field  -->
 			<label>Select operator    :</label>
 			<select id="txt"class="txt" name="op">
 				<option>+</option>
