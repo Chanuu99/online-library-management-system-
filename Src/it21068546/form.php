@@ -18,7 +18,7 @@
 			<!--number input felid  -->
 			<label>Enter Second Number:</label>
 			<input id="txtAge"class="txtAge" name="txtAge" type="Number" value="0"></input><br>
-             <!--drop-Doun  felid  -->
+            <!--drop-Doun  felid  -->
 			<label>Select operator    :</label>
 			<select id="txt"class="txt" name="op">
 				<option>+</option>
@@ -49,7 +49,7 @@ if(isset($_GET["btnS"])){
 		$n1=$_GET["txtName"];
 		$n2=$_GET["txtAge"];
 		$o=$_GET["op"];
-		
+
 //check opration
 if($o=='-'){
 	//body
