@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
-	Hello peeps
-	Hello
-	//new hello
-	// new hello 2
-	// new hello 3
+<head>
+	<title>Login</title>
+</head>
+<body>
+
+</body>
 </html>
