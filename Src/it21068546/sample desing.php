@@ -49,7 +49,7 @@
 		
 			<form>
 				<center>
-		<input type="text"   name=""><br>
+		<input type="text" width="100%"  name=""><br>
 		<input type="text"   name=""><br>
 
 		<input type="text"  name=""><br>
