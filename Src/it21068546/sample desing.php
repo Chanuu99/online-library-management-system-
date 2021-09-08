@@ -21,7 +21,7 @@
 
 
 	}
-button:hover{
+button input:hover{
 		color: white;
 		text-shadow: currentColor;
 		background-color: darkblue;
@@ -31,10 +31,10 @@ button:hover{
 
 
 	}
-	button.active{
+	button input.active{
 		color:blue;
 	}
-	button{
+	button input{
 		width: 50%;
 		height: 10%;
 		align-items: center;
@@ -54,19 +54,24 @@ button:hover{
 	<!--Request form-->
 	<div class="container">
 
-		<center><button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName" tvalue="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName" tvalue="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName" tvalue="0">ABC</button><br>
-   <button><a href="#" class="link">Click Me!</a></button> </center>
+		<center>
+			<form>
+		<input type="text" width="50%" name=""><br>
+		<input type="text" width="50%" name=""><br>
+
+		<input type="text" width="50%" name=""><br>
+		<input type="text" width="50%" name=""><br>
+		<input type="text" width="50%" name=""><br>
+		<input type="text" width="50%" name=""><br>
+		<input type="text" width="50%" name=""><br>
+		<input type="text" width="50%" name=""><br>
+		<input type="text" width="50%" name=""><br>
+		<input type="text" width="50%" name=""><br>
+		<input type="text" width="50%" name=""><br>
+		<input type="text" width="50%" name=""><br>
+		<button id="txtName" class="form-control" width="20%" name="txtName"  value="0">ABC</button><br>
+		</form>
+        <button><a href="#" class="link">Click Me!</a></button> </center>
 	</div>
 
 </body>
