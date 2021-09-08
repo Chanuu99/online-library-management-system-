@@ -159,7 +159,6 @@ if($o=='-'){
 		echo "</br><div class='alert alert-success'>
   		<div class='panel-body'>Answer is:".$a."</div>
 		</div>";
-}
 } 
 
 }
