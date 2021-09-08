@@ -56,10 +56,10 @@ button input:hover{
 
 		<center>
 			<form>
-		<input type="text" width="50%" name=""><br>
-		<input type="text" width="50%" name=""><br>
+		<input type="text" width="100%" name=""><br>
+		<input type="text" width="100%" name=""><br>
 
-		<input type="text" width="50%" name=""><br>
+		<input type="text" width="00%" name=""><br>
 		<input type="text" width="50%" name=""><br>
 		<input type="text" width="50%" name=""><br>
 		<input type="text" width="50%" name=""><br>
