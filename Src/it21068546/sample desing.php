@@ -5,7 +5,7 @@
 	<!---->
 	<style type="text/css">
 		.container {
-                 border-radius:none;
+                 border-radius:5px;
                  background-color: #f2f2f2;
                  padding: 10px 10px 10px 10px;
                  margin:1% 1% 1% 1% ;
