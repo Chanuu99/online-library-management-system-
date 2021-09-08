@@ -57,16 +57,16 @@ button:hover{
 		<center><button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
 		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
 		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName" tvalue="0">ABC</button><br></center>
-		<center><button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
+		<button id="txtName" class="form-control" name="txtName" tvalue="0">ABC</button><br>
 		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
 		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName" tvalue="0">ABC</button><br></center>
-		<center><button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
+		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
+		<button id="txtName" class="form-control" name="txtName" tvalue="0">ABC</button><br>
 		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
 		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
-		<button id="txtName" class="form-control" name="txtName" tvalue="0">ABC</button><br></center>
-   <button><a href="#" class="link">Click Me!</a></button> 
+		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
+		<button id="txtName" class="form-control" name="txtName" tvalue="0">ABC</button><br>
+   <button><a href="#" class="link">Click Me!</a></button> </center>
 	</div>
 
 </body>
