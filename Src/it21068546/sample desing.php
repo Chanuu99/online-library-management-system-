@@ -11,17 +11,8 @@
                  margin:1% 1% 1% 1% ;
 
                   }
-         .link:hover{
-		color: white;
-		text-shadow: currentColor;
-		background-color: darkblue;
-		text-overflow: inherit;
-		font-style: bold;
-
-
-
-	}
- button:hover{
+  
+ link:hover{
 		color: white;
 		text-shadow: currentColor;
 		background-color: darkblue;
