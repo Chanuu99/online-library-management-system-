@@ -69,6 +69,7 @@ button input:hover{
 		<input type="text" width="50%" name=""><br>
 		<input type="text" width="50%" name=""><br>
 		<input type="text" width="50%" name=""><br>
+		
 		<button id="txtName" class="form-control" width="20%" name="txtName"  value="0">ABC</button><br>
 		</form>
         <button><a href="#" class="link">Click Me!</a></button> </center>
