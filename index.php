@@ -10,4 +10,5 @@
   let b= prompt("Enter your name:");
   alert(a+b)
   </script>
-</html>
+<a href="Src/it21068546/form.php"><Button >Calculator </Button>
+</a></html>
