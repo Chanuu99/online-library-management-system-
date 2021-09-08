@@ -21,7 +21,7 @@
 
 
 	}
-button, input:hover{
+ input:hover{
 		color: white;
 		text-shadow: currentColor;
 		background-color: darkblue;
@@ -31,10 +31,10 @@ button, input:hover{
 
 
 	}
-	button ,input.active{
+	input.active{
 		color:blue;
 	}
-	button, input{
+	input{
 		width: 50%;
 		height: 10%;
 		align-items: center;
