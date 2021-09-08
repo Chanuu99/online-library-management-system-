@@ -3,8 +3,7 @@
 <head>
 	<!--Css link CSS/main.css -->
 	<link rel="stylesheet" type="text/css" href="online-library-management-system-\CSS">
-
-	<title> My Web Page</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">	<title> My Web Page</title>
 </head>
 <body>
 
@@ -21,22 +20,18 @@
 			<!--number input field   -->
 			<div class="form-group">
 			<label>Enter  Frist Number:</label>
-
 			<input id="txtName" class="form-control" name="txtName" type="number" value="0"></input><br>
 			</div>
 			<!--number input field   -->
-                        <div class="form-group">
+             <div class="form-group">
 			<label>Enter Second Number:</label>
 			<input id="txtAge" class="form-control" name="txtAge" type="Number" value="0"></input><br>
-                         </div>
+             </div>
+             
             <!--drop-Down  field  -->
  			<div class="form-group">
 			<input id="txtName"class="txtName" name="txtName" type="number" value="0"></input><br>
-			
-             <!--number input field   -->
-			<label>Enter Second Number:</label>
-			<input id="txtAge"class="txtAge" name="txtAge" type="Number" value="0"></input><br>
-
+	
             <!--drop-Down  field  -->
 			<label>Select operator    :</label>
 			<select id="txt"class="txt" name="op">
