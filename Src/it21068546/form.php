@@ -153,7 +153,7 @@ if($o=='-'){
 		echo "</br><div class='alert alert-success'>
   		<div class='panel-body'>Answer is:".$a."</div>
 		</div>";
-} else if($o=='/'){}
+} else if($o=='/'){
 	//body
 		$a= $n1/$n2;
 		echo "</br><div class='alert alert-success'>
