@@ -54,15 +54,14 @@ input[type=text], select {
 </style>
   </head>
   <body>
-    <?php echo '<p>Welcome to our new app</p>'; ?> 
+  
   </body>
    <ul>
   <li><a href="/">Home</a></li>
   <li><a href="Src/it21068546/form.php">Calculator</a></li>
-  <li><a href="#">Folder</a></li>
-  <li><a href="/README.md">Contact</a></li>
-  <li style="float:right"><a class="active" href="/README.md">About</a></li>
+  <li><a href="https://adithya-coder.github.io/online-library-management-system-/">Contact</a></li>
+  <li style="float:right"><a class="active" href="https://adithya-coder.github.io/online-library-management-system-/">About</a></li>
 </ul>
    
-<a href="Src/it21068546/form.php"><Button >Calculator </Button>
+
 </a></html>
