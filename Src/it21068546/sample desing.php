@@ -5,10 +5,10 @@
 	<!---->
 	<style type="text/css">
 		.container {
-                 border-radius: 5px;
+                 border-radius:none;
                  background-color: #f2f2f2;
                  padding: 10px 10px 10px 10px;
-                 margin:1% 10% 10% 10% ;
+                 margin:1% 1% 1% 1% ;
 
                   }
          .link:hover{
@@ -53,6 +53,7 @@ button:hover{
 
 	<!--Request form-->
 	<div class="container">
+
 		<center><button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
 		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
 		<button id="txtName" class="form-control" name="txtName"  value="0">ABC</button><br>
