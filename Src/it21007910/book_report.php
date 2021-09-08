@@ -5,4 +5,5 @@
 
 <?php
 	echo "Test line";
+	echo "Another line";
 ?>
