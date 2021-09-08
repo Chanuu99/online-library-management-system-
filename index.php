@@ -66,7 +66,8 @@ input[type=text], select {
   <li style="float:right"><a class="active" href="https://adithya-coder.github.io/online-library-management-system-/">About</a></li>
 </ul>
 
-<button class="btn btn-info">Click me</button
+<button class="btn btn-info">Click me</button>
+
    
 
 </a></html>
