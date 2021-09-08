@@ -7,3 +7,7 @@
 
 </body>
 </html>
+
+<?php
+	echo "Hello PHP";
+?>
