@@ -11,8 +11,17 @@
 	<!--calculator Form -->
 	<div class="container">
 
+	<!-- header -->
+<div class="jumbotron">
+    <h1>Calculator</h1>
+</div>
 	<!--Calculator   Form -->
 	 <div >
+	 <!--Content-->
+    <div class="modal-content">
+
+      <!--Body-->
+     <div class="modal-body mb-5 p-5">
 
 	 	<!--Form  -->
 		<form method="post" action=" form.php" >
@@ -27,14 +36,10 @@
 			<label>Enter Second Number:</label>
 			<input id="txtAge" class="form-control" name="txtAge" type="Number" value="0"></input><br>
              </div>
-             
-            <!--drop-Down  field  -->
- 			<div class="form-group">
-			<input id="txtName"class="txtName" name="txtName" type="number" value="0"></input><br>
-	
+
             <!--drop-Down  field  -->
 			<label>Select operator    :</label>
-			<select id="txt"class="txt" name="op">
+			<select id="txt" class="form-control"  name="op">
 				<option>+</option>
 				<option>-</option>
 				<option>*</option>
@@ -44,12 +49,13 @@
 
 			<!--Submit  -->
 			<div class="form-group">
-			<input id="btnS" class="btn btn-primary" name="btnS" type="Submit"></input>
+			<input id="btnS" class="form-control btn btn-primary btn-lg"  name="btnS" type="Submit"></input>
 			</div>
 
         </form>
 		<!-- End Form  -->
-
+	</div>
+	</div>
 	</div>
 	<!--End Form calculator   -->
 
@@ -71,25 +77,25 @@ if(isset($_POST["btnS"])){
 if($o=='-'){
 	//body
 	    $a= $n1-$n2;
-		echo "<div class='panel panel-default'>
+		echo "</br><div class='alert alert-success'>
   		<div class='panel-body'>Answer is:".$a."</div>
 		</div>";
 } else if($o=='+'){
 	//body
 		$a= $n1+$n2;
-		echo "<div class='panel panel-default'>
+		echo "</br><div class='alert alert-success'>
   		<div class='panel-body'>Answer is:".$a."</div>
 		</div>";
 } else if($o=='*'){
 	//body
 		$a= $n1*$n2;
-		echo "<div class='panel panel-default'>
+		echo "</br><div class='alert alert-success'>
   		<div class='panel-body'>Answer is:".$a."</div>
 		</div>";
 } else if($o=='/'){
 	//body
 		$a= $n1/$n2;
-		echo "<div class='panel panel-default'>
+		echo "</br><div class='alert alert-success'>
   		<div class='panel-body'>Answer is:".$a."</div>
 		</div>";
 } 
