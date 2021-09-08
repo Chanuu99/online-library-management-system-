@@ -9,16 +9,21 @@
 <body>
 
 	<!--calculator Form -->
-	 <div >
+	<div class="container">
 	 	<!--Form  -->
 		<form method="post" action=" form.php" >
 			<!--number input field   -->
+			<div class="form-group">
 			<label>Enter  Frist Number:</label>
-			<input id="txtName"class="txtName" name="txtName" type="number" value="0"></input><br>
+			<input id="txtName" class="form-control" name="txtName" type="number" value="0"></input><br>
+			</div>
 			<!--number input field   -->
+                        <div class="form-group">
 			<label>Enter Second Number:</label>
-			<input id="txtAge"class="txtAge" name="txtAge" type="Number" value="0"></input><br>
-            <!--drop-Down  field  -->
+			<input id="txtAge" class="form-control" name="txtAge" type="Number" value="0"></input><br>
+                         </div>
+                        <!--drop-Down  field  -->
+ 			<div class="form-group">
 			<label>Select operator    :</label>
 			<select id="txt"class="txt" name="op">
 				<option>+</option>
@@ -26,13 +31,15 @@
 				<option>*</option>
 				<option>/</option>
 			</select><br>
+			 </div>
 
 			<!--Submit  -->
-
-			<input id="btnS"class="btnS" name="btnS" type="Submit"></input>
-
+ 			<div class="form-group">
+			<input id="btnS" class="btn btn-primary" name="btnS" type="Submit"></input>
+			</div>
 		</form>
 		<!-- End Form  -->
+
 	</div>
 	<!--End Form Componet  -->
 
@@ -54,19 +61,27 @@ if(isset($_POST["btnS"])){
 if($o=='-'){
 	//body
 		$a= $n1-$n2;
-		echo "Answer is:".$a;
+		echo "<div class="panel panel-default">
+  		<div class="panel-body">Answer is:".$a."</div>
+		</div>";
 } else if($o=='+'){
 	//body
 		$a= $n1+$n2;
-		echo "Answer is:".$a;
+		echo "<div class="panel panel-default">
+  		<div class="panel-body">Answer is:".$a."</div>
+		</div>";
 } else if($o=='*'){
 	//body
 		$a= $n1*$n2;
-		echo "Answer is:".$a;
+		echo "<div class="panel panel-default">
+  		<div class="panel-body">Answer is:".$a."</div>
+		</div>";
 } else if($o=='/'){
 	//body
 		$a= $n1/$n2;
-		echo "Answer is:".$a;
+		echo "<div class="panel panel-default">
+ 		<div class="panel-body">Answer is:".$a."</div>
+		</div>";
 } 
 
 }

@@ -17,3 +17,14 @@ input .txtAge {
   	padding-right: 1000px;
 
  }
+button.active{
+		color:blue;
+	}
+	button{
+		width: 50%;
+		height: 10%;
+		align-items: center;
+		font-size: 120%;
+		border:none;
+		border-radius: 30px;
+	}
