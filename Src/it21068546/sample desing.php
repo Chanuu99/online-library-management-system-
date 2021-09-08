@@ -21,7 +21,7 @@
 
 
 	}
-button input:hover{
+button, input:hover{
 		color: white;
 		text-shadow: currentColor;
 		background-color: darkblue;
@@ -31,10 +31,10 @@ button input:hover{
 
 
 	}
-	button input.active{
+	button ,input.active{
 		color:blue;
 	}
-	button input{
+	button, input{
 		width: 50%;
 		height: 10%;
 		align-items: center;
@@ -56,19 +56,19 @@ button input:hover{
 
 		<center>
 			<form>
-		<input type="text" width="100%" name=""><br>
-		<input type="text" width="100%" name=""><br>
+		<input type="text"   name=""><br>
+		<input type="text"   name=""><br>
 
-		<input type="text" width="00%" name=""><br>
-		<input type="text" width="50%" name=""><br>
-		<input type="text" width="50%" name=""><br>
-		<input type="text" width="50%" name=""><br>
-		<input type="text" width="50%" name=""><br>
-		<input type="text" width="50%" name=""><br>
-		<input type="text" width="50%" name=""><br>
-		<input type="text" width="50%" name=""><br>
-		<input type="text" width="50%" name=""><br>
-		<input type="text" width="50%" name=""><br>
+		<input type="text"  name=""><br>
+		<input type="text"  name=""><br>
+		<input type="text"  name=""><br>
+		<input type="text"  name=""><br>
+		<input type="text"  name=""><br>
+		<input type="text"  name=""><br>
+		<input type="text"  name=""><br>
+		<input type="text"  name=""><br>
+		<input type="text"  name=""><br>
+		<input type="text"  name=""><br>
 
 		
         <button><a href="#" class="link">Click Me!</a></button> </center>
