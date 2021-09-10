@@ -10,6 +10,7 @@
 <body>
 	<center>
 		<!-- Form -->
+		<div class=".container ">
 		<form>
 			<fieldset>
 				<h1>Login</h1>
@@ -49,6 +50,7 @@
 				
 			</fieldset>
 		</form>
+		</div>
 		<!-- End of form-->
 	</center>
 </body>
