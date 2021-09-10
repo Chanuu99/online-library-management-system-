@@ -68,7 +68,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #001615;
+  background-color: #333;
 }
 .topnav form input{
   margin: 0px 0px 0px 0px;
@@ -76,9 +76,9 @@
 /**/
 .topnav1 {
   
-  margin-top: 10px;
+ /* margin-top: 10px;*/
   overflow: hidden;
-  background-color: #292d2c;
+  background-color: ##001615;
 }
 
 .topnav1 a {
