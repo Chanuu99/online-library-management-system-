@@ -30,7 +30,7 @@
 
 
 <div class="topnav1">
-     <a class="active"  onclick="openNav()" ><img  width="50%"  src="https://www.bing.com/th?id=OIP.IF5ND7jxe56z_8cL13XDVQHaHa&w=96&h=96&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"></a>
+     <a class="active"  onclick="openNav()" ><img  width="30%"  src="https://www.bing.com/th?id=OIP.IF5ND7jxe56z_8cL13XDVQHaHa&w=96&h=96&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"></a>
     
   </div>
 
