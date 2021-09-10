@@ -163,12 +163,11 @@ if($o=='-'){
  ?> 
 <!--End PHP-->
 
-  ...
 </div>
 </body>
 <footer>
   <div class="topnav1">
-    <CENTER><LABEL color="white">SLIIT 2021 </LABEL></CENTER>
+    <CENTER><p color="white">SLIIT 2021 ></p></CENTER>
     
   </div>
 </footer>
