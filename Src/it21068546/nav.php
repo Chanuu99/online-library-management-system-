@@ -37,7 +37,7 @@
 
 
 
-  
+
 <body>
 
 
@@ -168,7 +168,7 @@ if($o=='-'){
 </body>
 <footer>
   <div class="topnav1">
-    <a href="">sliit <SUP>2021</SUP> </a>
+    <CENTER><a href="">sliit <SUP>2021</SUP> </a></CENTER>
     
   </div>
 </footer>
