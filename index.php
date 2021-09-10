@@ -63,6 +63,7 @@ input[type=text], select {
   <li><a href="/">Home</a></li>
   <li><a href="Src/it21068546/form.php">Calculator</a></li>
    <li><a href="Src/it21068546/nav.php">sample</a></li>
+   <li><a href="Src/it21436680/Member Login.php">hasidu</a></li>
   <li><a href="https://adithya-coder.github.io/online-library-management-system-/">Contact</a></li>
   <li style="float:right"><a class="active" href="https://adithya-coder.github.io/online-library-management-system-/">About</a></li>
 </ul>
