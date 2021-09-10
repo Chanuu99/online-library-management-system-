@@ -3,10 +3,10 @@
 <head>
   <!--Layout -->
   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <script type="text/javascript" src="js/nac.js"></script>  
   <!--Css link CSS/main.css -->
-  <link rel="stylesheet" type="text/css" href="online-library-management-system-\CSS">
+<link rel="stylesheet" type="text/css" href="online-library-management-system-\CSS">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">  
 
@@ -15,8 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<title>Request Book</title>
 </head>
-<body>
-<div id="mySidenav" class="sidenav">
+<HEADER><div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a class="gest"><i class="fa fa-user-circle fa-2x" aria-hidden="true">Gest User</i></a>
   <i class="fas fa-tachometer-alt"></i><a href="/">Dashboard</a>
@@ -34,7 +33,14 @@
      <a class="active"  onclick="openNav()" ><img  width="50%"  src="https://www.bing.com/th?id=OIP.IF5ND7jxe56z_8cL13XDVQHaHa&w=96&h=96&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"></a>
     
   </div>
-</div>
+
+
+
+
+  
+<body>
+
+
 
 
 
@@ -160,5 +166,11 @@ if($o=='-'){
   ...
 </div>
 </body>
+<footer>
+  <div class="topnav1">
+    <a href="">sliit <SUP>2021</SUP> </a>
+    
+  </div>
+</footer>
 </html>
 
