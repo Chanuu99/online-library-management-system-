@@ -167,7 +167,7 @@ if($o=='-'){
 </body>
 <footer>
   <div class="topnav1">
-    <CENTER><p color="white">SLIIT 2021 ></p></CENTER>
+    <CENTER><p style="color: white;">SLIIT 2021 ></p></CENTER>
     
   </div>
 </footer>
