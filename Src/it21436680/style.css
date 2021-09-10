@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+h1 {
+	text-align: center;
+}
+
+.cont_1 {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.cont_2 {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.lbl_credentials {
+	font-weight: bold;
+}
+
+.input_fields {
+	width: 50%;
+}
+
+
+/* .cont_1 > * { */
+	/* width: 50%; */
+/* } */
+
+/* .cont_1 > label { */
+	/* background-color: lightblue; */
+/* } */
+
+/* .cont_1 > div{ */
+	/* width: 100% !important; */
+/* } */
