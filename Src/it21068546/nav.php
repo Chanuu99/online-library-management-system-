@@ -89,7 +89,7 @@ input[type=text], select {
       <!--number input field   -->
       <div class="form-groups">
       <label>Enter  Frist Number:</label>
-      <input id="txtName" class="form-controls" name="txtName" type="number" value="0"></input><br>
+      <input id="txtName" class="form-controls" placeholder="Number one " name="txtName" type="number" value="0"></input><br>
       </div>
       <!--number input field   -->
              <div class="form-groups">
