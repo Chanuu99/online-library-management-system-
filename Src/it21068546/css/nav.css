@@ -66,7 +66,7 @@
 .topnav{
    list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem;
   overflow: hidden;
   background-color: #333;
 }
@@ -94,8 +94,16 @@
 
 
   .topnav img{
-    width:10%;
+    width:25%;
     padding-left: 10px;
+    background-color: transparent;
+
+  }
+
+   .topnav1 .active img{
+    background-color: lightskyblue;
+    width: 30%;
+    padding-left: 0rem;
 
   }
 }
@@ -107,6 +115,13 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  border-radius: 1.5rem;
+   border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-color: black;
+  
+                
+ 
 }
 
 @media (min-width: 576px) {
@@ -133,12 +148,27 @@
   }
 }
 
+h3 {
+  text-shadow: 2px 2px 5px red;
+}
+
+input[type=text], select {
+ 
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  border-style: box;
+  border-width: 1rem;
+
 }
 
 .form-groups {
@@ -197,6 +227,12 @@
   color: #6c757d;
   opacity: 1;
 }
+.form-controls::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+
 select.form-controls:not([size]):not([multiple]) {
   height: calc(2.25rem + 2px);
 }
@@ -243,7 +279,7 @@ select.form-controls:focus::-ms-value {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
-
+ width: 100%;
 }
 
 .btn-primary:hover {
@@ -389,6 +425,10 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
   line-height: 1.2;
   color: inherit;
+    font-weight: bold;
+}
+h3 {
+  color: white;
 }
 
 h1, .h1 {
@@ -403,19 +443,27 @@ h1, .h1 {
 }
 /*jumbo*/
 .jumbotron {
-  padding: 2rem 1rem;
+ /* padding: 0rem 1rem*/;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
-  border-radius: 0.3rem;
+  background-color: #007bff;
+  border-radius: 0rem;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+}
+ .jumbotron form,.jumbotron h3{
+    margin-left:1rem;
+
 }
 
-@media (min-width: 576px) {
-  .jumbotron {
-    padding: 4rem 2rem;
+
+@media (min-width: 200px) {
+  .jumbotron form,.jumbotron {
+    padding: 1rem 0rem;
   }
 }
 
-.jumbotron-fluid {
+.jumbotron form,.jumbotron-fluid {
   padding-right: 0;
   padding-left: 0;
   border-radius: 0;
