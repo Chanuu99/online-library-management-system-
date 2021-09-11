@@ -143,6 +143,7 @@
 
 .form-groups {
   margin-bottom: 1rem;
+   width: auto;
 }
 
 .form-controls {
