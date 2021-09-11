@@ -92,7 +92,7 @@ input[type=text], select {
       <input id="txtName" class="form-controls"  name="txtName" type="number" value="0"></input><br>
       </div>
       <!--number input field   -->
-             <div class="form-groups">
+             <!--div class="form-groups"-->
       <label>Enter Second Number:</label>
       <input id="txtAge" class="form-controls" name="txtAge" type="Number" value="0"></input><br>
              </div>
