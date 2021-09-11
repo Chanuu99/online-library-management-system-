@@ -47,13 +47,13 @@
 <div id="main">
 <style>
 
-/*.container {
+.container {
                  border-radius: 5px;
                  background-color: #f2f2f2;
                  padding: 10px 10px 10px 10px;
                  margin:1% 10% 10% 10% ;
 
-                  }*/
+                  }
 h3 {
   text-shadow: 2px 2px 5px red;
 }
@@ -89,7 +89,7 @@ input[type=text], select {
       <!--number input field   -->
       <div class="form-groups">
       <label>Enter  Frist Number:</label>
-      <input id="txtName" class="form-controls" placeholder="Number one " name="txtName" type="number" value="0"></input><br>
+      <input id="txtName" class="form-controls"  name="txtName" type="number" value="0"></input><br>
       </div>
       <!--number input field   -->
              <div class="form-groups">
