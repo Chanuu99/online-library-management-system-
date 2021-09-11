@@ -93,12 +93,12 @@ input[type=text], select {
       <!--number input field   -->
       <div class="form-groups">
       
-      <input id="txtName" class="form-controls"  name="txtName" placeholder="Book Name" type="text" value="0"></input><br>
+      <input id="txtName" class="form-controls"  name="txtName" placeholder="Book Name" type="text" value=""></input><br>
       </div>
       <!--number input field   -->
              <!--div class="form-groups"-->
       <div class="form-groups">
-      <input id="txtAge" class="form-controls" name="txtAge" placeholder="Auther" type="Text" value="0"></input><br>
+      <input id="txtAge" class="form-controls" name="txtAge" placeholder="Auther" type="Text" value=""></input><br>
              </div>
 
             <!--drop-Down  field  -->
