@@ -13,7 +13,7 @@
 		<div class=".container ">
 		<form>
 			<fieldset>
-				<h1 style="color: blue;">Login</h1>
+				<h1 style="color: yello;">Login</h1>
 				<div class="cont_1">
 					<label class="lbl_credentials">Email</label>
 					<div>
