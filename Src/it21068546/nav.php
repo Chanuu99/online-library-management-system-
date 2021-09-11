@@ -92,22 +92,30 @@ input[type=text], select {
 
       <!--number input field   -->
       <div class="form-groups">
-      <label>Enter  Frist Number:</label>
-      <input id="txtName" class="form-controls"  name="txtName" placeholder="Frist Name" type="text" value="0"></input><br>
+      
+      <input id="txtName" class="form-controls"  name="txtName" placeholder="Book Name" type="text" value="0"></input><br>
       </div>
       <!--number input field   -->
              <!--div class="form-groups"-->
-      <label>Enter Second Number:</label>
-      <input id="txtAge" class="form-controls" name="txtAge" placeholder="Last Name" type="Text" value="0"></input><br>
+      <div class="form-groups">
+      <input id="txtAge" class="form-controls" name="txtAge" placeholder="Auther" type="Text" value="0"></input><br>
              </div>
 
             <!--drop-Down  field  -->
-      <label>Select operator    :</label>
-      <select id="txt" class="form-controls"  name="op">
-        <option>+</option>
-        <option>-</option>
-        <option>*</option>
-        <option>/</option>
+      <div class="form-groups">
+      <select id="txt" class="form-controls" placeholder="Category" name="op">
+        <option>Education</option>
+        <option>Novel</option>
+        <option>Other</option>
+      
+      </select><br>
+    </div>
+      <div class="form-groups">
+        <select id="txt" class="form-controls" placeholder="Language" name="op">
+        <option>English</option>
+        <option>Sinhala</option>
+        <option>Tamil</option>
+      
       </select><br>
        </div>
 
@@ -130,40 +138,7 @@ input[type=text], select {
 <!--PHP -->
 <?php 
 //check index
-if(isset($_POST["btnS"])){
-  //get value form Form
-  $n1=$_POST["txtName"];
-  $n2=$_POST["txtAge"];
-  $o=$_POST["op"];
 
-//check opration
-if($o=='-'){
-  //body
-      $a= $n1-$n2;
-    echo "</br><div class='alert alert-success'>
-      <div class='panel-body'>Answer is:".$a."</div>
-    </div>";
-} else if($o=='+'){
-  //body
-    $a= $n1+$n2;
-    echo "</br><div class='alert alert-success'>
-      <div class='panel-body'>Answer is:".$a."</div>
-    </div>";
-} else if($o=='*'){
-  //body
-    $a= $n1*$n2;
-    echo "</br><div class='alert alert-success'>
-      <div class='panel-body'>Answer is:".$a."</div>
-    </div>";
-} else if($o=='/'){
-  //body
-    $a= $n1/$n2;
-    echo "</br><div class='alert alert-success'>
-      <div class='panel-body'>Answer is:".$a."</div>
-    </div>";
-} 
-
-}
  ?> 
 <!--End PHP-->
 
