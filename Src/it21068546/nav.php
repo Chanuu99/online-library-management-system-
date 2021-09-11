@@ -50,9 +50,7 @@
 .container {
                  border-radius: 5px;
                  background-color: #f2f2f2;
-                 padding: 10px 10px 10px 10px;
-                 margin:1% 10% 10% 10% ;
-
+                
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
