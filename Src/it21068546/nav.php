@@ -53,6 +53,12 @@
                  padding: 10px 10px 10px 10px;
                  margin:1% 10% 10% 10% ;
 
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
                   }
 h3 {
   text-shadow: 2px 2px 5px red;
