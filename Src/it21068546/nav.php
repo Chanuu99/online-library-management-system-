@@ -87,7 +87,7 @@ input[type=text], select {
     <form method="post" action=" form.php" >
 
       <!--number input field   -->
-      <div class="form-group">
+      <div class="form-groups">
       <label>Enter  Frist Number:</label>
       <input id="txtName" class="form-control" name="txtName" type="number" value="0"></input><br>
       </div>
