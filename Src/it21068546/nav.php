@@ -47,13 +47,13 @@
 <div id="main">
 <style>
 
-.container {
+/*.container {
                  border-radius: 5px;
                  background-color: #f2f2f2;
                  padding: 10px 10px 10px 10px;
                  margin:1% 10% 10% 10% ;
 
-                  }
+                  }*/
 h3 {
   text-shadow: 2px 2px 5px red;
 }
