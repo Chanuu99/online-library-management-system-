@@ -109,7 +109,7 @@ input[type=text], select {
 
       <!--Submit  -->
       <div class="form-groups">
-      <input id="btnS" class=" btn btn-primary btn-lg"  name="btnS" type="Submit"></input>
+      <input id="btnS" class=" btn btn-primary btn-lg"  name="btnS" type="Submit" width="100%"></input>
       </div>
 
         </form>
