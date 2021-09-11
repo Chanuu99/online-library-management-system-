@@ -100,7 +100,7 @@ input[type=text], select {
       <!--number input field   -->
              <!--div class="form-groups"-->
       <label>Enter Second Number:</label>
-      <input id="txtAge" class="form-controls" name="txtAge" type="Number" value="0"></input><br>
+      <input id="txtAge" class="form-controls" name="txtAge" placeholder="Last Name" type="Text" value="0"></input><br>
              </div>
 
             <!--drop-Down  field  -->
