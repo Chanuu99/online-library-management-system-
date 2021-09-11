@@ -196,3 +196,11 @@
   color: #6c757d;
   opacity: 1;
 }
+select.form-controls:not([size]):not([multiple]) {
+  height: calc(2.25rem + 2px);
+}
+
+select.form-controls:focus::-ms-value {
+  color: #495057;
+  background-color: #fff;
+}

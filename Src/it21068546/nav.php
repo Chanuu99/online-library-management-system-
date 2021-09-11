@@ -99,7 +99,7 @@ input[type=text], select {
 
             <!--drop-Down  field  -->
       <label>Select operator    :</label>
-      <select id="txt" class="form-control"  name="op">
+      <select id="txt" class="form-controls"  name="op">
         <option>+</option>
         <option>-</option>
         <option>*</option>
@@ -108,7 +108,7 @@ input[type=text], select {
        </div>
 
       <!--Submit  -->
-      <div class="form-group">
+      <div class="form-groups">
       <input id="btnS" class="form-control btn btn-primary btn-lg"  name="btnS" type="Submit"></input>
       </div>
 
