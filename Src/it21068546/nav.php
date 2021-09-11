@@ -104,6 +104,7 @@ input[type=text], select {
             <!--drop-Down  field  -->
       <div class="form-groups">
       <select id="txt" class="form-controls" placeholder="Category" name="op">
+        <option></option>
         <option>Education</option>
         <option>Novel</option>
         <option>Other</option>
