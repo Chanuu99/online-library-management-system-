@@ -242,7 +242,7 @@ select.form-controls:focus::-ms-value {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
-  width:100rem;
+
 }
 
 .btn-primary:hover {
