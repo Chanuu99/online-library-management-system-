@@ -89,12 +89,12 @@ input[type=text], select {
       <!--number input field   -->
       <div class="form-groups">
       <label>Enter  Frist Number:</label>
-      <input id="txtName" class="form-control" name="txtName" type="number" value="0"></input><br>
+      <input id="txtName" class="form-controls" name="txtName" type="number" value="0"></input><br>
       </div>
       <!--number input field   -->
-             <div class="form-group">
+             <div class="form-groups">
       <label>Enter Second Number:</label>
-      <input id="txtAge" class="form-control" name="txtAge" type="Number" value="0"></input><br>
+      <input id="txtAge" class="form-controls" name="txtAge" type="Number" value="0"></input><br>
              </div>
 
             <!--drop-Down  field  -->
