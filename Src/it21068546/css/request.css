@@ -103,7 +103,7 @@ input[type=email]:hover,input[type=text]:hover {
   border: 0;
 }
 /*form foucs */
-.form-controls:focus {
+.form-contros:focus {
   color: #495057;
   background-color: #fff;
   border-color: #80bdff;
