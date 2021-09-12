@@ -102,8 +102,8 @@ if($o=='-'){
 }
  ?></div>
 <footer>
-   <?php   include("Src/it21068546/Footer.php");
-   /*<style>
+
+   <style>
         ul {
   list-style-type: none;
   margin: 0;
@@ -177,7 +177,11 @@ input[type=text], select {
 
    
 
-</a>*/ ?>
+</a>
+   <?php   include("Src/it21068546/Footer.php");
+   ?>
+
+
 </footer>
 </body>
 </html>
