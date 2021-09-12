@@ -1,3 +1,4 @@
+/*panel*/
 .container {
   width: 100%;
   padding-right: 15px;
@@ -12,6 +13,7 @@
                 
  
 }
+/*panel max min countrol*/
 
 @media (min-width: 576px) {
   .container {
@@ -36,11 +38,11 @@
     max-width: 1140px;
   }
 }
-
+/*Header*/
 h3 {
   text-shadow: 2px 2px 5px red;
 }
-
+/*input */
 input[type=text], select {
  
   display: inline-block;
@@ -76,10 +78,10 @@ input[type=email]:hover,input[type=text]:hover {
   border-width: 1rem;
 
 }
-
+/*form main*/
 .form-groups {
   margin-bottom: 1rem;
-   width: auto;
+  width: auto;
 }
 
 .form-controls {
@@ -100,15 +102,15 @@ input[type=email]:hover,input[type=text]:hover {
   background-color: transparent;
   border: 0;
 }
-
-.form-contros:focus {
+/*form foucs */
+.form-controls:focus {
   color: #495057;
   background-color: #fff;
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-
+/*placeholder*/
 .form-controls::-webkit-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -138,7 +140,7 @@ input[type=email]:hover,input[type=text]:hover {
   opacity: 1;
 }
 
-
+/*dropdown*/
 select.form-controls:not([size]):not([multiple]) {
   height: calc(2.25rem + 2px);
 }
