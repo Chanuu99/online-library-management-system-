@@ -1,3 +1,8 @@
+<?php 
+include("./Header.php");
+ ?>
+ 
+<!DOCTYPE html>
 <html>
 <head>
 <title>boook report</title>
