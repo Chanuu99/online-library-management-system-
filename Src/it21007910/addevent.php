@@ -12,28 +12,28 @@
     <form>
         <div>
 		
-            <lable for="Even Id">Event Id:</lable>
+            <label for="Even Id">Event Id:</label>
             <input type="text" name="name" id="name" required>
         </div>
         <br><br><br>
         <div class="col-md-4">
-            <lable>Event Date:</lable>
+            <label>Event Date:</label>
             <input type="text" placeholder="12 May 2016" id="12 May 2016" />
 
-            <lable>Event Time:</lable>
+            <label>Event Time:</label>
             <input type="text" placeholder="12 55 AM" id="12 55 AM" />
         </div>
         <br><br><br>
 
         <div>
-            <lable for="Event name">Event Name:</lable>
+            <label for="Event name">Event Name:</label>
             <input type="text" name="name">
         </div>
 
         <br><br><br>
 
         <div>
-            <lable for="Event Discription">Event Discription:</lable>
+            <label for="Event Discription">Event Discription:</label>
             <textarea name="discription" id="discription" rows="10" cols="30">
 
             </textarea>
