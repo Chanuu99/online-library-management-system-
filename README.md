@@ -1,10 +1,10 @@
 <Html>
 
  <ul>
-  <li><a href="/">Home</a></li>
-  <li><a href="Src/it21068546/form.php">Calculator</a></li>
-  <li><a href="https://adithya-coder.github.io/online-library-management-system-/">Contact</a></li>
-  <li style="float:right"><a class="active" href="https://adithya-coder.github.io/online-library-management-system-/">About</a></li>
+  <li><a href="http://bibliotca.herokuapp.com/">Home</a></li>
+  
+ 
+  
 </ul>
 
   <h5>online-library-management-system-</h5>
