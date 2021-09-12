@@ -35,7 +35,7 @@ include("./Header.php");
 							<a  href="/it21436680/regmem_signup_page.php" id="web_signup" >Signup</a>
 						</div>
 					</div>					
-					<input type="text" class="input_fields">
+					<input type="text" class="input_fields" id="email">
 				</div>
 				<br><br>
 				
@@ -46,7 +46,7 @@ include("./Header.php");
 						<div style="background-color: lightgreen;"></div>
 					</div>
 					
-					<input type="password" class="input_fields">
+					<input type="password" class="input_fields" id="passwd">
 				</div>
 				<br><br>
 				

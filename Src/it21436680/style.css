@@ -44,6 +44,14 @@ h1 {
 	font-size: 18px;
 }
 
+#email{
+	width: 60%;
+}
+
+#passwd{
+	width: 60%;
+}
+
 .virtual_frame{
 	text-align: left;
 	margin-left: 35%;
