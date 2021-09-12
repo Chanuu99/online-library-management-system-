@@ -1,5 +1,6 @@
 <html>
   <head>
+
     <title>Dashboard</title>
     <style>
         ul {
@@ -59,6 +60,8 @@ input[type=text], select {
   <body>
   
   </body>
+  <header> <?php   include("Src/it21068546/Header.php") ?></header>
+ <br> 
    <ul>
   <li><a href="/">Home</a></li>
   <li><a href="Src/it21068546/form.php">Calculator</a></li>
@@ -73,4 +76,8 @@ input[type=text], select {
 
    
 
-</a></html>
+</a>
+<footer>
+   <?php   include("Src/it21068546/Footer.php") ?>
+</footer>
+</html>

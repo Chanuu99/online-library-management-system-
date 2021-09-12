@@ -28,7 +28,7 @@ include("./Header.php");
 
 <!-- header 5 -->
 <div class="jumbotron">
-    <h3>Request Book Details</h3>
+    <h3>Book Details</h3>
 </div>
 
 <!--Content-->
@@ -43,18 +43,18 @@ include("./Header.php");
       <!--input field   -->
       <div class="form-groups">
       
-        <input id="txtName" class="form-controls"  name="txtName" placeholder="Book Name" type="text" value=""></input><br>
+        <input id="txtName" class="form-controls"  name="txtName" placeholder="🕮 Book Name" type="text" value=""></input><br>
       </div>
 
       <!--input field   -->
       <div class="form-groups">
-        <input id="txtAge" class="form-controls" name="txtAge" placeholder="Auther" type="Text" value=""></input><br>
+        <input id="txtAge" class="form-controls" name="txtAge" placeholder="👤 Auther" type="Text" value=""></input><br>
       </div>
 
       <!--drop-Down  field  -->
       <div class="form-groups">
         <select id="txt" class="form-controls" placeholder="Category" name="op">
-          <option>Category</option>
+          <option>🖹 Category</option>
           <option>Education</option>
           <option>Novel</option>
           <option>Other</option>
@@ -64,7 +64,7 @@ include("./Header.php");
      <!--drop-Down Language field  -->
     <div class="form-groups">
         <select id="txt" class="form-controls"  name="op">
-          <option>Language</option>
+          <option>🗚 Language</option>
           <option>English</option>
           <option>Sinhala</option>
           <option>Tamil</option>
@@ -73,20 +73,21 @@ include("./Header.php");
     <!-- header 5 -->
 <div class="jumbotron " style=" padding: 0.5rem ;border-top-right-radius: 0px;
   border-top-left-radius: 0px;">
-    <h3>Request Book Details</h3>
+    <h3>Member Details</h3>
 </div>
 <div class="form-groups">
       
-        <input id="txtName" class="form-controls"  name="txtName" placeholder="Book Name" type="text" value=""></input><br>
+        <input id="txtName" class="form-controls"  name="txtName" placeholder="👤 Full Name" type="text" value=""></input><br>
       </div>
 
       <!--input field   -->
       <div class="form-groups">
-        <input id="txtAge" class="form-controls" name="txtAge" placeholder="Auther" type="Text" value=""></input><br>
+        <input id="txtAge" class="form-controls" name="txtAge" placeholder="🖂 Email" type="email" value=""></input><br>
       </div>
  <!--Submit  -->
     <div class="form-groups">
-       <input id="btnS" class=" btn btn-primary"  class="btn-lg" name="btnS" type="Submit" value="Request" style="border-radius: 0.5rem;" ></input>
+
+       <input id="btnS" class=" btn btn-primary"  class="btn-lg" name="btnS" type="Submit" value="Request" style="height:4rem; width: 100%; font-size: 2rem;border-radius: 1rem;" ><style type="text/css"></style></input>
     </div>
 
    </div>
