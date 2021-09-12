@@ -23,7 +23,7 @@ include("./Header.php");
 <body>
 <div id="main">
 <!--RequestBook   Form -->
-<div class="container"  style="background-color: #f2f2f2; margin: 10rem; border-top-right-radius: 20px;
+<div class="container"  style="background-color: #f2f2f2; margin: 1rem; border-top-right-radius: 20px;
   border-top-left-radius: 20px";>
 
 <!-- header 5 -->
