@@ -9,27 +9,31 @@
 </head>
 	
 <body>
+	<!-- "container" contains the the form-->
 	<div class="container">
 		<!-- Form -->
 		<form>
 			
 			<div class = "virtual_frame">
 			
+				<!-- Login header -->
 				<h1>Login</h1>
 				<br>
 				
+				<!-- Email -->
 				<div class="div_email">
 					<div class="cont_1">
 						<label class="lbl_credentials">Email</label>
-						<div class="cont_1_1">
+						<div class="cont_1_1" style="font-size: 17px;">
 							<label>Need an account?</label>
-							<a  href="/it21436680/regmem_signup_page.php" id="web_signup">Signup</a>
+							<a  href="/it21436680/regmem_signup_page.php" id="web_signup" >Signup</a>
 						</div>
 					</div>					
 					<input type="text" class="input_fields">
 				</div>
 				<br><br>
 				
+				<!-- Password -->
 				<div class="div_password">
 					<div class="cont_2">
 						<label class="lbl_credentials">Password</label>
@@ -39,14 +43,11 @@
 					<input type="password" class="input_fields">
 				</div>
 				<br><br>
-
-				<!--
-				<div class="cont_3">
-					<input type="checkbox">
-					<label type="text">Remember me</label>
-				</div>
-				-->
+				
+				<!-- Set fontsize of bottom elements -->
 				<div style="font-size: 18px">
+				
+					<!-- Remember me -->
 					<div class="div_checkbox">
 						<input type="checkbox">
 						<label type="text">Remember me</label>
@@ -54,21 +55,30 @@
 					
 					<br><br>	
 					
-					<div class="buttons" >
+					<!--Login buttons -->
+					<div class="login_buttons" >
 						<button id="btn_login">Login</button>
 						<button id="btn_guest">Continue as a Guest</button>
 					</div>
 				</div>
 				<br>
+				
+				<!-- Login with social media -->
 				<div class="sm_buttons">
 					<div class="fb btn">
 						<a><i class="fa fa-facebook fa-fw"></i> Login with Facebook
 					</div>
+					
 					<div class="google btn">
 						<i class="fa fa-google fa-fw"></i> Login with Google
+						
+						<!-- Align FB & Google button contents -->
+						&nbsp &nbsp
 					</div>
 				</div>
+				
 			</div>
+			
 		</form>
 		
 		<!-- End of form-->
@@ -76,3 +86,9 @@
 </body>
 
 <html>
+
+<!--php-->
+
+<?php
+	
+?>
