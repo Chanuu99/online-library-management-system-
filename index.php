@@ -169,6 +169,8 @@ input[type=text], select {
    <li><a href="Src/it21068546/RequestBooks.php">Request Books</a></li>
     <li><a href="Src/it21436680/Member Login.php">hasindu</a></li>
    <li><a href="Src/it20029586/addbook.php">chanudi</a></li>
+   <li><a href="Src/it20072810/downloadbook.php">kalana</a></li>
+   <li><a href="Src/it20029586/add event.php">oshini</a></li>
   <li><a href="https://adithya-coder.github.io/online-library-management-system-/">Contact</a></li>
   <li style="float:right"><a class="active" href="https://adithya-coder.github.io/online-library-management-system-/">About</a></li>
 </ul>
