@@ -23,7 +23,7 @@ h1 {
 }
 
 .cont_1_1 {
-	padding-top: 3px;
+	padding-top: 2px;
 }
 
 .cont_2 {
@@ -48,7 +48,6 @@ h1 {
 	text-align: left;
 	margin-left: 35%;
 	width: 50%;
-	background-color: ;
 }
 
 .div_checkbox {
@@ -56,7 +55,7 @@ h1 {
 	font-size: 20px;
 }
 
-.buttons {
+.login_buttons {
 	display: flex;
 	justify-content: space-between;
 	margin-left: 10%;
@@ -64,11 +63,11 @@ h1 {
 	
 }
 
-.buttons > * {
+.login_buttons > * {
 	border-radius: 0.25rem;
 	height: 40px;
 	font-size: 15px;
-	opacity: 0.85;
+	opacity: 0.8;
 }
 
 #btn_login {
@@ -146,16 +145,3 @@ h1 {
 .sm_buttons{
 	width: 60%;
 }
-
-
-/* .cont_1 > * { */
-	/* width: 60%; */
-/* } */
-
-/* .cont_1 > label { */
-	/* background-color: lightblue; */
-/* } */
-
-/* .cont_1 > div{ */
-	/* width: 60% !important; */
-/* } */
