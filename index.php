@@ -5,6 +5,8 @@
 <link rel="stylesheet" type="text/css" href="Src/it21068546/css/nav.css">
     <title>Dashboard</title>
 <body>
+  <header> <?php   include("Src/it21068546/Header.php") ?></header>
+
   <div id="main"><!--calculator Form -->
   <div class="container">
 
@@ -99,7 +101,6 @@ if($o=='-'){
 
 }
  ?></div>
-<header> <?php   include("Src/it21068546/Header.php") ?></header>
 <footer>
    <?php   include("Src/it21068546/Footer.php");
    /*<style>
