@@ -1,6 +1,7 @@
 <html>
   <head>
-
+    <script type="text/javascript" src="Src/it21068546/js/nac.js"></script> 
+<link rel="stylesheet" type="text/css" href="Src/it21068546/css/nav.css">
     <title>Dashboard</title>
     <style>
         ul {
