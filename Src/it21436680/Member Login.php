@@ -1,3 +1,7 @@
+<?php 
+include("./Header.php");
+ ?>
+
 <!DOCTYPE html>
 
 <html>
@@ -10,6 +14,7 @@
 </head>
 	
 <body>
+	<br>
 	<!-- "container" contains the the form-->
 	<div class="container">
 		<!-- Form -->
