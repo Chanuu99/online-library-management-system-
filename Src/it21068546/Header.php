@@ -22,7 +22,7 @@
 
   <a href="/">🎨 Dashboard</a>
   <a href="#">🕮 Request Book</a>
-  <a href="#">🛈  About Us</a>
+  <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
   <a href="#">👤 Contact</a>
   <hr>
   <div class="rate" >
