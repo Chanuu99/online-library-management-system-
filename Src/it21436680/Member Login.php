@@ -1,14 +1,20 @@
+<?php 
+include("./Header.php");
+ ?>
+
 <!DOCTYPE html>
 
 <html>
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Login Form</title>
 </head>
 	
 <body>
+	<br>
 	<!-- "container" contains the the form-->
 	<div class="container">
 		<!-- Form -->
@@ -29,7 +35,7 @@
 							<a  href="/it21436680/regmem_signup_page.php" id="web_signup" >Signup</a>
 						</div>
 					</div>					
-					<input type="text" class="input_fields">
+					<input type="text" class="input_fields" id="email">
 				</div>
 				<br><br>
 				
@@ -40,7 +46,7 @@
 						<div style="background-color: lightgreen;"></div>
 					</div>
 					
-					<input type="password" class="input_fields">
+					<input type="password" class="input_fields" id="passwd">
 				</div>
 				<br><br>
 				
@@ -88,7 +94,3 @@
 <html>
 
 <!--php-->
-
-<?php
-	
-?>

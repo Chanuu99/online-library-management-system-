@@ -1,0 +1,470 @@
+
+		/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #292d2c; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ffda00;
+ 
+}
+ .sidenav  .gest {
+  color: black;
+  background-color: #ffda00;
+ 
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+.topnav{
+   list-style-type: none;
+  margin: 0;
+  padding: 0.5rem;
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav form input{
+  margin: 0px 0px 0px 0px;
+}
+/**/
+.topnav1 {
+  
+  /*margin-top: 10px;*/
+  overflow: hidden;
+  background-color: #292d2c;
+}
+
+.topnav1 a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px ;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+  .topnav img{
+    width:25%;
+    padding-left: 10px;
+    background-color: transparent;
+
+  }
+
+   .topnav1 .active img{
+    background-color: lightskyblue;
+    width: 30%;
+    padding-left: 0rem;
+
+  }
+}
+
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 1.5rem;
+   border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-color: black;
+  
+                
+ 
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+h3 {
+  text-shadow: 2px 2px 5px red;
+}
+
+input[type=text], select {
+ 
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border-style: box;
+  border-width: 1rem;
+
+}
+
+.form-groups {
+  margin-bottom: 1rem;
+   width: auto;
+}
+
+.form-controls {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-controls::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.form-contros:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-controls::-webkit-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-controls::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-controls:-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-controls::-ms-input-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-controls::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.form-controls::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+
+select.form-controls:not([size]):not([multiple]) {
+  height: calc(2.25rem + 2px);
+}
+
+select.form-controls:focus::-ms-value {
+  color: #495057;
+  background-color: #fff;
+}
+ .form-inline .input-groups {
+    width: auto;
+  }
+
+
+  /*button*/
+  .btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  width: auto;
+}
+
+.btn:hover, .btn:focus {
+  text-decoration: none;
+}
+
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+ width: 100%;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+
+
+.btn-lg, .btn-group-lg > .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*h1*/
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+    font-weight: bold;
+}
+h3 {
+  color: white;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}/*body*/
+.modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem;
+}
+/*jumbo*/
+.jumbotron {
+ /* padding: 0rem 1rem*/;
+  margin-bottom: 2rem;
+  background-color: #007bff;
+  border-radius: 0rem;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+}
+ .jumbotron form,.jumbotron h3{
+    margin-left:1rem;
+
+}
+
+
+@media (min-width: 200px) {
+  .jumbotron form,.jumbotron {
+    padding: 1rem 0rem;
+  }
+}
+
+.jumbotron form,.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
