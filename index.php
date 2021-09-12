@@ -23,7 +23,7 @@
      <div class="modal-body mb-5 p-5">
 
     <!--Form  -->
-    <form method="post" action=" form.php" >
+    <form method="post" action=" index.php" >
 
       <!--number input field   -->
       <div class="form-group">
