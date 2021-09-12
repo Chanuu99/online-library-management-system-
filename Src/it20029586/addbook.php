@@ -1,3 +1,7 @@
+<?php 
+include("./Header.php");
+ ?>
+ 
 <html>
 	<head>
 		<title>Add Books</title>
