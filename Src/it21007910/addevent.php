@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -11,7 +10,6 @@
 <hr>
     <form>
         <div>
-		
             <label for="Even Id">Event Id:</label>
             <input type="text" name="name" id="name" required>
         </div>
@@ -41,9 +39,6 @@
 
         <input type="button" name="btnl" value="publish">
     </form>
-
-
-
 
 </body>
 
