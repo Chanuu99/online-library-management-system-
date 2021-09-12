@@ -1,3 +1,6 @@
+<?php 
+include("./Header.php");
+ ?>
 
 <!DOCTYPE html>
 <html>
