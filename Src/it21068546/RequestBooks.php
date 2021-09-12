@@ -21,7 +21,7 @@ include("./Header.php");
 
 <!-- Body of page-->
 <body>
-
+<dvi id="main">
 <!--RequestBook   Form -->
 <div class="container"  style="background-color: #f2f2f2; margin: 10rem; border-top-right-radius: 20px;
   border-top-left-radius: 20px";>
@@ -97,6 +97,7 @@ include("./Header.php");
 </div>
 
 </div>
+</dvi>
 </body>
 
  <?php 
