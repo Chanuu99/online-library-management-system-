@@ -94,7 +94,3 @@ include("./Header.php");
 <html>
 
 <!--php-->
-
-<?php
-	
-?>
