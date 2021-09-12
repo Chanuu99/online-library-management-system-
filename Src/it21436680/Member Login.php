@@ -16,7 +16,7 @@ include("./Header.php");
 <body>
 	<br>
 	<!-- "container" contains the the form-->
-	<div class="container">
+	<div class="container_main">
 		<!-- Form -->
 		<form>
 			
