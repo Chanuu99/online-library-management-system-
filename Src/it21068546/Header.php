@@ -21,8 +21,8 @@
   <a class="gest" color="white"><i class="fa fa-user-circle fa-2x" style="color:white; text-decoration: none; " aria-hidden="true" ></i>Hello, Sign in</a><br>    
 
   <a href="/">🎨 Dashboard</a>
-  <a href="#">🕮 Request Book</a>
-  <a href="#">🛈  About Us</a>
+  <a href="Src/it21068546/RequestBooks.php">🕮 Request Book</a>
+  <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
   <a href="#">👤 Contact</a>
   <hr>
   <div class="rate" >
