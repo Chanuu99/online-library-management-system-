@@ -4,6 +4,7 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Login Form</title>
 </head>
 	
@@ -58,7 +59,15 @@
 						<button id="btn_guest">Continue as a Guest</button>
 					</div>
 				</div>
-				<br><br>
+				<br>
+				<div class="sm_buttons">
+					<div class="fb btn">
+						<a><i class="fa fa-facebook fa-fw"></i> Login with Facebook
+					</div>
+					<div class="google btn">
+						<i class="fa fa-google fa-fw"></i> Login with Google
+					</div>
+				</div>
 			</div>
 		</form>
 		
