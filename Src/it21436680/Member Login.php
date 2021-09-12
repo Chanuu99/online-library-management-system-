@@ -15,6 +15,7 @@ include("./Header.php");
 	
 <body>
 	<br>
+	<div id="main">
 	<!-- "container" contains the the form-->
 	<div class="container_main">
 		<!-- Form -->
@@ -89,6 +90,7 @@ include("./Header.php");
 		
 		<!-- End of form-->
 	</div>
+</div>
 </body>
 
 <html>
