@@ -32,6 +32,18 @@ include("./Header.php");
                  .header{
                         background:blue; 
                         }
+						
+				input[type=text]:hover {
+                        border-color:lightskyblue;
+                        text-decoration: initial;
+                         }
+     			
+                 select:hover {
+                         border-color:lightskyblue;
+                         text-decoration: initial;
+  
+                              }
+							  
                 </style>
 
 
@@ -58,21 +70,21 @@ include("./Header.php");
 			<!--input field-->
 			Book Name
 			<br>
-			<input  class="text" type="text" placeholder="Book Name" name="Book Name" required>
+			<input  class="text" type="text" placeholder="🕮 Book Name" name="Book Name" required>
 			<br>
 			<br>
 
 			<!--input field-->
 			Author
 			<br>
-			<input class="text" type="text" placeholder="Author" name="Author" required>
+			<input class="text" type="text" placeholder="👤 Author" name="Author" required>
 			<br>
 			<br>
 
 			<!--input field-->
 			Publisher
 			<br>
-			<input class="text" type="text" placeholder="Publisher" name="Publisher" required>
+			<input class="text" type="text" placeholder="👤 Publisher" name="Publisher" required>
 			<br>
 			<br>
 
@@ -87,11 +99,11 @@ include("./Header.php");
 			Category
 			<br>
 			<select class="text" placeholder="Category" name="Category" required>
-                        <option>Category</option>
-			<option>Novel</option>
-			<option>Education</option>
+                        <option>🖹 Category</option>
+			            <option>Novel</option>
+			            <option>Education</option>
                         <option>Other</option>
-                        </select>
+            </select>
 			<br>
 			<br>
 			
