@@ -1,9 +1,6 @@
 /*panel*/
 body{
-   -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
+  
 backdrop-filter: blur(5px);
  background-color:rgba(225, 255, 255,);
 }
@@ -16,7 +13,10 @@ backdrop-filter: blur(5px);
   transition: 0.2s;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  
+   -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
 
   
                 
