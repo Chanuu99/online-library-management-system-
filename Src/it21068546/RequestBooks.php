@@ -25,8 +25,9 @@ include("./Header.php");
   <div id="main">
     <!--RequestBook   Form -->
     <div class="container"  
-        style="background-color: #f2f2f2; margin: 1rem; border-top-right-radius: 20px;
+        style="background-color: #f2f2f2; margin: 1rem 1rem 1rem 1rem; border-top-right-radius: 20px;
           border-top-left-radius: 20px";>
+
 
     <!-- header 1 -->
     <div class="jumbotron">
