@@ -6,7 +6,7 @@ background-blend-mode: color-burn;
 .container {
   width: 100%;
   padding : 2% 2% 2% 2%;
-  margin :  ;
+  align-items: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-color: black;
