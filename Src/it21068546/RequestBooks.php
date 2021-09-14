@@ -112,7 +112,7 @@ include("./Header.php");
         </div>
          <!-- End Form  -->
      </form>
-     <hr style="border-color:#f2f2f2;">
+     <hr style="color:#f2f2f2;">
 <div class="viwe" style="display:flex;">
 
       <table id="customers">
