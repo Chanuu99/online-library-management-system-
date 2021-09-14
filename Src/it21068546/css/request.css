@@ -22,7 +22,7 @@ body{
   padding : 2% 2% 2% 2%;
   align-items: center;
   display: inline-block;
-
+  margin: 1rem 1rem 1rem 1rem;
   border-style: ridge;
   transition: 0.2s;
   border-top-right-radius: 20px;
