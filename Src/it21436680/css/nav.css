@@ -70,7 +70,7 @@
   overflow: hidden;
   background-color: #333;
 }
-.topnav form input{
+.topnav form {
   margin: 0px 0px 0px 0px;
 }
 /**/
@@ -152,7 +152,7 @@ h3 {
   text-shadow: 2px 2px 5px red;
 }
 
-input[type=text], select {
+select {
  
   display: inline-block;
   border: 1px solid #ccc;
@@ -319,7 +319,6 @@ select.form-controls:focus::-ms-value {
   border-radius: 0.3rem;
 }
 
-input,
 button,
 select,
 optgroup,
@@ -330,8 +329,7 @@ textarea {
   line-height: inherit;
 }
 
-button,
-input {
+button {
   overflow: visible;
 }
 
@@ -355,18 +353,6 @@ button::-moz-focus-inner,
   border-style: none;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
-  -webkit-appearance: listbox;
-}
 
 textarea {
   overflow: auto;
