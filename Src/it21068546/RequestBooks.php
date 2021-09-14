@@ -26,7 +26,9 @@ include("./Header.php");
     <!--RequestBook   Form -->
     <div class="container"  
         style="background-color: #f2f2f2; margin: 1rem 1rem 1rem 1rem; border-top-right-radius: 20px;
-          border-top-left-radius: 20px";>
+          border-top-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+         border-bottom-left-radius: 20px;">
 
 
     <!-- header 1 -->
