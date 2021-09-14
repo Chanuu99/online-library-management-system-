@@ -122,22 +122,22 @@ include("./Header.php");
   <tr>
     <td>Alfreds Futterkiste</td>
     <td>Maria Anders</td>
-    <td>✔️</td>
+    <td>✔️|❌</td>
   </tr>
   <tr>
     <td>Berglunds snabbköp</td>
     <td>Christina Berglund</td>
-    <td>❌</td>
+    <td>❌|✔️</td>
   </tr>
   <tr>
     <td>Centro comercial Moctezuma</td>
     <td>Francisco Chang</td>
-    <td>✔️</td>
+    <td>✔️|❌</td>
   </tr>
   <tr>
     <td>Ernst Handel</td>
     <td>Roland Mendel</td>
-    <td>❗</td>
+    <td>❗|-</td>
   </tr>
  
 </table>
