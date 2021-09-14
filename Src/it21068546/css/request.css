@@ -430,22 +430,22 @@ h1, .h1 {
       }
 
 
-      #customers {
+     .viwe #customers {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#customers td, #customers th {
+.viwe #customers td, #customers th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
+.viwe #customers tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
+.viwe #customers tr:hover {background-color: #ddd;}
 
-#customers th {
+.viwe #customers th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
