@@ -1,7 +1,7 @@
 /*panel*/
 body{
   
-backdrop-filter: blur(1px);
+
  background-color:rgba(225, 25, 55,);
  background-cloor-filter: blur(1px);
 }
@@ -14,7 +14,7 @@ backdrop-filter: blur(1px);
   transition: 0.2s;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  
+  filter: grayscale(100%);
 
   
                 
