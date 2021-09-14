@@ -4,7 +4,7 @@ body{
         
      
       
-        display: grid;
+        display: flex;
         place-items: center;
 
  
@@ -21,6 +21,7 @@ body{
   padding : 2% 2% 2% 2%;
   align-items: center;
   display: block;
+
   border-style: ridge;
   transition: 0.2s;
   border-top-right-radius: 20px;
