@@ -2,7 +2,7 @@
 //Header
 include("./Header.php");
  ?>
-
+<html>
 <!-- linking Javascript -->
 <script type="text/javascript" src="js/nac.js"></script> 
 
@@ -107,13 +107,14 @@ include("./Header.php");
   </div>    
 <!--End main-->
 </div>
- <?php 
+ 
+
+</body>
+</html>
+<?php 
 //include footer
  require("./Footer.php")
   ?>
-
-</body>
-
 
 
 
