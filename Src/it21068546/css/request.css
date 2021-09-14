@@ -5,6 +5,12 @@ body{
  background-color:rgba(225, 25, 55,);
  background-cloor-filter: blur(1px);
 }
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        .container {
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+          background-color: rgba(255, 255, 255, 0.5);
+        }
 .container {
   width: 100%;
   padding : 2% 2% 2% 2%;
@@ -15,7 +21,10 @@ body{
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   filter: grayscale(100%);
-
+  background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 5px;
+        color: #333;
+        font-family: system-ui, sans-serif;
   
                 
  
