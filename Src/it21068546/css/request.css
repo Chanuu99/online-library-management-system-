@@ -1,6 +1,9 @@
 /*panel*/
 body{
-  
+   -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
 backdrop-filter: blur(5px);
  background-color:rgba(225, 255, 255,);
 }
