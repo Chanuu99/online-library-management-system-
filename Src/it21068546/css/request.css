@@ -1,7 +1,8 @@
 /*panel*/
 body{
-  background-color: indigo;
-background-blend-mode: color-burn;
+  
+
+ background-color:rgba(228, 225, 219, 1);
 }
 .container {
   width: 100%;
@@ -9,7 +10,7 @@ background-blend-mode: color-burn;
   align-items: center;
   display: block;
   border-style: ridge;
- 
+  transition: 0.2s;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   
