@@ -132,7 +132,7 @@ include("./Header.php");
   <tr>
     <td>Centro comercial Moctezuma</td>
     <td>Francisco Chang</td>
-    <td>❌ <button class="btn btn-info">Remove</button></td>
+    <td>❌ <button class="btn btn-remove">Remove</button></td>
   </tr>
   
  

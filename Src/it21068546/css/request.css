@@ -213,13 +213,27 @@ select.form-controls:focus::-ms-value {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
+.btn-remove{
+  color: #fff;
+  background-color: darkred;
+  border-color: #007bff;
+ 
+}
+.btn-remove:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+.btn-remove:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
  
 }
-
 .btn-primary:hover {
   color: #fff;
   background-color: #0069d9;
