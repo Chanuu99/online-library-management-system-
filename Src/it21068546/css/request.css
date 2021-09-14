@@ -5,8 +5,8 @@ background-blend-mode: color-burn;
 }
 .container {
   width: 100%;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 2%;
+  padding-left: 2%;
   margin-right: auto;
   margin : 10px 10px 10px 10px ;
   border-top-right-radius: 20px;
