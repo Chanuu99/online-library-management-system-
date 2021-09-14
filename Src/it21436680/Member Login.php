@@ -24,8 +24,14 @@ include("./Header.php");
 			<div class = "virtual_frame">
 			
 				<!-- Login header -->
+				<div class="jumbotron">
+					<h3>Login</h3>
+				</div>
+				
+				<!--
 				<h1>Login</h1>
 				<br>
+				-->
 				
 				<!-- Email -->
 				<div class="div_email">

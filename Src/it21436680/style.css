@@ -157,3 +157,12 @@ h1 {
 #main {
 	background-color: #4c0082;
 }
+
+.jumbotron {
+	padding: 1rem 0rem;
+    margin-bottom: 2rem;
+    background-color: #007bff;
+    border-radius: 0rem;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
