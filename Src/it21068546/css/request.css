@@ -1,11 +1,9 @@
 /*panel*/
 body{
-   -webkit-filter: blur(1px);
-  -moz-filter: blur(1px);
-  -o-filter: blur(1px);
-  -ms-filter: blur(1px);
+  
 backdrop-filter: blur(1px);
  background-color:rgba(225, 25, 55,);
+ background-cloor-filter: blur(1px);
 }
 .container {
   width: 100%;
