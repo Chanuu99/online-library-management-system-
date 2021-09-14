@@ -112,8 +112,9 @@ include("./Header.php");
         </div>
          <!-- End Form  -->
      </form>
+     <hr>
 <div class="viwe" style="display:flex;">
-  <hr>
+
       <table id="customers">
   <tr>
     <th>Book</th>
