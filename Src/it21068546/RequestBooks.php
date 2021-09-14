@@ -137,7 +137,7 @@ include("./Header.php");
   <tr>
     <td>Ernst Handel</td>
     <td>Roland Mendel</td>
-    <td>Austria</td>
+    <td>❗</td>
   </tr>
  
 </table>
