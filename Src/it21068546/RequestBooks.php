@@ -134,11 +134,7 @@ include("./Header.php");
     <td>Francisco Chang</td>
     <td>✔️|❌</td>
   </tr>
-  <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>❗ |❌</td>
-  </tr>
+  
  
 </table>
 
