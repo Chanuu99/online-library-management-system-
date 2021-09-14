@@ -114,7 +114,7 @@ include("./Header.php");
      </div>
      <!-- End Form  -->
      </form>
-     <label>adithya</label>
+     <label style="display: inline-flex;">adithya</label>
      </center>
     <!-- End form Body-->
     
