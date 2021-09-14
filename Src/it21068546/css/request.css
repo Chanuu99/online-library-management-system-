@@ -17,11 +17,11 @@ body{
           background-color: rgba(255, 255, 255, 0.5);
         }
 .container {
-  display: flex;
+
   width: 100%;
   padding : 2% 2% 2% 2%;
   align-items: center;
-  display: block;
+  display: inline-block;
 
   border-style: ridge;
   transition: 0.2s;
