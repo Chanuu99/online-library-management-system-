@@ -1,10 +1,10 @@
 /*panel*/
 body{
- 
+  background-position: center center;
         
      
       
-        display: grid;
+        
         place-items: center;
 
  
