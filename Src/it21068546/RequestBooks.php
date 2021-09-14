@@ -107,14 +107,14 @@ include("./Header.php");
   </div>    
 <!--End main-->
 </div>
-</body>
-  
-</body>
-
  <?php 
 //include footer
  require("./Footer.php")
   ?>
+
+</body>
+
+
 
 
 
