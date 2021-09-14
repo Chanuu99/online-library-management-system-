@@ -153,3 +153,7 @@ h1 {
 .sm_buttons{
 	width: 60%;
 }
+
+#main {
+	background-color: #4c0082;
+}
