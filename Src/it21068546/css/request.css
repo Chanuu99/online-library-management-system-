@@ -215,7 +215,7 @@ select.form-controls:focus::-ms-value {
 
 .btn-remove{
   color: #fff;
-  background-color: orange;
+  background-color: indianred;
   border-color: #007bff;
  
 }
