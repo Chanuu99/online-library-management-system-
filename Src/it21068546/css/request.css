@@ -19,6 +19,13 @@ backdrop-filter: blur(5px);
                 
  
 }
+.container div:hover {
+  border-color: lightskyblue;
+
+  
+                
+ 
+}
 /*panel max min countrol*/
 
 @media (min-width: 576px) {
