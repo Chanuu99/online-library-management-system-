@@ -1,7 +1,7 @@
 /*panel*/
 body{
   
-backdrop-filter: blur(5px);
+backdrop-filter: blur(1px);
  background-color:rgba(225, 255, 255,);
 }
 .container {
