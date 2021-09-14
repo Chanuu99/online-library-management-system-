@@ -25,14 +25,14 @@
   <a href="#">Contact</a><i class="fas fa-info-circle"></i>
 </div>
 <!--nav bar  logo srach,admin-->
-<div class="topnav">
+<center><div class="topnav">
       <img src="https://th.bing.com/th/id/R.36dd618e18bb5ebe5cb174e97d9c4812?rik=Upd0klNFHi%2fCGw&riu=http%3a%2f%2fwww.antioquiatic.edu.co%2fimages%2flogo-biblioteca.png&ehk=7EicayNy8FNz9p9owaZTAi2BRCphdaTviysnInw2bv4%3d&risl=&pid=ImgRaw&r=0" class="logo"  > 
   </div>
 
 <!--nav bar  menu and navigation-->
 <div class="topnav1">
       <a class="active"  onclick="openNav()" ><img   src="https://www.bing.com/th?id=OIP.IF5ND7jxe56z_8cL13XDVQHaHa&w=96&h=96&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"></a>
-    </div>
+    </div></center>
 </HEADER>
 </body>
 </html>
