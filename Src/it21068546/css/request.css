@@ -1,9 +1,15 @@
 /*panel*/
 body{
-  
+  background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
 
- background-color:rgba(225, 25, 55,);
- background-cloor-filter: blur(1px);
+ 
+ 
 }
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
         .container {
