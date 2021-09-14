@@ -24,11 +24,6 @@ include("./Header.php");
 			<div class = "virtual_frame">
 			
 				<!-- Login header -->
-				<div class="jumbotron">
-					<h2>Login</h2>
-				</div>
-				
-				<!--
 				<h1>Login</h1>
 				<br>
 				-->
