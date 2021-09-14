@@ -218,6 +218,7 @@ select.form-controls:focus::-ms-value {
   background-color: indianred;
   border: none;
   border-radius: 2rem;
+  width: auto;
  
 }
 .btn-remove:focus, .btn-primary.focus {
