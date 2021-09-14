@@ -34,12 +34,13 @@ include("./Header.php");
     </div>
 
     <!--Content-->
-    <div class="modal-content">
+    <!--div class="modal-content"-->
 
       <!-- form Body-->
-      <div class="modal-body mb-5 p-5">
+      <!--div class="modal-body mb-5 p-5"-->
 
         <!--Form  -->
+        <center>
         <form method="post" action=" form.php" style="box-sizing: border-box;" >
 
           <!--input field   -->
@@ -99,6 +100,7 @@ include("./Header.php");
      </div>
      <!-- End Form  -->
      </form>
+     </center>
     <!-- End form Body-->
     </div>
     <!--End Content-->
