@@ -25,7 +25,7 @@ include("./Header.php");
 			
 				<!-- Login header -->
 				<div class="jumbotron">
-					<h2>Login</h2>
+					<h1>Login</h1>
 				</div>
 				
 				<!--
