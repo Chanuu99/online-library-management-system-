@@ -8,6 +8,7 @@ background-blend-mode: color-burn;
   padding : 2% 2% 2% 2%;
   align-items: center;
   display: block;
+  border-style: outset;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-color: black;
