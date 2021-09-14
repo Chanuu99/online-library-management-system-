@@ -26,7 +26,6 @@ include("./Header.php");
 				<!-- Login header -->
 				<h1>Login</h1>
 				<br>
-				-->
 				
 				<!-- Email -->
 				<div class="div_email">
