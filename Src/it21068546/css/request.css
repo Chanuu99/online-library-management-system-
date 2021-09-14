@@ -216,7 +216,8 @@ select.form-controls:focus::-ms-value {
 .btn-remove{
   color: #fff;
   background-color: indianred;
-  border-color: #007bff;
+  border: none;
+  border-radius: 2rem;
  
 }
 .btn-remove:focus, .btn-primary.focus {
@@ -225,7 +226,7 @@ select.form-controls:focus::-ms-value {
 .btn-remove:hover {
   color: #fff;
   background-color: #0069d9;
-  border-color: #0062cc;
+  border: none;
 }
 
 .btn-primary {
