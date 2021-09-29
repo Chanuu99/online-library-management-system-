@@ -65,7 +65,7 @@ include("./Header.php");
 					<!--Login buttons -->
 					<div class="login_buttons" >
 						<button id="btn_login">Login</button>
-						<button id="btn_guest">Continue as a Guest</button>
+						<div><button id="btn_guest">Continue as a Guest</button></div>
 					</div>
 				</div>
 				<br>

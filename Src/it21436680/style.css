@@ -70,6 +70,7 @@ h1 {
 
 .login_buttons {
 	display: flex;
+	/* flex-wrap: wrap; */
 	justify-content: space-between;
 	margin-left: 10%;
 	width: 40%;
@@ -89,6 +90,7 @@ h1 {
 	border-color: #007bff;
 	width: 40%;
 	font-weight: bold;
+	min-width: 50px;
 }
 
 #btn_login:hover {
@@ -98,12 +100,12 @@ h1 {
 }
 
 #btn_guest {
-	padding: 0;
+	padding: 5%;
 	border: none;
 	background: none;	
 	color: #007bff;
 	font-weight: bold;
-	width: 50%;
+	width: 100%;
 	
 }
 
@@ -157,6 +159,7 @@ h1 {
 
 .sm_buttons{
 	width: 60%;
+	min-width: 160px;
 }
 
 #main {
