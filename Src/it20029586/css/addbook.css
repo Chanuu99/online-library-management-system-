@@ -1,0 +1,117 @@
+/*panel*/
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 10px 10px 10px 10px ;
+ 
+   border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-color: black;
+  
+  
+                 /* form{
+                       width:500px;
+                       margin:auto;
+                       padding:20px;
+                       background:gray;
+                       font-size:16px;
+                       border-radius:10px;
+                       font-family:verdana;
+                       color:white;
+                      }*/
+
+                 .text{
+
+                       width: 500px;
+                       height: 5%;
+                       border-radius:10px;
+                       text-align:left;
+                       font-family:verdana;
+                       font-size:16px;
+                       color:gray;
+                       outline:none;
+                      }
+           
+                 .header{
+                        background:blue; 
+                        }
+						
+				input[type=text]:hover {
+                        border-color:lightskyblue;
+                        text-decoration: initial;
+                         }
+     			
+                 select:hover {
+                         border-color:lightskyblue;
+                         text-decoration: initial;
+  
+				 }
+
+							  
+				/*jumbo*/
+.jumbotron {
+ /* padding: 0rem 1rem*/;
+  margin-bottom: 2rem;
+  background-color: #007bff;
+  border-radius: 0rem;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+}
+ .jumbotron form,.jumbotron h3{
+    margin-left:1rem;
+
+}
+
+
+@media (min-width: 200px) {
+  .jumbotron form,.jumbotron {
+    padding: 1rem 0rem;
+  }
+}
+
+.jumbotron form,.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+}
+
+
+input[type=text], select {
+ 
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+  
+                
+ 
+}
+/*panel max min countrol*/
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

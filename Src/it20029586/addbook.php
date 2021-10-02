@@ -4,99 +4,84 @@ include("./Header.php");
  
 <html>
 	<head>
-		<title>Add Books</title>
-                <style>
-                 form{
-                       width:500px;
-                       margin:auto;
-                       padding:20px;
-                       background:gray;
-                       font-size:16px;
-                       border-radius:10px;
-                       font-family:verdana;
-                       color:white;
-                      }
+	 <!-- linking Javascript -->
+	 <script type="text/javascript" src=""></script> 
 
-                 .text{
+	 <!--linking css-->
+	 <link rel="stylesheet" type="text/css" href="">
+	 <link rel="stylesheet" type="text/css" href="css/addbook.css">
 
-                       width: 500px;
-                       height: 5%;
-                       border-radius:10px;
-                       text-align:left;
-                       font-family:verdana;
-                       font-size:16px;
-                       color:gray;
-                       outline:none;
-                      }
-           
-                 .header{
-                        background:blue; 
-                        }
-						
-				input[type=text]:hover {
-                        border-color:lightskyblue;
-                        text-decoration: initial;
-                         }
-     			
-                 select:hover {
-                         border-color:lightskyblue;
-                         text-decoration: initial;
-  
-                              }
-							  
-                </style>
-
-
+     <title>Add Books</title>
+              				  
 	</head>
+	
 	<body>
-		<!--1 nav bar-->
-		<!--2 nav bar-->
-		<div class="header">
-		<h2>Add Book</h2>
-                <h4>Search Book ID</h4>
-		<input type="text" placeholder="Search Book ID" name="search">
-		<button type="submit" value="Go" ></button>
-		<hr>
-                </div>
+		
+		<div id="main">
+        <div class="container"  
+        style="background-color: #f2f2f2;  border-top-right-radius: 20px;
 
+          border-top-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+         border-bottom-left-radius: 20px;
+         ">
+		 
+		 <div class="jumbotron">
+		  <h1>ADD BOOK</h1>
+		  <h3>Search Book ID</h3>
+		 <input type="text" placeholder="Search Book ID" name="search"> 
+		 <button type="submit" value="Go" > go</button>
+		 </div>
+		 
 		<form>
 			<!--input field-->
-			Book ID
+			<div class="input-GROUP">
+			<lable>BookID</lable>
 			<br>
 			<input class="text" type="text" placeholder="Book ID" name="Book ID" required>
 			<br>
 			<br>
+			</div>
 
 			<!--input field-->
-			Book Name
+			<div class="input-GROUP">
+			<lable>Book Name</lable>
 			<br>
 			<input  class="text" type="text" placeholder="🕮 Book Name" name="Book Name" required>
 			<br>
 			<br>
+			</div>
 
 			<!--input field-->
-			Author
+			<div class="input-GROUP">
+			<lable>Author</lable>
 			<br>
 			<input class="text" type="text" placeholder="👤 Author" name="Author" required>
 			<br>
 			<br>
+			</div>
 
 			<!--input field-->
-			Publisher
+			<div class="input-GROUP">
+			<lable>Publisher</lable>
 			<br>
 			<input class="text" type="text" placeholder="👤 Publisher" name="Publisher" required>
 			<br>
 			<br>
+			</div>
 
 			<!--input field-->
-			Edition
+			<div class="input-GROUP">
+			<lable>Edition</lable>
 			<br>
 			<input class="text" type="text" placeholder="Edition" name="Edition" required>
 			<br>
 			<br>
+			</div>
 
 			<!--Drop down list-->
-			Category
+			<div class="input-GROUP">
+			<lable>Category</lable>
 			<br>
 			<select class="text" placeholder="Category" name="Category" required>
                         <option>🖹 Category</option>
@@ -106,10 +91,17 @@ include("./Header.php");
             </select>
 			<br>
 			<br>
+			</div>
 			
 			
 		</form>
 		
 		</div>
+		</div>
         </body>
 </html>
+
+<?php 
+//include footer
+ require("./Footer.php")
+  ?>
