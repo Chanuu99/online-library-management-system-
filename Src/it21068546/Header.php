@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<body>
+
 
 <!--Layout -->
 <meta charset="utf-8">
@@ -53,9 +53,9 @@
   <!--line-->
   <hr>
   <!--text area-->
-  <textarea placeholder="">
+  <!--textarea placeholder="">
   
-  </textarea><br>
+  </textarea><br-->
   <!--submit feedback-->
   <button class=" btn btn-primary" style="align-items:right;margin-left: 70%; margin-top:0.5rem;">Submit</button>
 
@@ -91,8 +91,8 @@
 </div>
 
 </HEADER>
-</body>
-</html>
+
+
 
 
 
