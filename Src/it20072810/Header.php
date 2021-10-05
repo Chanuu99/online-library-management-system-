@@ -12,27 +12,86 @@
 <!--linking css-->
 <link rel="stylesheet" type="text/css" href="css/nav.css">
 
+
 </head>
 <!--header-->
 <HEADER>
 <!--Side nav bar-->
 <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a class="gest"><i class="fa fa-user-circle fa-2x" aria-hidden="true">Gest User</i></a>
-  <i class="fas fa-tachometer-alt"></i><a href="/">Dashboard</a>
-  <a href="Src/it21068546/RequestBooks.php">Request Book</a><i class="fas fa-redo"></i>
-  <a href="#">About Us</a><i class="fas fa-info-circle"></i>
-  <a href="#">Contact</a><i class="fas fa-info-circle"></i>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+  </a>
+
+  <!--menu header-->
+  <a class="gest" color="white"><i class="fa fa-user-circle fa-2x" style="color:white; text-decoration: none; " aria-hidden="true" ></i>Hello, Sign in</a><br> 
+
+  <!--menu-->
+  <a href="/">🎨 Dashboard</a>
+  <a href="Src/it20029586/RequestBooks.php">🕮 Add Book</a>
+  <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
+  <a href="Src/it20029586/Contact _us.php">👤 Contact</a>
+
+  <!--line-->
+  <hr>
+
+  <!--feedback-->
+  <div class="rate" >
+      <style type="text/css">
+            .checked {
+                color: orange;
+            }
+      </style>
+      <!--feedback-->
+      <h2>Feedback</h2><br>
+      <h4>Rate Us</h4>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+  </div><br>
+
+  <!--line-->
+  <hr>
+  <!--text area-->
+  <textarea placeholder="">
+  
+  </textarea><br>
+  <!--submit feedback-->
+  <button class=" btn btn-primary" style="align-items:right;margin-left: 70%; margin-top:0.5rem;">Submit</button>
+
+  <!--line-->
+  <hr>
+
+  <!--feedback-->
+  <div class="qr">
+      <img src="https://blog.qr1.at/wp-content/uploads/2015/05/qr-code-mulit-appstore.jpg" width="100%" align="center">
+  </div>
+<!--End Side nav bar-->
 </div>
+
+
 <!--nav bar  logo srach,admin-->
 <div class="topnav">
-      <img src="https://th.bing.com/th/id/R.36dd618e18bb5ebe5cb174e97d9c4812?rik=Upd0klNFHi%2fCGw&riu=http%3a%2f%2fwww.antioquiatic.edu.co%2fimages%2flogo-biblioteca.png&ehk=7EicayNy8FNz9p9owaZTAi2BRCphdaTviysnInw2bv4%3d&risl=&pid=ImgRaw&r=0" class="logo"  > 
-  </div>
-
-<!--nav bar  menu and navigation-->
-<div class="topnav1">
-      <a class="active"  onclick="openNav()" ><img   src="https://www.bing.com/th?id=OIP.IF5ND7jxe56z_8cL13XDVQHaHa&w=96&h=96&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"></a>
+    <!-- logo-->
+    <div class="nav-logo"> 
+      <img src="https://th.bing.com/th/id/R.36dd618e18bb5ebe5cb174e97d9c4812?rik=Upd0klNFHi%2fCGw&riu=http%3a%2f%2fwww.antioquiatic.edu.co%2fimages%2flogo-biblioteca.png&ehk=7EicayNy8FNz9p9owaZTAi2BRCphdaTviysnInw2bv4%3d&risl=&pid=ImgRaw&r=0"  > 
     </div>
+<!-- End nav bar  logo srach,admin-->
+</div>
+
+<!--nav bar  menu countrol and navigation-->
+<div class="topnav1">
+    <!--side nav bar open  l-->
+    <span style="color:white;padding-left:1rem; font-style: unset;    font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open
+    </span>
+    <!--navigation-->
+    <span style="display: inline-flex; text-overflow:inherit;margin-left:    2rem;  margin-bottom:1rem;   font-weight: bold;"> <a href="./"      style="color: #b4b9bb; padding:0px;word-spacing: 0.5rem;">👤User 🞂 👤 Contact Us</a>
+    </span>
+<!--End nav bar  menu countrol and navigation-->
+</div>
+
 </HEADER>
+
 </body>
+
 </html>
