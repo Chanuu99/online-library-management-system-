@@ -139,7 +139,7 @@ function test_input($data) {
  
 bg-blend-mode: overlay;
 background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626), url("https://images.unsplash.com/photo-1570102881689-c04ab4cf1f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFsbG9vbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");;
-    background-size: 120% 2000px,100% 2000px;
+   
 
    -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -212,7 +212,7 @@ include("./Header.php");
   <div id="main">
     <!--RequestBook   Form -->
      
-<div class="container" style="background-color: rgba(255, 255, 255, 0.5);background: transparent ;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); " >
+<div class="container" style="background-color: rgba(255, 255, 255, 0.5);background: transparent ;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);border-style: none; " >
 <!--gide 2-->
 <div style=" display: grid; grid-template-columns: auto auto  ;">
 
