@@ -3,7 +3,7 @@
 
 <!--Layout -->
 <meta charset="utf-8">
-
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- linking Javascript -->
 <script type="text/javascript" src="js/nac.js"></script>  
@@ -17,12 +17,7 @@
 <!--header-->
 <HEADER>
 <!--Side nav bar-->
-<div id="mySidenav" class="sidenav" style=" background: rgba(255,255,255,0.1);
-    box-shadow:0 25px 45px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255,255,255,0.5);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    backdrop-filter: blur(25px);">
+<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
   </a>
 
@@ -62,26 +57,21 @@
   
   </textarea><br-->
   <!--submit feedback-->
-  <!--button class=" btn btn-primary" style="align-items:right;margin-left: 70%; margin-top:0.5rem;">Submit</button-->
+  <button class=" btn btn-primary" style="align-items:right;margin-left: 70%; margin-top:0.5rem;">Submit</button>
 
   <!--line-->
   <hr>
 
   <!--feedback-->
-  <div class="qr" style="">
-      <img   src="https://blog.qr1.at/wp-content/uploads/2015/05/qr-code-mulit-appstore.jpg" width="100%" style="" align="center">
+  <div class="qr">
+      <img src="https://blog.qr1.at/wp-content/uploads/2015/05/qr-code-mulit-appstore.jpg" width="100%" align="center">
   </div>
 <!--End Side nav bar-->
 </div>
 
 
 <!--nav bar  logo srach,admin-->
-<div class="topnav" style=" background: rgba(255,255,255,0.1);
-    box-shadow:0 25px 45px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255,255,255,0.5);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    backdrop-filter: blur(25px);">
+<div class="topnav">
     <!-- logo-->
     <div class="nav-logo"> 
       <img src="https://th.bing.com/th/id/R.36dd618e18bb5ebe5cb174e97d9c4812?rik=Upd0klNFHi%2fCGw&riu=http%3a%2f%2fwww.antioquiatic.edu.co%2fimages%2flogo-biblioteca.png&ehk=7EicayNy8FNz9p9owaZTAi2BRCphdaTviysnInw2bv4%3d&risl=&pid=ImgRaw&r=0"  > 
@@ -90,25 +80,16 @@
 </div>
 
 <!--nav bar  menu countrol and navigation-->
-<div class="topnav1" style=" background: rgba(255,255,255,0.1);
-    box-shadow:0 25px 45px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255,255,255,0.5);
-    border-right: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-    backdrop-filter: blur(25px);">
+<div class="topnav1">
     <!--side nav bar open  l-->
-    <span style="color:grey;padding-left:1rem; font-style: unset;    font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open
+    <span style="color:white;padding-left:1rem; font-style: unset;    font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open
     </span>
     <!--navigation-->
-    
+    <span style="display: inline-flex; text-overflow:inherit;margin-left:    2rem;  margin-bottom:1rem;   font-weight: bold;"> <a href="./"      style="color: #b4b9bb; padding:0px;word-spacing: 0.5rem;">👤User 🞂 🕮 RequestBook</a>
     </span>
-
 <!--End nav bar  menu countrol and navigation-->
 </div>
-<div class="navi" style="margin-left:85%; padding-top: 2rem;">
-<span style="display: inline-flex; text-overflow:inherit;margin-left:    2rem;  margin-bottom:1rem;   font-weight: bold;"> <span style="color:deepskyblue; font-size: 1rem;">User/</span><span style="color:antiquewhite; font-size: 1rem;"> RequestBook</span> 
-</span>
-</div>
+
 </HEADER>
 
 

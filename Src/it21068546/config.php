@@ -1,5 +1,5 @@
 <?php
-$servername = "remotemysql.com";
+/*$servername = "remotemysql.com";
 $username = "CNqQ9qf2VC";
 $password = "VEyeXiBvbd";
 $dbname = "CNqQ9qf2VC";
@@ -10,7 +10,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-/*
+*/
 ?>
 <?php
 $servername = "localhost";
@@ -25,4 +25,4 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-?>*/
+?>
