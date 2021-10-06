@@ -1,14 +1,37 @@
 <html>
   <head>
+    <style type="text/css">
+       body{
+  
+ 
+bg-blend-mode: overlay;
+background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626), url("https://images.unsplash.com/photo-1570102881689-c04ab4cf1f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFsbG9vbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");;
+   
+
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+ .viwe{
+
+overflow-y:scroll;
+overflow-wrap:300px ;
+height:300px;
+display:inline-grid;
+width: 100%;
+
+}
+    </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script type="text/javascript" src="Src/it21068546/js/nac.js"></script> 
 <link rel="stylesheet" type="text/css" href="Src/it21068546/css/nav.css">
     <title>Dashboard</title>
 <body>
-  <header> <?php   include("Src/it21068546/Header.php") ?></header>
+  <header> <?php   include("Src/Header.php") ?></header>
 
   <div id="main"><!--calculator Form -->
-  <div class="container">
+  <div class="container" style="background-color: rgba(255, 255, 255, 0.5);background: transparent ;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);border-style: none; padding-right: 2px; padding-left: 0px; width:auto;">
 
   <!-- header -->
 <div class="jumbotron">

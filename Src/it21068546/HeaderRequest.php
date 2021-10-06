@@ -39,7 +39,6 @@
   <!--menu-->
   <a href="/">🎨 Dashboard</a>
   <a href="Src/it21068546/RequestBooks.php">🕮 Request Book</a>
-  <a href="Src/it21068546/Admin.php">🕮 Admin </a>
   <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
   <a href="#">👤 Contact</a>
 </div>
