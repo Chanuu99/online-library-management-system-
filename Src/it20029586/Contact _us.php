@@ -43,27 +43,27 @@ include("./Header.php");
         <form method="post" action=" form.php" style="box-sizing: border-box;" >
 
           <!--input name-->
-          <div class="form-groups">
-            <input id="txtName" class="form-controls"  name="txtName" placeholder="Enter Name" type="text" value=""></input><br>
+          <div class="form-set">
+            <input id="txtName" class="form-controls"  name="txtName" placeholder="Enter Name" type="text" value=""></input><br><br>
           </div>
 
           <!--input email-->
-          <div class="form-groups">
-            <input id="txtAge" class="form-controls" name="txtAge" placeholder="Enter E-mail" type="email" value=""></input><br>
+          <div class="form-set">
+            <input id="txtAge" class="form-controls" name="txtAge" placeholder="Enter E-mail" type="email" value=""></input><br><br>
           </div>
 		  
 		  <!--input phone-->
-          <div class="form-groups">
-            <input id="txtAge" class="form-controls" name="txtAge" placeholder="Phone" type="Text" value=""></input><br>
+          <div class="form-set">
+            <input id="txtAge" class="form-controls" name="txtAge" placeholder="Phone" type="Text" value=""></input><br><br>
           </div>
 
          <!--input message-->
-		 <div class="form-groups">
-            <textarea id="txtName" class="form-controls"  name="txtName" placeholder="Enter Your Message" rows="4" cols="25" value=""></textarea><br>
+		 <div class="form-set">
+            <textarea id="txtName" class="form-controls"  name="txtName" placeholder="Enter Your Message" rows="4" cols="25" value=""></textarea><br><br>
          </div>
 
          <!--send msg-->
-         <div class="form-groups">
+         <div class="form-set">
             <input id="btn" class=" btn btn-primary"  class="btn-lg" name="btn" type="Submit" value="Send Message" 
             style="height:4rem; width: 100%; font-size: 2rem;border-radius: 1rem;">
             </input>
@@ -73,27 +73,7 @@ include("./Header.php");
      <!-- End Form  -->
      </form>
 	 
-	 <center>
-	 <table class="tb1" >
-
-	   <tr>
-	    <td class="rows">
-	    +94702526291
-	    </td>
-	 
-	    <td class="rows">
-	    +94765678262
-	    </td>
-	 
-	    <td class="rows">
-	    bibliocatal@gmail.com
-	    </td>
-	  </tr>
-	 </table>
-	 </center>
-	 
-	 <br>
-	 <br>
+	
 	 
     <!-- End form Body-->
     </div>

@@ -9,6 +9,7 @@
    border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-color: black;
+  font-family: inherit;
   
                 
  
@@ -43,31 +44,40 @@ h3 {
   text-shadow: 2px 2px 5px red;
 }
 /*input */
-input[type=text], select {
+input[type=text] {
  
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
-input[type=email], select {
+input[type=email] {
  
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
+
+textarea{
+	display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  
+}
+
 input[type=email]:hover,input[type=text]:hover {
  border-color:lightskyblue;
  text-decoration: initial;
  
-  
 }
- select:hover {
- border-color:lightskyblue;
- text-decoration: initial;
-  
-}
+ 
+ textarea:hover {
+  	 border-color:lightskyblue;
+     text-decoration: initial;
+ }
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -79,9 +89,10 @@ input[type=email]:hover,input[type=text]:hover {
 
 }
 /*form main*/
-.form-groups {
+.form-set {
   margin-bottom: 1rem;
   width: auto;
+  
 }
 
 .form-controls {
@@ -267,6 +278,7 @@ h1, .h1 {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  font-family: inherit;
   padding: 1rem;
 }
 /*jumbo*/
@@ -321,15 +333,4 @@ h1, .h1 {
         will-change: transform;
       }
 	  
-.tb1{
-	padding:60x;
-	border-collapse:collapse;
-	width:90%;
-	table-border:0;
-	background-color:#D3D3D3;
-	border-radius:10px;
-}
-.rows{
-	text-align:center;
-}
 

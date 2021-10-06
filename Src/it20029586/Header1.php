@@ -85,7 +85,7 @@
     <span style="color:white;padding-left:1rem; font-style: unset;    font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open
     </span>
     <!--navigation-->
-    <span style="display: inline-flex; text-overflow:inherit;margin-left:    2rem;  margin-bottom:1rem;   font-weight: bold;"> <a href="./"      style="color: #b4b9bb; padding:0px;word-spacing: 0.5rem;">👤User 🞂 👤 Contact Us</a>
+    <span style="display: inline-flex; text-overflow:inherit;margin-left:    2rem;  margin-bottom:1rem;   font-weight: bold;"> <a href="./"      style="color: #b4b9bb; padding:0px;word-spacing: 0.5rem;">🎨 Dashboard 🞂 Privacy Policy</a>
     </span>
 <!--End nav bar  menu countrol and navigation-->
 </div>
