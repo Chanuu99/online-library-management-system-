@@ -1,0 +1,109 @@
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right:auto ;
+  margin-left: 10px 10px 10px 10px ;
+ 
+   border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-color: black;
+  font-family: inherit;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border-style: box;
+  border-width: 1rem;
+}
+
+  
+  /*panel max min countrol*/
+  
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+  
+/*jumbo*/
+.jumbotron {
+ /* padding: 0rem 1rem*/;
+  margin-bottom: 2rem;
+  background-color: #696880;
+  border-radius: 0rem;
+
+}
+ .jumbotron form,.jumbotron h3{
+    margin-left:1rem;
+
+}
+
+
+@media (min-width: 200px) {
+  .jumbotron form,.jumbotron {
+    padding: 1rem 0rem;
+  }
+}
+
+.jumbotron form,.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  border-radius: 0;
+  
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+h3 {
+	text-align:left;
+}
+
+p {
+	text-align:left;
+}
