@@ -54,7 +54,7 @@ input[type=text], select {
 
 
 
-input[type=text], select:hover {
+input[type=text]:hover, select:hover {
  border-color:lightskyblue;
  text-decoration: initial;
  
