@@ -38,7 +38,7 @@
   <a class="gest" color="white" style="display:flex;"><i class="fa fa-user-circle fa-2x" style="color:white; text-decoration: none;  " aria-hidden="true" ></i><?php echo $username ?></a><br> 
  <div style="margin-left:0rem; word-spacing: 1px; font-size:1rem; font-family: 'Varela Round';font-weight: bold;";>
   <!--menu-->
-  <a href="/">🎨 Dashboard</a>
+  <a href="../../indexs.php">🎨 Dashboard</a>
   <a href="Src/it21068546/RequestBooks.php">🕮 Request Book</a>
   <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
   <a href="#">👤 Contact</a>
