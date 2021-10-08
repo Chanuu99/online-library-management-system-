@@ -16,10 +16,8 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		width: 150px;
-		height: 150px;
-		text-align: center;
-		line-height: 150px;
+		
+	align-items: center;
 		
 	}
 	.ring
@@ -133,7 +131,7 @@ setTimeout(function(){
 		</script>
 		<span></span>
 	</div>
- <img width="90%" height="10%" src="bg logo.png "  > 
+ <img width="100%" height="100%" src="bg logo.png "  > 
 </body>
 
 <script type="text/javascript">
