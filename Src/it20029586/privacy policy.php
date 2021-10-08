@@ -15,7 +15,7 @@ include("./Header1.php");
 
 <body>
     <center>
-	<div class="container"  
+	<div class="container" id="main" 
         style="background-color: #f2f2f2; margin: 1rem; border-top-right-radius: 20px;
           border-top-left-radius: 20px; border-bottom-right-radius:20px; border-bottom-left-radius:20px; border-align:center;"><br>
 	 <div class="jumbotron"> 
