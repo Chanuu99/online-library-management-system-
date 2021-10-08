@@ -1,128 +1,18 @@
-
-		/* The side navigation menu */
-.sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #292d2c; /* Black*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #ffda00;
- 
-}
- .sidenav  .gest {
-  color: black;
-  background-color: #ffda00;
- 
-}
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
-
-
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-
-
-
-
-.topnav{
-   list-style-type: none;
-  margin: 0;
-  padding: 0.5rem;
-  overflow: hidden;
-  background-color: #333;
-}
-.topnav form input{
-  margin: 0px 0px 0px 0px;
-}
-/**/
-.topnav1 {
-  
-  /*margin-top: 10px;*/
-  overflow: hidden;
-  background-color: #292d2c;
-}
-
-.topnav1 a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 5px ;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-
-
-  .topnav img{
-    width:25%;
-    padding-left: 10px;
-    background-color: transparent;
-
-  }
-
-   .topnav1 .active img{
-    background-color: lightskyblue;
-    width: 30%;
-    padding-left: 0rem;
-
-  }
-}
-
-
+/*panel*/
 .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 1.5rem;
+  margin-right:auto ;
+  margin-left: 10px 10px 10px 10px ;
+ 
    border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-color: black;
-  
-                
+           
  
 }
+/*panel max min countrol*/
 
 @media (min-width: 576px) {
   .container {
@@ -147,11 +37,11 @@
     max-width: 1140px;
   }
 }
-
+/*Header*/
 h3 {
   text-shadow: 2px 2px 5px red;
 }
-
+/*input */
 input[type=text], select {
  
   display: inline-block;
@@ -159,7 +49,24 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
+input[type=email], select {
+ 
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email]:hover,input[type=text]:hover {
+ border-color:lightskyblue;
+ text-decoration: initial;
+ 
+  
+}
+ select:hover {
+ border-color:lightskyblue;
+ text-decoration: initial;
+  
+}
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -170,10 +77,10 @@ input[type=text], select {
   border-width: 1rem;
 
 }
-
+/*form main*/
 .form-groups {
   margin-bottom: 1rem;
-   width: auto;
+  width: auto;
 }
 
 .form-controls {
@@ -194,7 +101,7 @@ input[type=text], select {
   background-color: transparent;
   border: 0;
 }
-
+/*form foucs */
 .form-contros:focus {
   color: #495057;
   background-color: #fff;
@@ -202,7 +109,7 @@ input[type=text], select {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
-
+/*placeholder*/
 .form-controls::-webkit-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -231,19 +138,6 @@ input[type=text], select {
   color: #6c757d;
   opacity: 1;
 }
-
-
-select.form-controls:not([size]):not([multiple]) {
-  height: calc(2.25rem + 2px);
-}
-
-select.form-controls:focus::-ms-value {
-  color: #495057;
-  background-color: #fff;
-}
- .form-inline .input-groups {
-    width: auto;
-  }
 
 
   /*button*/
@@ -279,7 +173,7 @@ select.form-controls:focus::-ms-value {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
- width: 100%;
+ 
 }
 
 .btn-primary:hover {
@@ -319,59 +213,6 @@ select.form-controls:focus::-ms-value {
   border-radius: 0.3rem;
 }
 
-input,
-button,
-select,
-optgroup,
-textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-button,
-input {
-  overflow: visible;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
-  -webkit-appearance: listbox;
-}
-
-textarea {
-  overflow: auto;
-  resize: vertical;
-}
 
 fieldset {
   min-width: 0;
@@ -396,30 +237,16 @@ progress {
   vertical-align: baseline;
 }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
 
-[type="search"] {
-  outline-offset: -2px;
-  -webkit-appearance: none;
-}
 
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/*h1*/
-h1, h2, h3, h4, h5, h6 {
+h1, h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h3
+.h1, .h3 {
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
@@ -427,7 +254,7 @@ h1, h2, h3, h4, h5, h6,
   color: inherit;
     font-weight: bold;
 }
-h3 {
+h3,h1{
   color: white;
 }
 
@@ -449,7 +276,7 @@ h1, .h1 {
   border-radius: 0rem;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-
+  
 }
  .jumbotron form,.jumbotron h3{
     margin-left:1rem;
@@ -468,3 +295,40 @@ h1, .h1 {
   padding-left: 0;
   border-radius: 0;
 }
+
+@keyframes spinner {
+        0% {
+          transform: translate3d(-50%, -50%, 0) rotate(0deg);
+        }
+        100% {
+          transform: translate3d(-50%, -50%, 0) rotate(360deg);
+        }
+      }
+      .spin::before {
+        animation: 1.5s linear infinite spinner;
+        animation-play-state: inherit;
+        border: solid 5px #cfd0d1;
+        border-bottom-color: red;
+        border-radius: 50%;
+        content: "";
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        transform: translate3d(-50%, -50%, 0);
+        will-change: transform;
+      }
+	  
+.tb1{
+	padding:60x;
+	border-collapse:collapse;
+	width:90%;
+	table-border:0;
+	background-color:#D3D3D3;
+	border-radius:10px;
+}
+.rows{
+	text-align:center;
+}
+

@@ -1,49 +1,125 @@
 <?php 
+//Header
 include("./Header.php");
  ?>
 
-<!DOCTYPE html>
-<html>
+<!-- linking Javascript -->
+<script type="text/javascript" src=""></script> 
+
+<!--linking css-->
+<link rel="stylesheet" type="text/css" href="css/addevent.css">
+
 
 <head>
-    <title>add event</title>
+   <!--Page title-->
+   <title>Contact Us</title>
 </head>
 
+<!--page body-->
 <body>
-<center><h1>add event</h1>
-<hr>
-    <form>
-        <div>
-            <label for="Even Id">Event Id:</label>
-            <input type="text" name="name" id="name" required>
-        </div>
-        <br><br><br>
-        <div class="col-md-4">
-            <label>Event Date:</label>
-            <input type="text" placeholder="12 May 2016" id="12 May 2016" />
+  <center>
+  <div id="main">
+    <!--contact us Form -->
+    <div class="container"  
+        style="background-color: #f2f2f2; margin: 1rem; border-top-right-radius: 20px;
+          border-top-left-radius: 20px; border-bottom-right-radius:20px; border-bottom-left-radius:20px; border-align:center;">
 
-            <label>Event Time:</label>
-            <input type="text" placeholder="12 55 AM" id="12 55 AM" />
-        </div>
-        <br><br><br>
+    <!-- header 1 -->
+    <div class="jumbotron">
+	
+        <h1>Add event</h1>
+		
+    </div>
 
-        <div>
-            <label for="Event name">Event Name:</label>
-            <input type="text" name="name">
-        </div>
+    <!--Content-->
+    <div class="modal-content">
 
-        <br><br><br>
+      <!-- form Body-->
+      <div class="modal-body mb-5 p-5">
 
-        <div>
-            <label for="Event Discription">Event Discription:</label>
-            <textarea name="discription" id="discription" rows="10" cols="30">
+        <!--Form  -->
+        <form method="post" action=" form.php" style="box-sizing: border-box;" >
+		
+		 <!--input Event Name-->
+		 <div class="form-groups">
+			
+			<input id="txtName" class="form-controls" name="txtName" placeholder="Event Name" type="text" value=""> <br>
+         </div>
 
-            </textarea>
-        </div><br><br>
+          <!--input Event Date-->
+          <div class="form-groups">
+            <input id="txtDate" class="form-controls" name="txtDate" placeholder="Event Date : 12 May 2016" type="text" value=""> <br>
+			<!--debug-->
+          </div>
+		  
+		  <!--input Event Time-->
+          <div class="form-groups">
+            <input id="txtTime" class="form-controls" name="txtTime" placeholder="Event Time : 06:00 PM" type="text" value=""><br>
+          </div>
 
-        <input type="button" name="btnl" value="publish">
-    </form>
+         
+		 
+		 <!--input Event Description-->
+		 <div class="form-groups">
+			<textarea id="txtDesc" class="form-controls"  name="txtDesc" placeholder="Event Description" rows="4" cols="25" value=""></textarea>
+		 </div>
 
+         <!--send msg-->
+         <div class="form-groups">
+            <input id="btn" class=" btn btn-primary"  class="btn-lg" name="btn" type="Submit" value="Publish" 
+            style="height:2rem; width: 10%; font-size: 1rem;border-radius: 1rem; float: right; padding-bottom: 30px;"><br>
+         </div>
+
+      </div>
+     <!-- End Form  -->
+     </form>
+	 
+	 <center>
+	 <table class="tb1" >
+
+	   <tr>
+	    <td class="rows">
+	    +94702526291
+	    </td>
+	 
+	    <td class="rows">
+	    +94765678262
+	    </td>
+	 
+	    <td class="rows">
+	    bibliocatal@gmail.com
+	    </td>
+	  </tr>
+	 </table>
+	 </center>
+	 
+	 <br>
+	 <br>
+	 
+    <!-- End form Body-->
+    </div>
+    <!--End Content-->
+  </div>
+  
+  <!--end container-->
+  </div>    
+<!--End main-->
+
+</div>
+</center>
 </body>
+  
 
-</html>
+
+ <?php 
+//include footer
+ require("./Footer.php")
+  ?>
+
+
+
+
+
+
+
+

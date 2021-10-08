@@ -1,14 +1,15 @@
 /*panel*/
 .container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  width:60%;
+  padding-right:0px;
+  padding-left:opx;
   margin-right:auto ;
   margin-left: 10px 10px 10px 10px ;
  
    border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-color: black;
+  font-family: inherit;
   
                 
  
@@ -38,36 +39,49 @@
     max-width: 1140px;
   }
 }
-/*Header*/
-h3 {
-  text-shadow: 2px 2px 5px red;
-}
+
+
 /*input */
-input[type=text], select {
+input[type=text] {
  
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  border-color: gray;
+  background-color: #F6ECF5;
 }
-input[type=email], select {
+input[type=email] {
  
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  border-color: gray;
+  background-color:#F6ECF5;
 }
+
+textarea {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: gray;
+  background-color: #F6ECF5;
+  
+}
+
 input[type=email]:hover,input[type=text]:hover {
- border-color:lightskyblue;
+ border-color:#957DAD;
  text-decoration: initial;
  
-  
 }
- select:hover {
- border-color:lightskyblue;
- text-decoration: initial;
-  
-}
+ 
+ textarea:hover {
+  	 border-color:#957DAD;
+     text-decoration: initial;
+ }
+
 .container-fluid {
   width: 100%;
   padding-right: 15px;
@@ -79,9 +93,10 @@ input[type=email]:hover,input[type=text]:hover {
 
 }
 /*form main*/
-.form-groups {
+.form-set {
   margin-bottom: 1rem;
   width: auto;
+  
 }
 
 .form-controls {
@@ -91,9 +106,9 @@ input[type=email]:hover,input[type=text]:hover {
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: #F6ECF5;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid gray;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -172,15 +187,15 @@ input[type=email]:hover,input[type=text]:hover {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #5a405f;
+  border-color: #73527a;
  
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color:#73527a;
+  border-color:#5a405f;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -243,20 +258,21 @@ progress {
 h1, h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  padding: 10px;
 }
 
 
-h1, h3
-.h1, .h3 {
+h1, h3, h2
+.h1, .h3, .h2 {
   margin-bottom: 0.5rem;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.2;
   color: inherit;
-    font-weight: bold;
+  font-weight: bold;
 }
-h3,h1{
-  color: white;
+h3,h1, h2{
+  color:  #5a405f;
 }
 
 h1, .h1 {
@@ -267,35 +283,10 @@ h1, .h1 {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  font-family: inherit;
   padding: 1rem;
 }
-/*jumbo*/
-.jumbotron {
- /* padding: 0rem 1rem*/;
-  margin-bottom: 2rem;
-  background-color: #007bff;
-  border-radius: 0rem;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  
-}
- .jumbotron form,.jumbotron h3{
-    margin-left:1rem;
 
-}
-
-
-@media (min-width: 200px) {
-  .jumbotron form,.jumbotron {
-    padding: 1rem 0rem;
-  }
-}
-
-.jumbotron form,.jumbotron-fluid {
-  padding-right: 0;
-  padding-left: 0;
-  border-radius: 0;
-}
 
 @keyframes spinner {
         0% {
@@ -305,31 +296,18 @@ h1, .h1 {
           transform: translate3d(-50%, -50%, 0) rotate(360deg);
         }
       }
-      .spin::before {
-        animation: 1.5s linear infinite spinner;
-        animation-play-state: inherit;
-        border: solid 5px #cfd0d1;
-        border-bottom-color: red;
-        border-radius: 50%;
-        content: "";
-        height: 40px;
-        width: 40px;
-        position: absolute;
-        top: 10%;
-        left: 10%;
-        transform: translate3d(-50%, -50%, 0);
-        will-change: transform;
-      }
-	  
-.tb1{
-	padding:60x;
-	border-collapse:collapse;
-	width:90%;
-	table-border:0;
-	background-color:#D3D3D3;
-	border-radius:10px;
-}
-.rows{
-	text-align:center;
-}
 
+.tbr1{
+	background-color:white;
+	 
+}
+.tbr2{
+	background-color:white;
+}	
+
+.tbl,tr,tb{
+	 
+	 border-color: #eff0f4;
+	 border-collapse: collapse;
+	 
+}

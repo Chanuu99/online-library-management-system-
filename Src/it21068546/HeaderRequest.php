@@ -1,7 +1,8 @@
 <?php   //get login details
 
- /*session_start();     
- $username= $_SESSION['logged_user'] ;*/
+ session_start(); 
+ $username= $_SESSION['logged_user'];    
+ 
  ?>
 <!DOCTYPE html>
 
@@ -34,12 +35,11 @@
   </a>
 
   <!--menu header-->
-  <a class="gest" color="white"><i class="fa fa-user-circle fa-2x" style="color:white; text-decoration: none; " aria-hidden="true" ></i>Hello, Sign in <?php /* echo "$username";*/ ?></a><br> 
+  <a class="gest" color="white" style="display:flex;"><i class="fa fa-user-circle fa-2x" style="color:white; text-decoration: none;  " aria-hidden="true" ></i><?php echo $username ?></a><br> 
  <div style="margin-left:0rem; word-spacing: 1px; font-size:1rem; font-family: 'Varela Round';font-weight: bold;";>
   <!--menu-->
   <a href="../../indexs.php">🎨 Dashboard</a>
   <a href="Src/it21068546/RequestBooks.php">🕮 Request Book</a>
-  <a href="Src/it21068546/Admin.php">🕮 Admin </a>
   <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
   <a href="#">👤 Contact</a>
 </div>
@@ -92,7 +92,7 @@
     backdrop-filter: blur(25px);">
     <!-- logo-->
     <div class="nav-logo"> 
-      <img src="https://th.bing.com/th/id/R.36dd618e18bb5ebe5cb174e97d9c4812?rik=Upd0klNFHi%2fCGw&riu=http%3a%2f%2fwww.antioquiatic.edu.co%2fimages%2flogo-biblioteca.png&ehk=7EicayNy8FNz9p9owaZTAi2BRCphdaTviysnInw2bv4%3d&risl=&pid=ImgRaw&r=0"  > 
+      <img src="bg logo.png"  height="5%"> 
     </div>
 <!-- End nav bar  logo srach,admin-->
 </div>
@@ -115,7 +115,7 @@
 <!--End nav bar  menu countrol and navigation-->
 </div>
 <div class="navi" style="/*margin-left:85%;*/ padding-top: 2rem; text-align:right;">
-<span style="display: inline-flex; text-overflow:inherit;margin-left:    2rem;  margin-bottom:1rem;   font-weight: bold;"> <span style="color:deepskyblue; font-size: 1rem;">Gest User/</span><span style="color:antiquewhite; font-size: 1rem;"> Home</span> 
+<span style="display: inline-flex; text-overflow:inherit;margin-left:    2rem;  margin-bottom:1rem;   font-weight: bold;"> <span style="color:deepskyblue; font-size: 1rem;">User/</span><span style="color:antiquewhite; font-size: 1rem;"> RequestBook</span> 
 </span>
 </div>
 
