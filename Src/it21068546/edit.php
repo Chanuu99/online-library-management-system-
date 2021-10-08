@@ -45,7 +45,7 @@ setTimeout(function(){
          }, 1);
 </script>
 ";
-
+  header("Location:RequestBooks.php");
     
 } else {
       $noti.= "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
