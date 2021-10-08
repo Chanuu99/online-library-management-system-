@@ -92,7 +92,7 @@
     backdrop-filter: blur(25px);">
     <!-- logo-->
     <div class="nav-logo"> 
-      <img src="bg logo.png"  > 
+      <img src="bg logo.png"  height="5%"> 
     </div>
 <!-- End nav bar  logo srach,admin-->
 </div>
