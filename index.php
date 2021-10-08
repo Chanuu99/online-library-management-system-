@@ -11,6 +11,17 @@
 		transition: 0.5s;
 		background: #262626;
 	}
+	img
+	{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 150px;
+		height: 150px;
+		text-align: center;
+		line-height: 150px;
+		
+	}
 	.ring
 	{
 		position: absolute;
