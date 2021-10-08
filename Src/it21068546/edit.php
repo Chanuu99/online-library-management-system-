@@ -41,7 +41,7 @@ for (i = 0; i < close.length; i++) {
 }
     
 setTimeout(function(){
-            window.location.href = '/RequestBooks.php';
+            window.location.href = 'https://bibliotca.herokuapp.com/Src/it21068546/RequestBooks.php';
          }, 1);
 </script>
 ";
