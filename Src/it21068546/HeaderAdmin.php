@@ -93,7 +93,7 @@
     backdrop-filter: blur(25px);">
     <!-- logo-->
     <div class="nav-logo"> 
-      <img src="https://th.bing.com/th/id/R.36dd618e18bb5ebe5cb174e97d9c4812?rik=Upd0klNFHi%2fCGw&riu=http%3a%2f%2fwww.antioquiatic.edu.co%2fimages%2flogo-biblioteca.png&ehk=7EicayNy8FNz9p9owaZTAi2BRCphdaTviysnInw2bv4%3d&risl=&pid=ImgRaw&r=0"  > 
+      <img src="bg logo.png"  > 
     </div>
 <!-- End nav bar  logo srach,admin-->
 </div>
