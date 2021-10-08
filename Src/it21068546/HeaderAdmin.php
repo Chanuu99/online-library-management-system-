@@ -34,7 +34,7 @@
   </a>
 
   <!--menu header-->
-  <a class="gest" color="white"><i class="fa fa-user-circle fa-2x" style="color:white; text-decoration: none; " aria-hidden="true" ></i> Admin <?php /* echo "$username";*/ ?></a><br> 
+  <a class="gest" color="white" style="display:flex;"><i class="fa fa-user-circle fa-2x" style="color:white; text-decoration: none; " aria-hidden="true" ></i> Admin <?php /* echo "$username";*/ ?></a><br> 
    <div style="margin-left:0rem; word-spacing: 1px; font-size:1rem; font-family: 'Varela Round';font-weight: bold;";>
   <!--menu-->
   <a href="/">🎨Dashboard</a>

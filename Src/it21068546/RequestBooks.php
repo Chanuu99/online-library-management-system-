@@ -1,3 +1,13 @@
+<?php 
+//Header
+function rdir(){
+   
+   
+
+}
+include_once("./HeaderRequest.php");
+
+ ?>
 
 
 <?php
@@ -13,32 +23,13 @@ $rids=0;
        
 //get login details
 
- /*session_start();
-  /*if(isset($_POST['btnS'])) {
-       include_once("config.php");
- /*$username= $_SESSION['logged_user'] ;*/
+ $username= $_SESSION['logged_user']; 
+ 
 
 
 $noti="";
-  // Check If form submitted, insert form data into users table.
-  if(isset($_POST['btnS'])) {
-    $bname = $_POST['bName'];
-    $auther=$_POST['bAuther'];
-    $cate = $_POST['txtop'];
-    $lg = $_POST['txtlg'];
 
-    //member
-
-    $fname = $_POST['fName'];
-    $email=$_POST['txtmail'];
-   
-   
-
-
-
-
-
-         $rid="SELECT RID FROM `regular_user` where Email='@gmail.com'";
+         $rid="SELECT RID FROM `regular_user` where Email='$username'";
          $res = mysqli_query($conn, $rid);
            
                // output data of each row
@@ -65,11 +56,29 @@ $noti="";
                 $tab.= "<td>".$rows['Book_name']."</td>";
                 $tab.= "<td>".$rows['Author']."</td>";
                 
-                $tab.= "<td><center><a href='delete.php?Request_ID=$rows[Request_ID]'><button  class='btn btn-remove '>Remove</button></a></td>";
+                $tab.= "<td><center><a href='delete.php?Request_ID=$rows[Request_ID]'><button  class='btn btn-remove btns'> &#128308; Remove</button></a>  <a href='edit.php?Request_ID=$rows[Request_ID]'><button  class='btn btn-remove btns '>  &#9998; Edit     </button></a></td>";
                 $tab.= "</tr>";
               
             }
         }
+  // Check If form submitted, insert form data into users table.
+  if(isset($_POST['btnS'])) {
+    $bname = $_POST['bName'];
+    $auther=$_POST['bAuther'];
+    $cate = $_POST['txtop'];
+    $lg = $_POST['txtlg'];
+
+    //member
+
+    $fname = $_POST['fName'];
+    $email=$_POST['txtmail'];
+   
+   
+
+
+
+
+
 
 
 
@@ -87,9 +96,28 @@ $noti="";
     $resultt =  "INSERT INTO `request_book`( `RID`, `Author`, `Category`, `Language`, `Book_name`, `Email`, `Name`) VALUES('$rids','$auther','$cate','$lg','$bname','$email','$fname')";
     
     if ($conn->query($resultt) === TRUE) {
-    $noti.="<h3>New record created successfully</h3>";
-    header("Location: RequestBooks.php");
+
+    $noti.="<div class='alert success'>
+  <span class='closebtn'>&times;</span>  
+  <strong>Success!</strong> Request successful Thank you!.
+</div> <script type='text/javascript'>
+var close = document.getElementsByClassName('closebtn');
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = '0';
+    setTimeout(function(){ div.style.display = 'none'; }, 600);
+  }
+}
     
+setTimeout(function(){
+            window.location.href = 'RequestBooks.php';
+         }, 2000);
+</script>
+";
+   
         
      
 } else {
@@ -128,9 +156,10 @@ function test_input($data) {
 </head>
 
 
-
 <!-- linking Javascript -->
-<script type="text/javascript" src="js/nac.js"></script> 
+<script type="text/javascript" src="js/nac.js">
+
+</script> 
 
 <!--Icon pack-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -138,90 +167,28 @@ function test_input($data) {
 <!--linking css-->
 <link rel="stylesheet" type="text/css" href="css/nav.css">
 <link rel="stylesheet" type="text/css" href="css/request.css">
+<link rel="stylesheet" type="text/css" href="css/ani.css">
 
 <!--Page Head-->
 
   <style type="text/css">
- body{
-  
- 
-bg-blend-mode: overlay;
-background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626), url("https://images.unsplash.com/photo-1570102881689-c04ab4cf1f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFsbG9vbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");;
-   
-
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
- }
 
 
-
-.viwe{
-
-overflow-y:scroll;
-overflow-wrap:300px ;
-height:300px;
-display:inline-grid;
-width: 100%;
-
-}
-    
-table{
-width: 100%;
- align-items: center;
-padding-right:3%;
-}           
- @keyframes text{
-    0%{
-        color: inherit;
-        margin-bottom: 40px;
-    }
-    30%{
-        letter-spacing: 25px;
-        margin-bottom: 40px;
-    }
-    85%{
-        letter-spacing: 8px;
-        margin-bottom: 40px;
-    }
- }
- /* card */
- .card{
-
-position: relative;
-box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5);
-border-radius: 15px;
-background: rgba(255, 255, 255, 1.0);
-overflow: hidden;
-justify-content: center;
-align-items: center;
-border-top: 1px solid rgba(255, 255, 255, 0.5);
-border-left: 1px solid rgba(255, 255, 255, 0.5);
-backdrop-filter: blur(5px); 
- }
-
- /* jambo 2 */
-.jumbo{
-border-radius:0px; border-top: 1px solid rgba(255, 255, 255, 0.5);
-border-left: 1px solid rgba(255, 255, 255, 0.5); position: relative;
-box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5); 
-}
 </style>
 </head>
-<?php 
-//Header
-include_once("./HeaderRequest.php");
-
- ?>
-<!-- Body of page-->
+<!--body of page-->
 <body >
 
 <!--main-->
   <div id="main">
     <!--RequestBook   Form -->
      
-<div class="container" style="background-color: rgba(255, 255, 255, 0.5);background: transparent ;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);border-style: none; padding-right: 2px; padding-left: 0px; width:auto;">
+<div class="container" style="
+transition: all .8s ease;
+
+
+
+background-color: rgba(255, 255, 255, 0.5);background: transparent ;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);border-style: none; padding-right: 2px; padding-left: 0px; width:auto;">
 <!--gide 2-->
 <div style=" display: grid; grid-template-columns: auto auto  ;">
 
@@ -280,12 +247,12 @@ include_once("./HeaderRequest.php");
 
           <!--input field  -->
     <div class="form-groups">
-            <input id="txtmail" class="form-controls" name="txtmail" placeholder="🖂 Email" type="email" value=""></input><br>
+            <input id="txtmail" class="form-controls" name="txtmail" placeholder="🖂 Email" type="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></input><br>
      </div>
           <br><br>
          <!--Submit  -->
     <div class="form-groups">
-            <input id="btnS" class=" btn btn-primary "  class="btn-lg" name="btnS" type="Submit" onclick="ValidateEmail();"value="Request" 
+            <input id="btnS" class=" btn btn-primary btns "  class="btn-lg" name="btnS" type="Submit" onclick="ValidateEmail();"value="Request" 
             style=" margin-top: 2rem; border-radius: 7px;margin-left: 0%;" >
             </input>
     </div>

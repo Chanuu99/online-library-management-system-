@@ -2,11 +2,13 @@
 // include database connection file
 include_once("config.php");
  $noti="";
- $id = $_GET['Request_ID'];
+ 
+
+
 
 // Check if form is submitted for user update, then redirect to homepage after update
  if(isset($_POST['update'])) {
-	 $id = $_POST['Request_ID'];
+   $id = $_POST['Request_ID'];
     $bname = $_POST['bName'];
     $auther=$_POST['bAuther'];
     $cate = $_POST['txtop'];
@@ -21,9 +23,28 @@ include_once("config.php");
 		
 	// update user data
 	$result = "UPDATE `request_book` SET `Author`='$auther',`Category`='$cate',`Language`='$lg',`Book_name`='$bname',`Email`='$email',`Name`='$fname' WHERE `Request_ID`='$id' ";
-	 echo"$id";
+	/* echo"$id";*/
 	if ($conn->query($result) === TRUE) {
-    $noti.="<h3>New record created successfully</h3>";
+    $noti.="<div class='alert success'>
+  <span class='closebtn'>&times;</span>  
+  <strong>Success!</strong> Request successful updated  Thank you!.
+</div> <script type='text/javascript'>
+var close = document.getElementsByClassName('closebtn');
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = '0';
+    setTimeout(function(){ div.style.display = 'none'; }, 600);
+  }
+}
+    
+setTimeout(function(){
+            window.location.href = 'RequestBooks.php';
+         }, 1);
+</script>
+";
 
     
 } else {
@@ -32,49 +53,43 @@ include_once("config.php");
  
 
 
-$conn->close();
+
 	// Redirect to homepage to display updated user in list
 	/*header("Location: RequestBooks.php");*/
+ 
 }
+
 ?>
-<?php
-/*  $auther="";
 
-    $cate= "";
-    $lg ="" ;
+<?php 
+ try{
 
-    $bname ="";
-
-    //member
- $email="";
-     $fname ="";
- if(isset($_POST['update'])) {
+$id = $_GET['Request_ID'];
 
 
-$id = $_GET['id'];
 
 // Fetech user data based on id
-$results ="SELECT  `Author`, `Category`, `Language`, `Book_name`, `Email`, `Name` FROM `request_book` WHERE  Request_ID =$id";
-   $r = mysqli_query($conn, $results);
+$results = mysqli_query($conn,"SELECT  `Request_ID`, `Author`, `Category`, `Language`, `Book_name`, `Email`, `Name` FROM `request_book` WHERE  Request_ID =$id");
+  
 
-while($row = mysqli_fetch_array($r))
+while($row=mysqli_fetch_array($results))
 {
-	
-    $auther.=$row['Author'];
-    $cate.= $row['Category'];
-    $lg.= $row['Language'];
-
-    $bname.= $row['Book_name'];
-
-    //member
- $email.=$row['Email'];
-     $fname.=$row['Name'];
+  
+    $auther=$row['Author'];
+    $cate= $row['Category'];
+    $lg= $row['Language'];
+    $bname= $row['Book_name'];
+    $email=$row['Email'];
+    $fname=$row['Name'];
    
    
 }
-}*/
+}catch(Exception $e ) {
+   
+  echo "error";
+}
 
-?>
+ ?>
 
 
 <!DOCTYPE html>
@@ -95,27 +110,11 @@ while($row = mysqli_fetch_array($r))
 <!--linking css-->
 <link rel="stylesheet" type="text/css" href="css/nav.css">
 <link rel="stylesheet" type="text/css" href="css/request.css">
+<link rel="stylesheet" type="text/css" href="css/ani.css">
 
 <!--Page Head-->
 <head>
   <style type="text/css">
-  .container:hover {
-  border-color: white;
-
-  }
-
-
-.viwe{
-  overflow-y:scroll;
-overflow-wrap:300px ;
-
-height:300px;
-
- display:inline-grid;
- width: 100%;
-
-}
-               
  
 
 </style>
@@ -127,22 +126,24 @@ height:300px;
 <body bgcolor="#f0f0f0">
 <?php 
 //Header
-include("./Header.php");
+include("./HeaderRequest.php");
  ?>
 
 
   <!--main-->
   <div id="main">
     <!--RequestBook   Form -->
-    <div class="container" >
+    <div class="container" style="background-color: rgba(255, 255, 255, 0.5);background: transparent ;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);border-style: none; padding-right: 2px; padding-left: 0px; width:auto;">
 
 <div style=" display: grid;
   grid-template-columns: auto auto  ;
         ">
+
+ <div class="card" style="  margin:3% 3% 3% 3%; padding: 3% 3% 3% 3%; " >
 <div style="border: box; border-color:#f2f2f2 ;" >
     <!-- header 1 -->
-    <div class="jumbotron">
-        <h3>Book Details</h3>
+    <div class="jumbotron jumbo" style="background-color: green;">
+        <h3> Update Book </h3>
     </div>
 
     <!--Content-->
@@ -153,22 +154,22 @@ include("./Header.php");
 
         <!--Form  -->
         <center>
-        <form method="post" action="edit.php?Request_ID=<?php echo($id);  ?>"  >
+        <form method="post" action="edit.php?Request_ID=<?php echo '$id '?>" >
 
           <!--input field   -->
           <div class="form-groups">
           
-            <input id="bName" class="form-controls"  name="bName" placeholder="🕮 Book Name" type="text">
+            <input id="bName" class="form-controls"  name="bName" placeholder="🕮 Book Name" type="text" value=<?php echo $bname;?>>
           </div>
 
           <!--input field   -->
           <div class="form-groups">
-            <input id="txtAge" class="form-controls" name="bAuther" placeholder="👤 Auther" type="Text" >
+            <input id="txtAge" class="form-controls" name="bAuther" placeholder="👤 Auther" type="Text"value=<?php echo $auther;?> >
           </div>
 
           <!--drop-Down  field  -->
           <div class="form-groups">
-            <select id="txt" class="form-controls" placeholder="Category" name="txtop">
+            <select id="txt" class="form-controls" placeholder="Category" name="txtop" value=<?php echo $cate;?>>
               <option>🖹 Category</option>
               <option>Education</option>
               <option>Novel</option>
@@ -178,7 +179,7 @@ include("./Header.php");
 
          <!--drop-Down Language field  -->
         <div class="form-groups">
-            <select id="txt" class="form-controls"  name="txtlg" >
+            <select id="txt" class="form-controls"  name="txtlg" value=<?php echo $lg;?>>
               <option>🗚 Language</option>
               <option>English</option>
               <option>Sinhala</option>
@@ -186,30 +187,33 @@ include("./Header.php");
             </select>
         </div>
 </div>
+</div>
+<div class="card" style="  margin:3% 3% 3% 3%; padding: 3% 3% 3% 3%; " >
 <div style="padding-left: 1rem; border: border-box;">
     <!-- header 2 -->
-    <div class="jumbotron " style=" ;
+    <div class="jumbotron jumbo" style=" ;
       ">
-      <h3>Member Details</h3>
+      <h3> Update Member </h3>
     </div>
 
     <div class="form-groups">
             <!--input field  user details -->
-            <input id="fName" class="form-controls"  name="fName" placeholder="👤 Full Name" type="text" >
+            <input id="fName" class="form-controls"  name="fName" placeholder="👤 Full Name" type="text" value=<?php echo $fname;?>>
           </div>
 
           <!--input field  -->
           <div class="form-groups">
-            <input id="txtmail" class="form-controls" name="txtmail" placeholder="🖂 Email" type="email" >
+            <input id="txtmail" class="form-controls" name="txtmail" placeholder="🖂 Email" type="email" value=<?php echo $email;?>>
           </div>
 <br><br>
          <!--Submit  -->
         <div class="form-groups">
-        	<td><input type="text" name="id" value=<?php echo $id;?>></td>
-            <input id="btnS" class=" btn btn-primary"  class="btn-lg" name="update" type="Submit" value="update" 
+        	<td><input type="hidden" name="Request_ID" value=<?php echo $_GET['Request_ID'];?>></td>
+            <input id="btnS" class=" btn btn-primary btns"   name="update" type="Submit" value="Update" 
             style="height:4rem; width: 100%; font-size: 2rem;border-radius: 1rem;" >
             </input>
         </div>
+      </div>
          <!-- End Form  -->
      </form>
    
@@ -241,5 +245,5 @@ include("./Header.php");
 
 <?php 
 //include footer
- require("./Footer.php")
+ require("./Footer.php");
   ?>

@@ -44,7 +44,7 @@ $rids=0;
 
                 
                 
-                $itab.= "<td><center><a href='deletei.php?con_id=$rows[con_id]'><button  class='btn btn-remove '>Claim Issue</button></a></td>";
+                $itab.= "<td><center><a href='deletei.php?con_id=$rows[con_id]'><button  class='btn btn-remove btns'>Claim Issue</button></a></td>";
                 $itab.= "</tr>";
               
             }
@@ -64,7 +64,7 @@ $rids=0;
 
                 
                 
-                $ptab.= "<td><center><a href='deletep.php?PID=$rows[PID]'><button  class='btn btn-remove '>Remove Publisher</button></a></td>";
+                $ptab.= "<td><center><a href='deletep.php?PID=$rows[PID]'><button  class='btn btn-remove btns btn-lg ' style=' font-size: 80%;'>Remove Publisher</button></a></td>";
                 $ptab.= "</tr>";
               
             }
@@ -84,7 +84,7 @@ $rids=0;
 
                 
                 
-                $btab.= "<td><center><a href='deleteb.php?PID=$rows[PID]'><button  class='btn btn-remove '>Remove Book</button></a></td>";
+                $btab.= "<td><center><a href='deleteb.php?PID=$rows[PID]'><button  class='btn btn-remove btns '>Remove Book</button></a></td>";
                 $btab.= "</tr>";
               
             }
@@ -101,7 +101,7 @@ $rids=0;
                 $utab.= "<td>".$rows['Frist_Name']."</td>";
                 $utab.= "<td>".$rows['Email']."</td>";
                 
-                $utab.= "<td><center><a href='deleteu.php?RID=$rows[RID]'><button  class='btn btn-remove '>Remove User</button></a></td>";
+                $utab.= "<td><center><a href='deleteu.php?RID=$rows[RID]'><button  class='btn btn-remove btns '>Remove User</button></a></td>";
                 $utab.= "</tr>";
               
             }
@@ -120,7 +120,7 @@ $rids=0;
                 $tab.= "<td>".$rows['Book_name']."</td>";
                 $tab.= "<td>".$rows['Author']."</td>";
                 
-                $tab.= "<td><center><a href='deleter.php?Request_ID=$rows[Request_ID]'><button  class='btn btn-remove '>Claim Request</button></a></td>";
+                $tab.= "<td><center><a href='deleter.php?Request_ID=$rows[Request_ID]'><button  class='btn btn-remove btns'>Claim Request</button></a></td>";
                 $tab.= "</tr>";
               
             }
@@ -200,75 +200,12 @@ function test_input($data) {
 <!--linking css-->
 <link rel="stylesheet" type="text/css" href="css/nav.css">
 <link rel="stylesheet" type="text/css" href="css/Admin.css">
+<link rel="stylesheet" type="text/css" href="css/ani.css">
 
 <!--Page Head-->
 
   <style type="text/css">
- body{
-  
- 
-bg-blend-mode: overlay;
-background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626), url("https://images.unsplash.com/photo-1570102881689-c04ab4cf1f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFsbG9vbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");;
-   
 
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
- }
-
-
-
-.viwe{
-
-overflow-y:scroll;
-overflow-wrap:300px ;
-height:300px;
-display:inline-grid;
-width: 100%;
-
-}
-    
-table{
-width: 100%;
- align-items: center;
-padding-right:3%;
-}           
- @keyframes text{
-    0%{
-        color: inherit;
-        margin-bottom: 40px;
-    }
-    30%{
-        letter-spacing: 25px;
-        margin-bottom: 40px;
-    }
-    85%{
-        letter-spacing: 8px;
-        margin-bottom: 40px;
-    }
- }
- /* card */
- .card{
-
-position: relative;
-box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5);
-border-radius: 15px;
-background: rgba(255, 255, 255, 1.0);
-overflow: hidden;
-justify-content: center;
-align-items: center;
-border-top: 1px solid rgba(255, 255, 255, 0.5);
-border-left: 1px solid rgba(255, 255, 255, 0.5);
-backdrop-filter: blur(5px); 
- }
-
- /* jambo 2 */
-.jumbo{
-border-radius:0px; border-top: 1px solid rgba(255, 255, 255, 0.5);
-border-left: 1px solid rgba(255, 255, 255, 0.5); position: relative;
-box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5); 
-}
 </style>
 </head>
 
