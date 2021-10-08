@@ -154,7 +154,7 @@ include("./HeaderRequest.php");
 
         <!--Form  -->
         <center>
-        <form method="post" action="edit.php?Request_ID=<?php echo '$id '?>" >
+        <form method="post" action="edit.php" >
 
           <!--input field   -->
           <div class="form-groups">
