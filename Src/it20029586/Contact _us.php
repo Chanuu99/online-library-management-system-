@@ -51,7 +51,7 @@ $conn->close();
   <div id="main">
     <!--contact us Form -->
     <div class="container"  
-        style="background-color: #f2f2f2; margin: 1rem; border-top-right-radius: 20px;
+        style="background-color: rgba(255, 255, 255, 0.5);background: transparent ;  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);border-style: none; padding-right: 2px; padding-left: 0px; width:auto;background-color: #f2f2f2; margin: 1rem; border-top-right-radius: 20px;
           border-top-left-radius: 20px; border-bottom-right-radius:20px; border-bottom-left-radius:20px; border-align:center;">
 
     <!-- header 1 -->
