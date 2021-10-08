@@ -26,9 +26,8 @@
 
   <!--menu-->
   <a href="/">🎨 Dashboard</a>
-  <a href="Src/it20029586/addbook.php">🕮 Add Book</a>
   <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
-  <a href="Src/it20029586/Contact _us.php">👤 Contact</a>
+  <a href="Src/it20029586/Contact _us.php">&#9742;Contact</a>
 
   <!--line-->
   <hr>

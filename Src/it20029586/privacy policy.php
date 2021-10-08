@@ -14,8 +14,9 @@ include("./Header1.php");
 </head>
 
 <body>
+ <div id="main">
     <center>
-	<div class="container" id="main" 
+	<div class="container"  
         style="background-color: #f2f2f2; margin: 1rem; border-top-right-radius: 20px;
           border-top-left-radius: 20px; border-bottom-right-radius:20px; border-bottom-left-radius:20px; border-align:center;"><br>
 	 <div class="jumbotron"> 
@@ -59,12 +60,16 @@ include("./Header1.php");
 		<br>
 		  
 	</div>
+ </div>
+
 	</center>
+  </div>
 </body>
 
 </html>
 
-<?php 
+
+	<?php 
 //include footer
  require("./Footer.php")
   ?>

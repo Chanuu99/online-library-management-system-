@@ -1,107 +1,172 @@
 <?php 
-include("./Header.php");
+//Header
+include("./Header2.php");
  ?>
  
-<html>
-	<head>
-	 <!-- linking Javascript -->
-	 <script type="text/javascript" src=""></script> 
+<?php
+  include('config.php');
+ 
 
-	 <!--linking css-->
-	 <link rel="stylesheet" type="text/css" href="">
-	 <link rel="stylesheet" type="text/css" href="css/addbook.css">
+if(isset($_POST['submit']))
+{
+  
+   $name=$_POST['BookName'];
+   $author=$_POST['author'];
+   $edi=$_POST['edition'];
+   $cat=$_POST['category'];
+   $image=$_POST
+   $pdf=$_POST['file'];
 
-     <title>Add Books</title>
-              				  
-	</head>
+  
+  
+  $result="INSERT INTO 'book'( `Book_Name`, `Author`, `Edition`, 'Category', 'Book_pdf') VALUES('$name','$author','$edi', '$cat', '$pdf')";
+  if ($conn->query($result) === TRUE) {
+  /* echo"<h3>New record created successfully</h3>";
+  */
+} else {
+echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
+}
+
+} $conn->close();
+?>
+
+
+
+<!-- linking Javascript -->
+<script type="text/javascript" src=""></script> 
+
+<!--linking css-->
+<link rel="stylesheet" type="text/css" href="css/addbook.css">
+
+
+<head>
+   <!--Page title-->
+   <title>Add Book</title>
+</head>
+
+<!--page body-->
+<body>
+  <center>
+  <div id="main">
+    <!--contact us Form -->
+    <div class="container"  
+        style="background-color: #f2f2f2; margin: 1rem; border-top-right-radius: 20px;
+          border-top-left-radius: 20px; border-bottom-right-radius:20px; border-bottom-left-radius:20px; border-align:center;">
+
+    <!-- header 1 -->
+    <div class="jumbotron">
 	
-	<body>
+        <h1>ADD BOOK</h1>
+		<!--h3>Search Book ID <input type="text" placeholder="Search Book ID " name="search"-->
+        <!--button type="submit" value="Go" class="search" > Search</button--><!--/h3-->
+        
 		
-		<div id="main">
-        <div class="container"  
-        style="background-color: #f2f2f2;  border-top-right-radius: 20px;
+    </div>
 
-          border-top-left-radius: 20px;
-          border-bottom-right-radius: 20px;
-         border-bottom-left-radius: 20px;
-         ">
+    <!--Content-->
+    <div class="modal-content">
+
+      <!-- form Body-->
+      <div class="modal-body mb-5 p-5">
+
+        <!--Form  -->
+        <form method="post" action=" Addbook.php" enctype="multipart/form-data" style="box-sizing: border-box;" >
+
+          <!--input name-->
+          <div class="form-set">
+            <input id="txtName" class="form-controls"  name="BookName" placeholder="Book Name" type="text" value="" required></input><br><br>
+          </div>
+
+          <!--input author-->
+          <div class="form-set">
+            <input id="txtAge" class="form-controls" name="author" placeholder="Author" type="Text" value="" required></input><br><br>
+          </div>
+		  
+		  <!--input edition-->
+          <div class="form-set">
+            <input id="txtAge" class="form-controls" name="edition" placeholder="Edition" type="Text" value="" required></input><br><br>
+          </div>
+		  
+		  <!--input category-->
+          <div class="form-set">
+            <select id="txtAge" class="form-controls" name="category" placeholder="Category" >
+			<option>Category</option>
+			<option>Novel</option>
+			<option>Fiction</option>
+			<option>Short Story</option>
+		    <option>Scientific</option>
+			<option>Mathematics</option> 
+			<option>Historical</option>
+			<option>IT</option>
+			</select><br>
+          </div>
+		  
+		  <!--input cover-->
+		 <div class="form-set">
+		  <input id="cover" class="form-controls" name="image[]" placeholder="Upload Cover" type="file" value="" width="5%" required ></input><br><br>
+		 </div>
+
+         <!--input pdf-->
+		 <div class="form-set">
+		  <input id="pdf" class="form-controls" name="file" placeholder="Upload PDF" type="file" value=""></input><br><br>
+         </div>
+
 		 
-		 <div class="jumbotron">
-		  <h1>ADD BOOK</h1>
-		  <h3>Search Book ID</h3>
-		 <input type="text" placeholder="Search Book ID" name="search"> 
-		 <button type="submit" value="Go" > go</button>
+		 <div class="form-set">
+            <input id="btn" class=" btn btn-primary"  class="btn-lg" name="submit" type="Submit" value="Add Book" 
+            style="height:2.5rem; width:50%; font-size:20 px;border-radius: 0.25rem;"><br>
+            </input>
+         </div>
+		
+		 
+		 
+		 <div class="form-set">
+            <input id="btn" class=" btn btn-primary"  class="btn-lg" name="btn" type="Reset" value="Reset" 
+            style="height:2.5rem; width:50%; font-size:20 px;border-radius: 0.25rem;">
+            </input>
 		 </div>
 		 
-		<form>
-			<!--input field-->
-			<div class="input-GROUP">
-			<lable>BookID</lable>
-			<br>
-			<input class="text" type="text" placeholder="Book ID" name="Book ID" required>
-			<br>
-			<br>
-			</div>
+		 
 
-			<!--input field-->
-			<div class="input-GROUP">
-			<lable>Book Name</lable>
-			<br>
-			<input  class="text" type="text" placeholder="🕮 Book Name" name="Book Name" required>
-			<br>
-			<br>
-			</div>
+      </div>
+     <!-- End Form  -->
+     </form>
+	 
+	 
+	 
+    <!-- End form Body-->
+    </div>
+    <!--End Content-->
+  </div>
+  
+  <!--end container-->
+  </div>    
+<!--End main-->
 
-			<!--input field-->
-			<div class="input-GROUP">
-			<lable>Author</lable>
-			<br>
-			<input class="text" type="text" placeholder="👤 Author" name="Author" required>
-			<br>
-			<br>
-			</div>
+</div>
+ <div id="main">
+ <div class="container"  
+        style="background-color: #f2f2f2; margin: 1rem; border-top-right-radius: 20px;
+          border-top-left-radius: 20px; border-bottom-right-radius:20px; border-bottom-left-radius:20px; border-align:center;">
+ </div>
+ 
+ 
+</div>
+</center>
+</body>
+  
 
-			<!--input field-->
-			<div class="input-GROUP">
-			<lable>Publisher</lable>
-			<br>
-			<input class="text" type="text" placeholder="👤 Publisher" name="Publisher" required>
-			<br>
-			<br>
-			</div>
 
-			<!--input field-->
-			<div class="input-GROUP">
-			<lable>Edition</lable>
-			<br>
-			<input class="text" type="text" placeholder="Edition" name="Edition" required>
-			<br>
-			<br>
-			</div>
-
-			<!--Drop down list-->
-			<div class="input-GROUP">
-			<lable>Category</lable>
-			<br>
-			<select class="text" placeholder="Category" name="Category" required>
-                        <option>🖹 Category</option>
-			            <option>Novel</option>
-			            <option>Education</option>
-                        <option>Other</option>
-            </select>
-			<br>
-			<br>
-			</div>
-			
-			
-		</form>
-		
-		</div>
-		</div>
-        </body>
-</html>
-
-<?php 
+ <?php 
 //include footer
  require("./Footer.php")
   ?>
+
+
+
+
+
+
+
+
+

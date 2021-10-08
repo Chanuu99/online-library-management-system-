@@ -26,9 +26,8 @@
 
   <!--menu-->
   <a href="/">🎨 Dashboard</a>
-  <a href="Src/it20029586/addbook.php">🕮 Add Book</a>
   <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
-  <a href="Src/it20029586/Contact _us.php">👤 Contact</a>
+  <a href="Src/it20029586/Contact _us.php">&#9742;Contact</a>
 
   <!--line-->
   <hr>
@@ -85,7 +84,7 @@
     <span style="color:white;padding-left:1rem; font-style: unset;    font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open
     </span>
     <!--navigation-->
-    <span style="display: inline-flex; text-overflow:inherit;margin-left:    2rem;  margin-bottom:1rem;   font-weight: bold;"> <a href="./"      style="color: #b4b9bb; padding:0px;word-spacing: 0.5rem;">👤User 🞂 👤 Contact Us</a>
+    <span style="display: inline-flex; text-overflow:inherit;margin-left:    2rem;  margin-bottom:1rem;   font-weight: bold;"> <a href="./"      style="color: #b4b9bb; padding:0px;word-spacing: 0.5rem;">👤User 🞂 &#9742; Contact Us</a>
     </span>
 <!--End nav bar  menu countrol and navigation-->
 </div>
