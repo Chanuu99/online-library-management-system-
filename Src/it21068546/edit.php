@@ -41,7 +41,7 @@ for (i = 0; i < close.length; i++) {
 }
     
 setTimeout(function(){
-            window.location.href = 'RequestBooks.php';
+            window.location.href = '/RequestBooks.php';
          }, 1);
 </script>
 ";
