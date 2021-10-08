@@ -122,7 +122,7 @@ setTimeout(function(){
 		</script>
 		<span></span>
 	</div>
-
+ <img width="90%" height="10%" src="bg logo.png "  > 
 </body>
 
 <script type="text/javascript">
