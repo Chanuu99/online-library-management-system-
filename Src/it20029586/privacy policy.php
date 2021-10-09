@@ -1,6 +1,6 @@
 <?php 
 //Header
-include("./Header1.php");
+include("./ppheader.php");
  ?>
  
 <html>
@@ -10,8 +10,10 @@ include("./Header1.php");
   
   <!--linking-->
   <link rel="stylesheet" type="text/css" href="css/privacy.css">
-  <style type="text/css">
-body{
+  
+  <style>
+  
+  body{
   
  
 bg-blend-mode: overlay;
@@ -23,8 +25,8 @@ background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626)
   -o-background-size: cover;
   background-size: cover;
  }
-
  </style>
+  
 </head>
 
 <body>

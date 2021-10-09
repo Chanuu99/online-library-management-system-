@@ -1,6 +1,6 @@
 <?php 
 //Header
-include("./Header2.php");
+include("./newheader.php");
  ?>
  
 <?php
@@ -83,7 +83,7 @@ if(isset($_POST['submit']))
 	 
   
   if ($conn->query($sql) === TRUE) {
-  echo"<h3>Book updated successfull</h3>";
+  //echo"<h3>Book updated successfull</h3>";
   
 } else {
 echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
@@ -107,7 +107,23 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
 
 <head>
    <!--Page title-->
-   <title>Add Book</title>
+   <title>Update Book</title>
+   
+    <style>
+  
+  body{
+  
+ 
+bg-blend-mode: overlay;
+background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626), url("https://images.unsplash.com/photo-1570102881689-c04ab4cf1f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFsbG9vbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");;
+   
+
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+ </style>
 </head>
 
 <!--page body-->
@@ -122,7 +138,7 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
     <!-- header 1 -->
     <div class="jumbotron">
 	
-        <h1>ADD BOOK</h1>
+        <h1>UPDATE BOOK</h1>
 		<!--h3>Search Book ID <input type="text" placeholder="Search Book ID " name="search"-->
         <!--button type="submit" value="Go" class="search" > Search</button--><!--/h3-->
         
@@ -234,7 +250,7 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
   <!--end container-->
   </div>    
 <!--End main-->
-<hr>
+
 
 </div>
  

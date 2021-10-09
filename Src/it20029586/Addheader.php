@@ -1,6 +1,6 @@
 <?php   //get login details
 
- session_start();
+
  $username= $_SESSION['logged_user'];    
  
  ?>

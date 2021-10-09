@@ -1,10 +1,32 @@
 <?php 
 //Header
-include("./Header2.php");
+  
+ session_start ();
+include("./addheader.php");
  ?>
  
 <?php
   include('config.php');
+
+$username= $_SESSION['logged_user']; 
+ //echo $username;
+
+$pid="";
+$noti="";
+
+         $pid="SELECT PID FROM publisher where Email='$username'";
+         $res = mysqli_query($conn, $pid);
+           
+               // output data of each row
+         if ($res->num_rows > 0) {
+            while($row = $res->fetch_assoc()) {
+                
+                $pid=$row['PID'];
+ //echo $pid;               
+               
+            }
+        }
+
  
 
 if(isset($_POST['submit']))
@@ -26,20 +48,16 @@ if(isset($_POST['submit']))
         if (move_uploaded_file($tempname, $folder))  {
              $iupload_Succssfull = TRUE;
 			
-        }
-      
-   
+     }
+       
   
- 
-  
-  
-   $file = $_FILES["file"]["name"];
-    $tempname = $_FILES["file"]["tmp_name"];    
-        $folder = "file/".$file;
+       $file = $_FILES["file"]["name"];
+       $tempname = $_FILES["file"]["tmp_name"];    
+       $folder = "file/".$file;
           
-    $sql = "INSERT INTO book(Book_pdf) VALUES ('$file')";
+       $sql = "INSERT INTO book(Book_pdf) VALUES ('$file')";
   
-         $fupload_Succssfull = FALSE;
+       $fupload_Succssfull = FALSE;
           
         if (move_uploaded_file($tempname, $folder))  {
              $fupload_Succssfull = TRUE;
@@ -47,19 +65,19 @@ if(isset($_POST['submit']))
 	 
   
    
-  if( $iupload_Succssfull and $fupload_Succssfull){
-	  $date = date("Y-m-d h:i:sa");
+     if( $iupload_Succssfull and $fupload_Succssfull){
+	    $date = date("Y-m-d h:i:sa");
 
-	  $sql="INSERT INTO book( Book_Name, Author, Edition, Category, Cover_pic, Book_pdf, Date ) VALUES ('$name','$author','$edi', '$cat', '$filename', ' $file', '$date')";
+	    $sql="INSERT INTO book( PID,Book_Name, Author, Edition, Category, Cover_pic, Book_pdf, Date ) VALUES ('2','$name','$author','$edi', '$cat', '$filename', ' $file', '$date')";
   
-  if ($conn->query($sql) === TRUE) {
-  echo"<h3>New record created successfully</h3>";
+    if ($conn->query($sql) === TRUE) {
+   // echo"<h3>New record created successfully</h3>";
   
 } else {
 echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
 }
   }
- $conn->close();
+
   
   }
   
@@ -78,6 +96,39 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
 <head>
    <!--Page title-->
    <title>Add Book</title>
+   
+   <style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+body{
+  
+ 
+bg-blend-mode: overlay;
+background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626), url("https://images.unsplash.com/photo-1570102881689-c04ab4cf1f4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmFsbG9vbnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");;
+   
+
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ }
+</style>
+
 </head>
 
 <!--page body-->
@@ -92,10 +143,7 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
     <!-- header 1 -->
     <div class="jumbotron">
 	
-        <h1>ADD BOOK</h1>
-		<!--h3>Search Book ID <input type="text" placeholder="Search Book ID " name="search"-->
-        <!--button type="submit" value="Go" class="search" > Search</button--><!--/h3-->
-        
+        <h1>ADD BOOK</h1>		
 		
     </div>
 
@@ -182,26 +230,27 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
 
 </div>
  <div id="main">
- <div class="container"  
-        style="background-color: #f2f2f2; margin: 1rem; border-top-right-radius: 20px;
-          border-top-left-radius: 20px; border-bottom-right-radius:20px; border-bottom-left-radius:20px; border-align:center;">
+ <div class="container1"  
+        style="background-color: white; margin: 1rem; border-top-right-radius: 0px;
+          border-top-left-radius: 0px; border-bottom-right-radius:0px; border-bottom-left-radius:0px; border-align:center;">
 		  
 		  
 		  <?php
+		  echo $pid;
+		  $sql= "SELECT PID, ISBN, Book_Name, Author, Edition, Category, Cover_pic, Book_pdf FROM book where PID='$pid' order by Date desc";
 		  
-		  $sql= "SELECT ISBN, Book_Name, Author, Edition, Category, Cover_pic, Book_pdf FROM book order by Date desc limit 5";
 		  $result= $conn->query($sql);
 		  
 		  if ($result->num_rows > 0) {
-		 echo "<table>
+		 echo "<div id='main'><table >
 		       <tr>
 		              <th>Book Name</th>
 		              <th>Author</th>
 					  <th>Edition</th>
 					  <th>Category</th>
 					  <th>Cover picture</th>
-					  <th>PDF</th>
 					  <th>Status</th>
+					  
 					  
 					  
 			   </tr>";
@@ -211,11 +260,11 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
 			   {
 				   $ISBN=$row['ISBN'];
 				   
-				   echo "<tr><td>".$row["Book_Name"]."</td><td>".$row["Author"]."</td><td>".$row["Edition"]."</td><td>".$row["Category"]."</td><td><img src='/it20029586/image/".$row["Cover_pic"]."'></td><td><div><form action='new.php' method='POST'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='edit'><img src='/it20029586/assets/edit.png'></button></form>
-				  <a id='bookelement'></a><form method='POST' action='#bookelement'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='delete'><img src='/it20029586/assets/delete.jpg'></button></form></div></td></tr>";
+				   echo "<tr><td>".$row["Book_Name"]."</td><td>".$row["Author"]."</td><td>".$row["Edition"]."</td><td>".$row["Category"]."</td><td><img width='180' height='250' src='/it20029586/image/".$row["Cover_pic"]."'></td><td><div><form action='new.php' method='POST'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='edit'><img width='50' src='/it20029586/assets/edit.png'></button></form>
+				  <a id='bookelement'></a><form method='POST' action='#bookelement'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='delete'><img width='50' src='/it20029586/assets/delete.jpg'></button></form></div></td></tr>";
 			   }
 			   
-			  echo " </table>";
+			  echo " </table></div>";
 			  
 			  
 		  }
@@ -228,13 +277,13 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
 	 
   
   if ($conn->query($sql) === TRUE) {
-  echo"<h3>Book deleted successfull</h3>";
+  //echo"<h3>Book deleted successfull</h3>";
   
 } else {
 echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
 }
   }
-			  
+	 $conn->close();		  
 		?>
 		 
 		 
