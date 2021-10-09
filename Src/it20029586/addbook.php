@@ -9,25 +9,61 @@ include("./Header2.php");
 
 if(isset($_POST['submit']))
 {
-  
+   
    $name=$_POST['BookName'];
    $author=$_POST['author'];
    $edi=$_POST['edition'];
    $cat=$_POST['category'];
-   $image=$_POST
-   $pdf=$_POST['file'];
+  
+   
+   $filename = $_FILES["image"]["name"];
+    $tempname = $_FILES["image"]["tmp_name"];    
+        $folder = "image/".$filename;
+          
+    
+        
+     $iupload_Succssfull = FALSE;
+        if (move_uploaded_file($tempname, $folder))  {
+             $iupload_Succssfull = TRUE;
+			
+        }
+      
+   
+  
+ 
+  
+  
+   $file = $_FILES["file"]["name"];
+    $tempname = $_FILES["file"]["tmp_name"];    
+        $folder = "file/".$file;
+          
+    $sql = "INSERT INTO book(Book_pdf) VALUES ('$file')";
+  
+         $fupload_Succssfull = FALSE;
+          
+        if (move_uploaded_file($tempname, $folder))  {
+             $fupload_Succssfull = TRUE;
+		}
+	 
+  
+   
+  if( $iupload_Succssfull and $fupload_Succssfull){
+	  $date = date("Y-m-d h:i:sa");
 
+	  $sql="INSERT INTO book( Book_Name, Author, Edition, Category, Cover_pic, Book_pdf, Date ) VALUES ('$name','$author','$edi', '$cat', '$filename', ' $file', '$date')";
   
+  if ($conn->query($sql) === TRUE) {
+  echo"<h3>New record created successfully</h3>";
   
-  $result="INSERT INTO 'book'( `Book_Name`, `Author`, `Edition`, 'Category', 'Book_pdf') VALUES('$name','$author','$edi', '$cat', '$pdf')";
-  if ($conn->query($result) === TRUE) {
-  /* echo"<h3>New record created successfully</h3>";
-  */
 } else {
 echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
 }
-
-} $conn->close();
+  }
+ $conn->close();
+  
+  }
+  
+ 
 ?>
 
 
@@ -103,7 +139,7 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
 		  
 		  <!--input cover-->
 		 <div class="form-set">
-		  <input id="cover" class="form-controls" name="image[]" placeholder="Upload Cover" type="file" value="" width="5%" required ></input><br><br>
+		  <input id="cover" class="form-controls" name="image" placeholder="Upload Cover" type="file" value="" width="5%" required ></input><br><br>
 		 </div>
 
          <!--input pdf-->
@@ -113,7 +149,7 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
 
 		 
 		 <div class="form-set">
-            <input id="btn" class=" btn btn-primary"  class="btn-lg" name="submit" type="Submit" value="Add Book" 
+            <input id="btn" class=" btn btn-primary"  class="btn-lg" name="submit" type="submit" value="Add Book" 
             style="height:2.5rem; width:50%; font-size:20 px;border-radius: 0.25rem;"><br>
             </input>
          </div>
@@ -142,12 +178,66 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
   <!--end container-->
   </div>    
 <!--End main-->
+<hr>
 
 </div>
  <div id="main">
  <div class="container"  
         style="background-color: #f2f2f2; margin: 1rem; border-top-right-radius: 20px;
           border-top-left-radius: 20px; border-bottom-right-radius:20px; border-bottom-left-radius:20px; border-align:center;">
+		  
+		  
+		  <?php
+		  
+		  $sql= "SELECT ISBN, Book_Name, Author, Edition, Category, Cover_pic, Book_pdf FROM book order by Date desc limit 5";
+		  $result= $conn->query($sql);
+		  
+		  if ($result->num_rows > 0) {
+		 echo "<table>
+		       <tr>
+		              <th>Book Name</th>
+		              <th>Author</th>
+					  <th>Edition</th>
+					  <th>Category</th>
+					  <th>Cover picture</th>
+					  <th>PDF</th>
+					  <th>Status</th>
+					  
+					  
+			   </tr>";
+			   
+			   while($row= $result->fetch_assoc())
+				  
+			   {
+				   $ISBN=$row['ISBN'];
+				   
+				   echo "<tr><td>".$row["Book_Name"]."</td><td>".$row["Author"]."</td><td>".$row["Edition"]."</td><td>".$row["Category"]."</td><td><img src='/it20029586/image/".$row["Cover_pic"]."'></td><td><div><form action='new.php' method='POST'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='edit'><img src='/it20029586/assets/edit.png'></button></form>
+				  <a id='bookelement'></a><form method='POST' action='#bookelement'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='delete'><img src='/it20029586/assets/delete.jpg'></button></form></div></td></tr>";
+			   }
+			   
+			  echo " </table>";
+			  
+			  
+		  }
+		  if(isset($_POST['delete']))
+			  
+			  {
+				   $ISBN=$_POST['isbn'];
+	  $sql="delete from book where ISBN='$ISBN'";
+      
+	 
+  
+  if ($conn->query($sql) === TRUE) {
+  echo"<h3>Book deleted successfull</h3>";
+  
+} else {
+echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
+}
+  }
+			  
+		?>
+		 
+		 
  </div>
  
  
