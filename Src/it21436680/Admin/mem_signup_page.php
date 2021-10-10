@@ -13,7 +13,7 @@
 	<div class="login">
 		<h1>Admin Signup</h1>
 	  
-		<form method="post" action="includes/admin_signup.php">
+		<form method="post" action="admin_signup.php">
 		
 			<input type="text" placeholder="Enter First Name" id="txtFname" name="txtFname" name="email" required="required" />
 			
