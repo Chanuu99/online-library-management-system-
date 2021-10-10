@@ -35,7 +35,7 @@ width: 100%;
     <title>Dashboard</title>
 
 <body onload="">
-  <div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="You Entering User Login Section" /></div>
+  <div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="You Entering Publisher Login Section" /></div>
   
   <header> <?php   include("Src/Header.php") ?></header>
 
