@@ -18,7 +18,7 @@
 	
 	if(mysqli_num_rows($result) == 1){
 		  $_SESSION['logged_user'] = $email;
-		header("Location:../it20029586/addbook.php");
+		header("Location:../../../it20029586/addbook.php");
 	}
 	else{
 		echo "<h3>Incorrect Email/Password</h3>";
