@@ -1,8 +1,8 @@
 <?php 
 //Header
   
- session_start ();
-include("./addheader.php");
+
+include("./Addheader.php");
  ?>
  
 <?php
