@@ -1,5 +1,23 @@
 /* Added by Hasindu */
 
+#signup{
+	color: #28a745; 
+	text-decoration: none; 
+	float: right; 
+	font-size: 18px; 
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 2px
+}
+
+#signup:hover{
+	color: #fff;
+	
+}
+
+#tac:hover{
+	color: lightskyblue;
+}
+
 .sm_buttons {
 	/* width: 60%;	*/
 	width: 100%;

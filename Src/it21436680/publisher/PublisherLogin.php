@@ -16,7 +16,10 @@
 			<input type="password" placeholder="Password" id="password"  name="password" required="required" />
 			<button type="submit" class="btn btn-primary btn-block btn-large" id="btn_login">Login</button>
 			
-			<br><br>
+			<br>
+			<a href="PubSignup.php" id="signup"> Signup</a>
+			
+			<br><br><br>
 			
 			<div class="sm_buttons">
 				<div class="fb  button btn-large">
