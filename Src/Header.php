@@ -40,7 +40,7 @@
   <a href="../../index.php">🎨 Refesh</a>
   <a onclick="textAudio()" href="Src/it21436680/User/index.php">🕮 Login Users </a>
   <a onclick="textToAudio()" href="Src/it21436680/publisher/index.php">🕮 Login Publishers </a>
-  <a href="../it21007910/newaboutus.php">🛈  About Us</a>
+  <a href="Src/it21007910/newaboutus.php">🛈  About Us</a>
   <a href="Src/it20029586/Contact _us.php">👤 Contact</a>
    <a href="Src/it20029586/privacy policy.php">✅ privacy</a>
 </div>
