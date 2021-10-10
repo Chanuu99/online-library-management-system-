@@ -1,3 +1,3 @@
 <?php
-	include_once 'User/MemberLogin.php';
+	header("Location:User/MemberLogin.php");
 ?>
