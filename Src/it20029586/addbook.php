@@ -14,8 +14,8 @@ $username= $_SESSION['logged_user'];
 $pid="";
 $noti="";
 
-         $pid="SELECT PID FROM publisher where Email='$username'";
-         $res = mysqli_query($conn, $pid);
+         $pids="SELECT PID FROM publisher where Email='$username'";
+         $res = mysqli_query($conn, $pids);
            
                // output data of each row
          if ($res->num_rows > 0) {
@@ -68,7 +68,7 @@ if(isset($_POST['submit']))
      if( $iupload_Succssfull and $fupload_Succssfull){
 	    $date = date("Y-m-d h:i:sa");
 
-	    $sql="INSERT INTO book( PID,Book_Name, Author, Edition, Category, Cover_pic, Book_pdf, Date ) VALUES ('2','$name','$author','$edi', '$cat', '$filename', ' $file', '$date')";
+	    $sql="INSERT INTO book( PID,Book_Name, Author, Edition, Category, Cover_pic, Book_pdf, Date ) VALUES ('$pid','$name','$author','$edi', '$cat', '$filename', ' $file', '$date')";
   
     if ($conn->query($sql) === TRUE) {
    // echo"<h3>New record created successfully</h3>";
