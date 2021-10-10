@@ -34,23 +34,9 @@ width: 100%;
 <link rel="stylesheet" type="text/css" href="Src/it21068546/css/nav.css">
     <title>Dashboard</title>
 
-<body onload="textToAudio()">
-  <div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="hi i am adithya" /></div>
-  <script type="text/javascript">
- function textToAudio() {
-                let msg = document.getElementById("text-to-speech").value;
-                
-                let speech = new SpeechSynthesisUtterance();
-                speech.lang = "en-US";
-                
-                speech.text = msg;
-                speech.volume = 1;
-                speech.rate = 1;
-                speech.pitch = 1;
-                
-                window.speechSynthesis.speak(speech);
-            }
-  </script>
+<body onload="">
+  <div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="welcome to our Biblioteca libary" /></div>
+  
   <header> <?php   include("Src/Header.php") ?></header>
 
   <div id="main"><!--calculator Form -->
