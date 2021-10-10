@@ -41,8 +41,8 @@
   <a href="Src/it21436680/User/index.php">🕮 Login Users </a>
   <a href="Src/it21436680/publisher/index.php">🕮 Login Publishers </a>
   <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
-  <a href="../it20029586/Contact _us.php">👤 Contact</a>
-   <a href="../it20029586/privacy policy.php">✅ privacy</a>
+  <a href="Src/it20029586/Contact _us.php">👤 Contact</a>
+   <a href="Src/it20029586/privacy policy.php">✅ privacy</a>
 </div>
   <!--line-->
   <hr>
