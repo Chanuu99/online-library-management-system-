@@ -18,7 +18,7 @@
 	
 	if(mysqli_num_rows($result) == 1){
 		  $_SESSION['logged_user'] = $email;
-		header("Location:../../it20072810/downloadbook.php");
+		header("Location:../../../it20072810/downloadbook.php");
 	}
 	else{
 		echo "<h3>Incorrect Email/Password</h3>";
