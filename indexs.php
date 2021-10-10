@@ -33,7 +33,9 @@ width: 100%;
     <script type="text/javascript" src="Src/it21068546/js/nac.js"></script> 
 <link rel="stylesheet" type="text/css" href="Src/it21068546/css/nav.css">
     <title>Dashboard</title>
+
 <body onload="textToAudio()">
+  <div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="hi i am adithya" /></div>
   <script type="text/javascript">
  function textToAudio() {
                 let msg = document.getElementById("text-to-speech").value;
