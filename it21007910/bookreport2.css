@@ -1,0 +1,20 @@
+.h1{
+background-color: #e0e0e0;
+
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+div Remove{
+  border-radius: 30px;
+  background-color:#FF0000 ;
+  padding:20 px;
+}
+div publish{
+  border-radius: 30px;
+  background-color:#5f9cd0 ;
+ padding:20 px;}
