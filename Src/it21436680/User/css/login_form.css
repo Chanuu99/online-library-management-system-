@@ -1,5 +1,9 @@
 /* Added by Hasindu */
 
+#tac:hover{
+	color: lightskyblue;
+}
+
 .sm_buttons {
 	/* width: 60%;	*/
 	width: 100%;
