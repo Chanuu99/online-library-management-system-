@@ -38,13 +38,14 @@
  <div style="margin-left:0rem; word-spacing: 1px; font-size:1rem; font-family: 'Varela Round';font-weight: bold;";>
   <!--menu-->
   <a href="../../index.php">🎨 Refesh</a>
-  <a href="Src/it21436680/User/index.php">🕮 Login Users </a>
+  <a onclick="textToAudio1()" href="Src/it21436680/User/index.php">🕮 Login Users </a>
   <a onclick="textToAudio()" href="Src/it21436680/publisher/index.php">🕮 Login Publishers </a>
   <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
   <a href="Src/it20029586/Contact _us.php">👤 Contact</a>
    <a href="Src/it20029586/privacy policy.php">✅ privacy</a>
 </div>
-<div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value=" welcome to our Biblioteca libary" /></div>
+<div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="You Entering  to Publisher Section" /></div>
+<div><input type="hidden" id="text-to-speech1" placeholder="Enter text to speak..." value=" You Entering  to User Section" /></div>
 <script type="text/javascript">
 
  
@@ -62,8 +63,25 @@
                 window.speechSynthesis.speak(speech);
             }
 
-            function myFunction() {
-  alert('textToAudio()');
+        
+}
+
+ 
+ function textToAudio1() {
+                let msg = document.getElementById("text-to-speech1").value;
+                
+                let speech = new SpeechSynthesisUtterance();
+                speech.lang = "en-US";
+                
+                speech.text = msg;
+                speech.volume = 1;
+                speech.rate = 1;
+                speech.pitch = 1;
+                
+                window.speechSynthesis.speak(speech);
+            }
+
+        
 }
         </script>
   <!--line-->
