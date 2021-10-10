@@ -39,11 +39,33 @@
   <!--menu-->
   <a href="../../index.php">🎨 Refesh</a>
   <a href="Src/it21436680/User/index.php">🕮 Login Users </a>
-  <a href="Src/it21436680/publisher/index.php">🕮 Login Publishers </a>
+  <a onclick="textToAudio()" href="Src/it21436680/publisher/index.php">🕮 Login Publishers </a>
   <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
   <a href="Src/it20029586/Contact _us.php">👤 Contact</a>
    <a href="Src/it20029586/privacy policy.php">✅ privacy</a>
 </div>
+<div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="hi! User welcome to our Biblioteca libary" /></div>
+<script type="text/javascript">
+
+ 
+ function textToAudio() {
+                let msg = document.getElementById("text-to-speech").value;
+                
+                let speech = new SpeechSynthesisUtterance();
+                speech.lang = "en-US";
+                
+                speech.text = msg;
+                speech.volume = 1;
+                speech.rate = 1;
+                speech.pitch = 1;
+                
+                window.speechSynthesis.speak(speech);
+            }
+
+            function myFunction() {
+  alert('textToAudio()');
+}
+        </script>
   <!--line-->
   <hr>
 
