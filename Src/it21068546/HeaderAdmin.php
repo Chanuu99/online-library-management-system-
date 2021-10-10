@@ -39,10 +39,10 @@
   <!--menu-->
   <a href="../../indexs.php">🎨Dashboard</a>
   <a href="../it21436680/Admin/mem_signup_page.php"> &#129302;&#9;New Admin</a>
-  <a href="../it21007910/addevent.php"> ⛹ &#9;New Events</a>
+  <a href="../it21007910/add_event.php"> ⛹ &#9;New Events</a>
   <a href="../it20029586/Contact _us.php">👤 Contact</a>
    <a href="../it20029586/privacy policy.php">✅ privacy</a>
-  <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
+  <a href="../it21007910/newaboutus.php">🛈  About Us</a>
   <a href="../it21436680/logout.php">✅ Log Out</a>
 </div>
   <!--line-->
