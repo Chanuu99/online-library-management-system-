@@ -14,8 +14,8 @@ $username= $_SESSION['logged_user'];
 $pid="";
 $noti="";
 
-         $pid="SELECT PID FROM publisher where Email='$username'";
-         $res = mysqli_query($conn, $pid);
+         $pids="SELECT PID FROM publisher where Email='$username'";
+         $res = mysqli_query($conn, $pids);
            
                // output data of each row
          if ($res->num_rows > 0) {
@@ -68,7 +68,7 @@ if(isset($_POST['submit']))
      if( $iupload_Succssfull and $fupload_Succssfull){
 	    $date = date("Y-m-d h:i:sa");
 
-	    $sql="INSERT INTO book( PID,Book_Name, Author, Edition, Category, Cover_pic, Book_pdf, Date ) VALUES ('2','$name','$author','$edi', '$cat', '$filename', ' $file', '$date')";
+	    $sql="INSERT INTO book( PID,Book_Name, Author, Edition, Category, Cover_pic, Book_pdf, Date ) VALUES ('$pid','$name','$author','$edi', '$cat', '$filename', ' $file', '$date')";
   
     if ($conn->query($sql) === TRUE) {
    // echo"<h3>New record created successfully</h3>";
@@ -154,7 +154,7 @@ background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626)
       <div class="modal-body mb-5 p-5">
 
         <!--Form  -->
-        <form method="post" action=" Addbook.php" enctype="multipart/form-data" style="box-sizing: border-box;" >
+        <form method="post" action="addbook.php" enctype="multipart/form-data" style="box-sizing: border-box;" >
 
           <!--input name-->
           <div class="form-set">
@@ -260,8 +260,8 @@ background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626)
 			   {
 				   $ISBN=$row['ISBN'];
 				   
-				   echo "<tr><td>".$row["Book_Name"]."</td><td>".$row["Author"]."</td><td>".$row["Edition"]."</td><td>".$row["Category"]."</td><td><img width='180' height='250' src='/it20029586/image/".$row["Cover_pic"]."'></td><td><div><form action='new.php' method='POST'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='edit'><img width='50' src='/it20029586/assets/edit.png'></button></form>
-				  <a id='bookelement'></a><form method='POST' action='#bookelement'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='delete'><img width='50' src='/it20029586/assets/delete.jpg'></button></form></div></td></tr>";
+				   echo "<tr><td>".$row["Book_Name"]."</td><td>".$row["Author"]."</td><td>".$row["Edition"]."</td><td>".$row["Category"]."</td><td><img width='180' height='250' src='image/".$row["Cover_pic"]."'></td><td><div><form action='new.php' method='POST'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='edit'><img width='50' src='assets/edit.png'></button></form>
+				  <a id='bookelement'></a><form method='POST' action='#bookelement'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='delete'><img width='50' src='assets/delete.jpg'></button></form></div></td></tr>";
 			   }
 			   
 			  echo " </table></div>";

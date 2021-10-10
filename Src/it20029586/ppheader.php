@@ -115,7 +115,7 @@
 <!--End nav bar  menu countrol and navigation-->
 </div>
 <div class="navi" style="/*margin-left:85%;*/ padding-top: 2rem; text-align:right;">
-<span style="display: inline-flex; text-overflow:inherit;margin-left:    2rem;  margin-bottom:1rem;   font-weight: bold;"> <span style="color:deepskyblue; font-size: 1rem;"></span><span style="color:antiquewhite; font-size: 1rem;">Privacy Policy</span> 
+<span style="display: inline-flex; text-overflow:inherit;margin-left:    2rem;  margin-bottom:1rem;   font-weight: bold;"> <span style="color:deepskyblue; font-size: 1rem;"></span><span style="color:antiquewhite; font-size: 1rem;">PRivacyPolicy</span> 
 </span>
 </div>
 
