@@ -260,7 +260,7 @@ background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626)
 			   {
 				   $ISBN=$row['ISBN'];
 				   
-				   echo "<tr><td>".$row["Book_Name"]."</td><td>".$row["Author"]."</td><td>".$row["Edition"]."</td><td>".$row["Category"]."</td><td><img width='180' height='250' src='/it20029586/image/".$row["Cover_pic"]."'></td><td><div><form action='new.php' method='POST'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='edit'><img width='50' src='/it20029586/assets/edit.png'></button></form>
+				   echo "<tr><td>".$row["Book_Name"]."</td><td>".$row["Author"]."</td><td>".$row["Edition"]."</td><td>".$row["Category"]."</td><td><img width='180' height='250' src='image/".$row["Cover_pic"]."'></td><td><div><form action='new.php' method='POST'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='edit'><img width='50' src='/it20029586/assets/edit.png'></button></form>
 				  <a id='bookelement'></a><form method='POST' action='#bookelement'><input type='text' name='isbn' value='".$ISBN."' style='display: none'/><button type='submit' name='delete'><img width='50' src='/it20029586/assets/delete.jpg'></button></form></div></td></tr>";
 			   }
 			   
