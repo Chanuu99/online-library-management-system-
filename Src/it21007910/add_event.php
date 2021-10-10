@@ -21,7 +21,7 @@ $lang=$_POST['Lang'];
 
 
 
-$result="INSERT INTO event_s('Date','Time',Name,description,Language,) VALUES('$date','$time','$name','$det',' $lang')";
+$result="INSERT INTO event_s('Date','Time',Name,description,Language) VALUES('$date','$time','$name','$det',' $lang')";
 if ($conn->query($result) === TRUE) {
 //echo"<h3>New record created successfully</h3>";
 
