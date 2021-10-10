@@ -36,7 +36,7 @@ width: 100%;
 
 <body onload="">
   <div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="welcome to our Biblioteca libary" /></div>
-  
+  <div><input type="hidden" id="text-to-speech1" placeholder="Enter text to speak..." value=" You Entering  to User Section" /></div>
   <header> <?php   include("Src/Header.php") ?></header>
 
   <div id="main"><!--calculator Form -->
