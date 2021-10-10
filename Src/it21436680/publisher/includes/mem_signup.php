@@ -7,7 +7,7 @@
 	$Password = mysqli_escape_string($con, $_POST['Password']);
 	$ConPassword = mysqli_escape_string($con, $_POST['ConPassword']);
 	
-	$sql = "INSERT INTO regular_user(Frist_Name, Last_Name, Email, Password) values('$First_Name','$Last_Name','$Email','$Password');";
+	$sql = "INSERT INTO publisher(Frist_Name, Last_Name, Email, Password) values('$First_Name','$Last_Name','$Email','$Password');";
 	
 	if($Password == $ConPassword){
 		/*
