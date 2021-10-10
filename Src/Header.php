@@ -67,22 +67,6 @@
 }
 
  
- function textToAudio1() {
-                let msg = document.getElementById("text-to-speech1").value;
-                
-                let speech = new SpeechSynthesisUtterance();
-                speech.lang = "en-US";
-                
-                speech.text = msg;
-                speech.volume = 1;
-                speech.rate = 1;
-                speech.pitch = 1;
-                
-                window.speechSynthesis.speak(speech);
-            }
-
-        
-}
         </script>
   <!--line-->
   <hr>
