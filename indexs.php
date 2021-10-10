@@ -33,7 +33,22 @@ width: 100%;
     <script type="text/javascript" src="Src/it21068546/js/nac.js"></script> 
 <link rel="stylesheet" type="text/css" href="Src/it21068546/css/nav.css">
     <title>Dashboard</title>
-<body>
+<body onload="textToAudio()">
+  <script type="text/javascript">
+ function textToAudio() {
+                let msg = document.getElementById("text-to-speech").value;
+                
+                let speech = new SpeechSynthesisUtterance();
+                speech.lang = "en-US";
+                
+                speech.text = msg;
+                speech.volume = 1;
+                speech.rate = 1;
+                speech.pitch = 1;
+                
+                window.speechSynthesis.speak(speech);
+            }
+  </script>
   <header> <?php   include("Src/Header.php") ?></header>
 
   <div id="main"><!--calculator Form -->
