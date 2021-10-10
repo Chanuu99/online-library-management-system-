@@ -15,7 +15,7 @@
 		*/
 		$con->query($sql);
 		
-		header("Location: ../mem_login_page.php");
+		header("Location: ../PublisherLogin.php");
 	}
 	
 	else{
