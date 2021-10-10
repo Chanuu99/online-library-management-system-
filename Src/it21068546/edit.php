@@ -192,7 +192,7 @@ include("./HeaderRequest.php");
          <!--drop-Down Language field  -->
         <div class="form-groups">
             <select id="txt" class="form-controls"  name="txtlg" value=<?php echo $lg;?>>
-              <optionv value="no"></option>
+              <option value="no"></option>
               <option>English</option>
               <option>Sinhala</option>
               <option>Tamil</option>
