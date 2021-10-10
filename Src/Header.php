@@ -44,7 +44,7 @@
   <a href="Src/it20029586/Contact _us.php">👤 Contact</a>
    <a href="Src/it20029586/privacy policy.php">✅ privacy</a>
 </div>
-<div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="hi! User welcome to our Biblioteca libary" /></div>
+<div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value=" welcome to our Biblioteca libary" /></div>
 <script type="text/javascript">
 
  
