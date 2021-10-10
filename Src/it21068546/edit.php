@@ -103,7 +103,19 @@ while($row=mysqli_fetch_array($results))
 
 <!-- linking Javascript -->
 <script type="text/javascript" src="js/nac.js"></script> 
+ <script type="text/javascript">
+            function Validate()
+            {
+                var e = document.getElementById("txt");
+                var strUser = e.options[e.selectedIndex].value;
 
+                var strUser1 = e.options[e.selectedIndex].text;
+                if(strUser=='no')
+                {
+                    alert("Please select Category and  Language");
+                }
+            }
+        </script>
 <!--Icon pack-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -170,7 +182,7 @@ include("./HeaderRequest.php");
           <!--drop-Down  field  -->
           <div class="form-groups">
             <select id="txt" class="form-controls" placeholder="Category" name="txtop" value=<?php echo $cate;?>>
-              <option>🖹 Category</option>
+              <option value="no"></option>
               <option>Education</option>
               <option>Novel</option>
               <option>Other</option>
@@ -180,7 +192,7 @@ include("./HeaderRequest.php");
          <!--drop-Down Language field  -->
         <div class="form-groups">
             <select id="txt" class="form-controls"  name="txtlg" value=<?php echo $lg;?>>
-              <option>🗚 Language</option>
+              <optionv value="no"></option>
               <option>English</option>
               <option>Sinhala</option>
               <option>Tamil</option>
@@ -209,7 +221,7 @@ include("./HeaderRequest.php");
          <!--Submit  -->
         <div class="form-groups">
         	<td><input type="hidden" name="Request_ID" value=<?php echo $_GET['Request_ID'];?>></td>
-            <input id="btnS" class=" btn btn-primary btns"   name="update" type="Submit" value="Update" 
+            <input id="btnS" class=" btn btn-primary btns"  onclick="Validate()"  name="update" type="Submit" value="Update" 
             style="height:4rem; width: 100%; font-size: 2rem;border-radius: 1rem;" >
             </input>
         </div>
