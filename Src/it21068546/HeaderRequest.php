@@ -87,7 +87,7 @@
 
     }
     ?>
-    <form action="" method="post">
+    <form action="HeaderRequest.php" method="post">
   <textarea placeholder="Write Your.. " name="feed-b" style="height:100%;">
   
   </textarea><br>
