@@ -1,5 +1,5 @@
 <?php 
-	include("./HeaderAdmin.php");
+	include("Header.php");
 $ftab="";
 
  // include database connection file
