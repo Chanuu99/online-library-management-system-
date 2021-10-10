@@ -204,17 +204,17 @@ background-color: rgba(255, 255, 255, 0.5);background: transparent ;  backdrop-f
           <!--input field   -->
           <div class="form-groups">
           
-            <input id="bName" class="form-controls"  name="bName" placeholder="🕮 Book Name" type="text" value=""></input><br>
+            <input id="bName" class="form-controls"  name="bName" placeholder="🕮 Book Name" type="text" value="" required></input><br>
           </div>
 
           <!--input field   -->
           <div class="form-groups">
-        <input id="txtAge" class="form-controls" name="bAuther" placeholder="👤 Auther" type="Text" value=""></input><br>
+        <input id="txtAge" class="form-controls" name="bAuther" placeholder="👤 Auther" type="Text" value="" required></input><br>
           </div>
 
           <!--drop-Down  field  -->
           <div class="form-groups">
-            <select id="txt" class="form-controls" placeholder="Category" name="txtop">
+            <select id="txt" class="form-controls" placeholder="Category" name="txtop" required>
               <option>🖹 Category</option>
               <option>Education</option>
               <option>Novel</option>
@@ -224,7 +224,7 @@ background-color: rgba(255, 255, 255, 0.5);background: transparent ;  backdrop-f
 
          <!--drop-Down Language field  -->
         <div class="form-groups">
-            <select id="txt" class="form-controls"  name="txtlg">
+            <select id="txt" class="form-controls"  name="txtlg" required>
               <option>🗚 Language</option>
               <option>English</option>
               <option>Sinhala</option>
@@ -242,12 +242,12 @@ background-color: rgba(255, 255, 255, 0.5);background: transparent ;  backdrop-f
 
     <div class="form-groups">
             <!--input field  user details -->
-            <input id="fName" class="form-controls"  name="fName" placeholder="👤 Full Name" type="text" value=""></input><br>
+            <input id="fName" class="form-controls"  name="fName" placeholder="👤 Full Name" type="text" value="" required></input><br>
     </div>
 
           <!--input field  -->
     <div class="form-groups">
-            <input id="txtmail" class="form-controls" name="txtmail" placeholder="🖂 Email" type="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></input><br>
+            <input id="txtmail" class="form-controls" name="txtmail" placeholder="🖂 Email" type="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></input><br>
      </div>
           <br><br>
          <!--Submit  -->
