@@ -15,7 +15,7 @@
 		*/
 		$con->query($sql);
 		
-		header("Location: ../../../it21068546/admin.php");
+		header("Location: ../../../it21068546/Admin.php");
 	}
 	
 	else{
