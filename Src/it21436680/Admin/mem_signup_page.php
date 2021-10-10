@@ -1,48 +1,50 @@
+<?php
+	// include_once '../Header.php';
+?>
 
 <html>
 
 <head>
-	<title>Create Account</title>
+	<link rel="stylesheet" type="text/css" href="css/login_form.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	<link rel="stylesheet" href="css/mem_signup_page.css" />
 </head>
-
 <body>
-	<div class="container">
+	<div class="login">
+		<h1>Admin Signup</h1>
+	  
+		<form method="post" action="includes/admin_signup.php">
 		
-		<form method="post" action="includes/mem_signup.php">
-			<div class = "heading">
-				<h1>Sign up</h1>
-			</div>
+			<input type="text" placeholder="Enter First Name" id="txtFname" name="txtFname" name="email" required="required" />
 			
-			<div class="form-groups">
-				<input id="txtFname" class="form-controls" name="txtFname" placeholder="Enter First Name" type="text" value="" /><br />
-			</div>
+			<input type="text" placeholder="Enter Last Name" id="txtLname" name="txtLname" required="required" />
 			
-			<div class="form-groups">
-				<input id="txtLname" class="form-controls" name="txtLname" placeholder="Enter Last Name" type="text" value="" /><br />
-			</div>
+			<input type="text" placeholder="Enter E-mail" id="txtEmail" name="txtEmail" required="required" />
 			
-			<div class="form-groups">
-				<input id="txtEmail" class="form-controls" name="txtEmail" placeholder="Enter E-mail" type="text" value="" /><br />
-			</div>
+			<input type="password" placeholder="Enter Password" id="Password"  name="Password" required="required" />
 			
-			<div class="form-groups">
-				<input id="Password" class="form-controls" name="Password" placeholder="Enter Password" type="password" value="" /><br />
-			</div>
 			
-			<div class="form-groups">
-				<input id="ConPassword" class="form-controls" name="ConPassword" placeholder="Confirm Password" type="password" value="" /><br />
-			</div>
+			<input type="password" placeholder="Confirm Password" id="ConPassword"  name="ConPassword" required="required" />
 			
-			<div class="form-groups">
-				<input id="btn" class=" btn btn-primary"  class="btn-lg" name="btn" type="Submit" value="Send Message" style="height:4rem; width: 100%; font-size: 2rem;border-radius: 1rem;">
-			</div>
+			<br>
+			<br>
+			
+			<input type="checkbox" id="checkbox" name="checkbox" style="width: auto !important;">We agree to your <a href="terms_and_conditions.php" style="color: #007bff;" id = "tac">Terms & Conditions</a>
+			
+			<br><br>
+
+			<button type="submit" class="btn btn-primary btn-block btn-large" id="btn_login">Signup</button>
+			
+			<br><br>
 			
 		</form>
 		
 	</div>
-
-<body>
+	
+</body>
 
 </html>
+
+ <?php
+	// include_once 'Footer.php';
+// ?>
