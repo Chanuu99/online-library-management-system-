@@ -4,6 +4,7 @@ include("./Event header.php");
 ?>
 
 <?php
+session_start();
 include('config.php');
 
 
@@ -43,7 +44,6 @@ echo "<h3>Error: " . $result . "<br>" . $conn->error."</h3>";
 <!--linking css-->
 <link rel="stylesheet" type="text/css" href="">
 <link rel="stylesheet" type="text/css" href="css/add.css">
-
 
 
 
