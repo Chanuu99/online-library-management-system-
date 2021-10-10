@@ -108,7 +108,28 @@
   <!--line-->
   <hr>
   <!--text area-->
-  <textarea placeholder="Write Your.. ">
+  <?php
+
+    // Check If form submitted, insert form data into users table.
+    if(isset($_POST['feed'])) {
+        $feed = $_POST['feed-b'];
+       
+        
+        // include database connection file
+        include_once("config.php");
+                
+        // Insert user data into table
+        $result = mysqli_query($conn, "INSERT INTO `feedback`(`Description`)VALUES('$feed')");
+        
+        // Show message when user added
+        echo "User added successfully.<script>setTimeout(function(){
+            window.location.href = 'RequestBooks.php';
+         }, 2000)</script>";
+
+    }
+    ?>
+    <form action="" method="post">
+  <textarea placeholder="Write Your.. " name="feed-b" style="height:100%;">
   
   </textarea><br>
   <!--submit feedback-->
@@ -134,7 +155,7 @@
     backdrop-filter: blur(25px);">
     <!-- logo-->
     <div class="nav-logo"> 
-      <img src="https://th.bing.com/th/id/R.36dd618e18bb5ebe5cb174e97d9c4812?rik=Upd0klNFHi%2fCGw&riu=http%3a%2f%2fwww.antioquiatic.edu.co%2fimages%2flogo-biblioteca.png&ehk=7EicayNy8FNz9p9owaZTAi2BRCphdaTviysnInw2bv4%3d&risl=&pid=ImgRaw&r=0"  > 
+     <img src="bg logo.png"  height="5%"> 
     </div>
 <!-- End nav bar  logo srach,admin-->
 </div>

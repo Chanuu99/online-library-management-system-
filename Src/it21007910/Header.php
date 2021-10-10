@@ -66,7 +66,29 @@
   <!--line-->
   <hr>
   <!--text area-->
-  <textarea placeholder="Write Your.. ">
+   <!--text area-->
+  <?php
+
+    // Check If form submitted, insert form data into users table.
+    if(isset($_POST['feed'])) {
+        $feed = $_POST['feed-b'];
+       
+        
+        // include database connection file
+        include_once("config.php");
+                
+        // Insert user data into table
+        $result = mysqli_query($conn, "INSERT INTO `feedback`(`Description`)VALUES('$feed')");
+        
+        // Show message when user added
+        echo "User added successfully.<script>setTimeout(function(){
+            window.location.href = 'RequestBooks.php';
+         }, 2000)</script>";
+
+    }
+    ?>
+    <form action="" method="post">
+  <textarea placeholder="Write Your.. " name="feed-b" style="height:100%;">
   
   </textarea><br>
   <!--submit feedback-->
