@@ -105,7 +105,7 @@
 			
 		}
 </style>
-<div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="Welcome to the Biblioteca libary" /></div>
+<div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="Welcome to the Biblioteca Public Library" /></div>
 <body onload="textToAudio()">
 	<div class="ring">
 		<em style="font-size:10px;">Loading</em>
@@ -143,7 +143,7 @@ setTimeout(function(){
                 speech.text = msg;
                 speech.volume = 1;
                 speech.rate = 1;
-                speech.pitch = 1;
+                speech.pitch = 2;
                 
                 window.speechSynthesis.speak(speech);
             }
