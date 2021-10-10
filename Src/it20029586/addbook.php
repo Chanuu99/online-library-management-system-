@@ -154,7 +154,7 @@ background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626)
       <div class="modal-body mb-5 p-5">
 
         <!--Form  -->
-        <form method="post" action=" Addbook.php" enctype="multipart/form-data" style="box-sizing: border-box;" >
+        <form method="post" action="addbook.php" enctype="multipart/form-data" style="box-sizing: border-box;" >
 
           <!--input name-->
           <div class="form-set">
