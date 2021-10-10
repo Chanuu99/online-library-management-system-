@@ -1,4 +1,4 @@
 <?php 
-header("Location:log/index.php");
+header("Location:log/indexs.php");
 
  ?>

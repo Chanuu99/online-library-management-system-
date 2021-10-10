@@ -39,9 +39,12 @@
  <div style="margin-left:0rem; word-spacing: 1px; font-size:1rem; font-family: 'Varela Round';font-weight: bold;";>
   <!--menu-->
   <a href="../../indexs.php">🎨 Dashboard</a>
+  <a href="../it21068546/RequestBooks.php">🕮 Request Book </a>
+  <a href="../it21007910/view_event.php">🕮 Events  </a>
   <a href="https://adithya-coder.github.io/online-library-management-system-/">🛈  About Us</a>
   <a href="../it20029586/Contact _us.php">👤 Contact</a>
    <a href="../it20029586/privacy policy.php">✅ privacy</a>
+    <a href="../it21436680/logout.php">✅ Log Out</a>
 </div>
   <!--line-->
   <hr>

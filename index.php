@@ -130,11 +130,8 @@ setTimeout(function(){
 	$(window).load(function() {
 		// Animate loader off screen
 		$("ring").fadeOut("slow");;
-		document.getElementById("ring").onload = function() {src="/h.php"};
+		document.getElementById("ring").onload = function() {src="index1.php"};
 	});
-	function handlePageLoaded(){
-  document.getElementsByClassName("ring")[0].style.display = "none";
-   document.getElementById("demo").innerHTML = url("google");
-}
+	
 </script>
 </html>
