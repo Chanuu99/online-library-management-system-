@@ -105,7 +105,7 @@
 			
 		}
 </style>
-<div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="hi i am adithya" /></div>
+<div><input type="hidden" id="text-to-speech" placeholder="Enter text to speak..." value="Welcome to the Biblioteca libary" /></div>
 <body onload="textToAudio()">
 	<div class="ring">
 		<em style="font-size:10px;">Loading</em>
@@ -134,19 +134,7 @@ setTimeout(function(){
 		document.getElementById("ring").onload = function() {src="index1.php"};
 	});
 
-	  function textToAudio() {
-                let msg = document.getElementById("text-to-speech").value;
-                
-                let speech = new SpeechSynthesisUtterance();
-                speech.lang = "en-US";
-                
-                speech.text = msg;
-                speech.volume = 1;
-                speech.rate = 1;
-                speech.pitch = 1;
-                
-                window.speechSynthesis.speak(speech);
-            }
+	 
 	
 </script>
 </html>
