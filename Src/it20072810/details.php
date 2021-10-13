@@ -75,5 +75,5 @@
 		echo "<body><b>Error occured</b></body></html>";
 	}
 	
-	include("Src/it21068546/Footer.php");
+	include("../it21068546/Footer.php");
 ?>
