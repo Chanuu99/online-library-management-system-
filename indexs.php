@@ -141,7 +141,7 @@ box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5);
 </style>
  </head>
  <body bgcolor="black">
-<div style=" display: grid; grid-template-columns: auto auto auto auto auto auto;">
+<div style=" display: grid; grid-template-columns: auto auto auto ;">
 
 
   
