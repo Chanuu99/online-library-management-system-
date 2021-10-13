@@ -1,6 +1,8 @@
 <?php
 	require 'config.php';
 	
+	include("../../Header.php");
+	
 	$isbn = $_GET['ISBN']; // set isbn
 	
 	$info = "";
@@ -72,4 +74,6 @@
 	else{
 		echo "<body><b>Error occured</b></body></html>";
 	}
+	
+	include("Src/it21068546/Footer.php");
 ?>
