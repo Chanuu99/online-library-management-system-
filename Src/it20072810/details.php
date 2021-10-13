@@ -67,14 +67,13 @@
 		
 		$info .= '</body></html>';
 		
-		
-		echo $info;
 	}
 	else{
 		$info =  "<body><b>Error occured</b>";
 	}
 	
 	$info .= "<script src='js/nac.js'></script></body>";
+	echo $info;
 	
 	include("../it21068546/Footer.php");
 ?>
