@@ -57,7 +57,7 @@
 		$info .= "<br><b>Book Name : </b><br>".$book['Book_Name']."<br>";
 		$info .= "<br><b>Author : </b><br>".$book['Author']."<br>";
 		$info .= "<br><b>Edition : </b><br>".$book['Edition']."<br>";
-		$info .= "<br><b>Category : </b><br>".$book['Category']."<br>";
+		$info .= "<br><b>Category : </b><br>".$book['Category']."<br><br>";
 		
 		$info .= '</h6>';
 		
