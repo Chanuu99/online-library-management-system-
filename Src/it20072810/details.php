@@ -58,7 +58,6 @@
 		$info .= "<br><b>Author : </b><br>".$book['Author']."<br>";
 		$info .= "<br><b>Edition : </b><br>".$book['Edition']."<br>";
 		$info .= "<br><b>Category : </b><br>".$book['Category']."<br>";
-		$info .= "<br><b>Published Date : </b><br>".$book['Date']."<br>";
 		
 		$info .= '</h6>';
 		
