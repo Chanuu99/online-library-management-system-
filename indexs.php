@@ -13,13 +13,12 @@ $ftab="";
         if ($fpp->num_rows > 0) {
             while($rows = $fpp->fetch_assoc()) {
               $image = $rows['Cover_pic'];    
-                // $ftab.=" <div style=' display: grid; grid-template-columns:auto;'>";
-                $ftab.=" <div style=' display: grid; grid-template-columns:auto auto auto;'>";
+                $ftab.=" <div style=' display: grid; grid-template-columns:auto;'>";
                 $ftab.="<div class='card' style=' margin:3% 3% 3% 3%; padding: 3% 3% 3% 3%; '>";
                 $ftab.="<div class='row'> <div class='column'>";
-                $ftab.= "<center><a href='Src/it20072810/details.php?ISBN=$rows[ISBN]'><img  class='apps'src='Src/it20029586/image/$image' width='10%' height='5%'></center><br>";
+                $ftab.= "<center><img  class='apps'src='Src/it20029586/image/$image' width='10%' height='5%'></center><br>";
                /* $ftab.= "<h2> ". $rows['Book_Name']."</h2></br>";*/
-                $ftab.="<center><button  class='btn btn-remove btns nin'> &#128308; Details</a></center> </div></div>";
+                $ftab.="<center><a href='Src/it20072810/details.php?ISBN=$rows[ISBN]'><button  class='btn btn-remove btns nin'> &#128308; Details</center> </div></div>";
                 $ftab.="</div></div>";
         
             }
