@@ -20,7 +20,7 @@ $ftab="";
                 $ftab.="<div class='row'> <div class='column'>";
                 $ftab.= "<center><img  class='apps'src='../it20029586/image/$image' width='10%' height='5%'></center><br>";
                /* $ftab.= "<h2> ". $rows['Book_Name']."</h2></br>";*/
-                $ftab.="<center><a href='details.php?ISBN=$rows[ISBN]'><button  class='btn btn-remove btns nin'> &#128308; Details</center> </div></div>";
+                $ftab.="<center><a href='details.php?ISBN=$rows[ISBN]'><button  class='btn btn-remove btns nin'> &#128308; Details</a></center> </div></div>";
                 $ftab.="</div></div>";
         
             }
