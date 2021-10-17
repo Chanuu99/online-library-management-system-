@@ -1,7 +1,8 @@
 <?php
-	require 'config.php';
+	require '../../config.php';
+	session_start();
 	
-	include("../../../Header.php");
+	// include("../../../Header.php");
 	
 	$isbn = $_GET['ISBN']; // set isbn
 	
@@ -49,6 +50,16 @@
 		$info .= '<body data-home-page="Page-1.html" data-home-page-title="Page 1" class="u-body">';
 		$info .='<section class="u-clearfix u-section-1" id="sec-6176"><div class="u-clearfix u-sheet u-sheet-1">';
 		
+		// temp home button
+		$info .= '<a href="../../indexs.php" class="u-btn u-button-style u-btn-1">Home</a>'; 
+		// temp logout button
+		if(isset($_SESSION['logged_user'])){
+			$info .= '<a href="../it21436680/logout.php" class="u-btn u-button-style u-btn-1" >Logout</a>';
+		}
+		else{
+			$info .= '<a  class="u-btn u-button-style u-btn-1" disabled="disabled" title="You are not logged in">Logout</a>';
+		}
+		
 		$info .= '<img class="u-image u-image-round u-radius-27 u-image-1 animated slideInDown-played" src="'.$dir.'image/'.$book['Cover_pic'].'"'.'alt="" data-image-width="1669" data-image-height="2560" data-animation-name="slideIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="Down" style="will-change: transform; animation-duration: 1000ms;">';
 			  
 		
@@ -61,7 +72,14 @@
 		
 		$info .= '</h6>';
 		
-		$info .= '<a href="'.$dir.'file/'.$book['Book_Name'].'.pdf" class="u-btn u-button-style u-btn-1">DOWNLOAD</a>';
+		// Download Button
+		if(isset($_SESSION['logged_user'])){
+			$info .= '<a href="'.$dir.'file/'.$book['Book_Name'].'.pdf" class="u-btn u-button-style u-btn-1">DOWNLOAD</a>';
+		}
+		else{
+			$info .= '<a class="u-btn u-button-style u-btn-1"s disabled="disabled" title="Please log in to Download">DOWNLOAD</a>';
+		}
+		
 		
 		$info .= '</div></section>';
 		
