@@ -118,7 +118,11 @@
 				}
 			}*/
 
-setTimeout(function(){
+// setTimeout(function(){
+            // window.location.href = 'index1.php';
+         // }, 10000);
+		 
+		 setTimeout(function(){
             window.location.href = 'index1.php';
          }, 10000);
 		</script>
