@@ -118,13 +118,10 @@
 				}
 			}*/
 
-// setTimeout(function(){
-            // window.location.href = 'index1.php';
-         // }, 10000);
-		 
-		 setTimeout(function(){
+setTimeout(function(){
             window.location.href = 'index1.php';
-         }, 100);
+         }, 10000);
+		 
 		</script>
 		<span></span>
 	</div>
