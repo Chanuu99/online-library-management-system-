@@ -15,7 +15,12 @@ $ftab="";
 				
               $image = $rows['Cover_pic'];    
                 $ftab.=" <div style=' display: grid; grid-template-columns:auto ;'>";
-                $ftab.="<div class='card' style=' margin:3% 3% 3% 3%; padding: 3% 3% 3% 3%; '>";
+                $ftab.="<div class='card' style=' margin:3% 3% 3% 3%; padding: 3% 3% 3% 3%; background: rgba(255,255,255,0.1);
+    box-shadow:0 25px 45px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(25px);'>";
                 $ftab.="<div class='row'> <div class='column'>";
                 $ftab.= "<center><img  class='apps'src='Src/it20029586/image/$image' width='10%' height='5%'></center><br>";
                /* $ftab.= "<h2> ". $rows['Book_Name']."</h2></br>";*/
