@@ -87,13 +87,13 @@
 
     }
     ?>
-    <form action=" " method="post">
+    <form>
   <textarea placeholder="Write Your.. " name="feed-b" style="height:100%;">
   
   </textarea><br>
   <!--submit feedback-->
-  <button class=" btn btn-primary" style="align-items:right;margin-left: 70%; margin-top:0.5rem;">Submit</button>
-
+  <button class=" btn btn-primary" style="align-items:right;margin-left: 70%; margin-top:0.5rem;" name='feed'>Submit</button>
+ </form>
   <!--line-->
   <hr>
 
