@@ -48,6 +48,10 @@ height:300px;
 display:inline-grid;
 width: 100%;
 
+.apps {
+	margin-left: 5rem;
+}
+
 }
     </style>
     
