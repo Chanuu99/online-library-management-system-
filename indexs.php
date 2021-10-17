@@ -1,29 +1,8 @@
 <?php 
-  include("Header.php");
-$ftab="";
-
- // include database connection file
-    include_once("config.php");
-     /*-------------------------------------book----------------------------------------------*/
-    $fsql = "SELECT ISBN, Book_Name, Cover_pic FROM book ORDER BY ISBN DESC ";
-        $fpp = mysqli_query($conn, $fsql);
-
- 
-        // output data of each row if(isset($_POST['Request_ID']))
-        if ($fpp->num_rows > 0) {
-            while($rows = $fpp->fetch_assoc()) {
-				
-              $image = $rows['Cover_pic'];    
-                $ftab.=" <div style=' display: grid; grid-template-columns:auto ;'>";
-                $ftab.="<div class='card' style=' margin:3% 3% 3% 3%; padding: 3% 3% 3% 3%; '>";
-                $ftab.="<div class='row'> <div class='column'>";
-                $ftab.= "<center><img  class='apps'src='Src/it20029586/image/$image' width='10%' height='5%'></center><br>";
-               /* $ftab.= "<h2> ". $rows['Book_Name']."</h2></br>";*/
-                $ftab.="<center><a href='Src/it20072810/details.php?ISBN=$rows[ISBN]'><button  class='btn btn-remove btns nin'> &#128308; Details</center></a> </div></div>";
-                $ftab.="</div></div>";
-            }
-        }
-
+	include("Header.php");
+  
+	// include database connection file
+	include_once("config.php");
  ?>
 <html>
   <head>
@@ -145,7 +124,30 @@ box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5);
 
 
   
-    <?php echo $ftab; ?>
+    <?php 
+	$ftab="";
+
+
+     /*-------------------------------------book----------------------------------------------*/
+    $fsql = "SELECT ISBN, Book_Name, Cover_pic FROM book ORDER BY ISBN DESC ";
+        $fpp = mysqli_query($conn, $fsql);
+
+ 
+        // output data of each row if(isset($_POST['Request_ID']))
+        if ($fpp->num_rows > 0) {
+            while($rows = $fpp->fetch_assoc()) {
+				
+              $image = $rows['Cover_pic'];    
+                $ftab.=" <div style=' display: grid; grid-template-columns:auto ;'>";
+                $ftab.="<div class='card' style=' margin:3% 3% 3% 3%; padding: 3% 3% 3% 3%; '>";
+                $ftab.="<div class='row'> <div class='column'>";
+                $ftab.= "<center><img  class='apps'src='Src/it20029586/image/$image' width='10%' height='5%'></center><br>";
+               /* $ftab.= "<h2> ". $rows['Book_Name']."</h2></br>";*/
+                $ftab.="<center><a href='Src/it20072810/details.php?ISBN=$rows[ISBN]'><button  class='btn btn-remove btns nin'> &#128308; Details</center></a> </div></div>";
+                $ftab.="</div></div>";
+            }
+        }
+	?>
  </div>
 
 </div>
