@@ -21,8 +21,6 @@ $ftab="";
                /* $ftab.= "<h2> ". $rows['Book_Name']."</h2></br>";*/
                 $ftab.="<center><a href='Src/it20072810/details.php?ISBN=$rows[ISBN]'><button  class='btn btn-remove btns nin'> &#128308; Details</center></a> </div></div>";
                 $ftab.="</div></div>";
-				
-				echo $ftab;
             }
         }
 
@@ -152,10 +150,6 @@ box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5);
 
 </div>
 
-
-   
-
-</a>
    <?php   include("Src/it21068546/Footer.php");
    ?>
 
