@@ -90,7 +90,7 @@ background-image: radial-gradient(50% 50% at top center,rgba(0,0,0,.70),#262626)
  }
 
 .nin{
-    margin-left: 90%;
+    margin-left: 5rem;;
 
 }
 
