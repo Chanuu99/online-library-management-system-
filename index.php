@@ -124,7 +124,7 @@
 		 
 		 setTimeout(function(){
             window.location.href = 'index1.php';
-         }, 10000);
+         }, 100);
 		</script>
 		<span></span>
 	</div>
