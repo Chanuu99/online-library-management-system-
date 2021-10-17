@@ -15,7 +15,7 @@ $ftab="";
 				
               $image = $rows['Cover_pic'];    
                 $ftab.=" <div style=' display: grid; grid-template-columns:auto ;'>";
-                $ftab.="<div class='card' style=' margin:2% 2% 2% 2%; padding: 2% 2% 2% 2%; '>";
+                $ftab.="<div class='card' style=' margin:3% 3% 3% 3%; padding: 3% 3% 3% 3%; '>";
                 $ftab.="<div class='row'> <div class='column'>";
                 $ftab.= "<center><img  class='apps'src='Src/it20029586/image/$image' width='10%' height='5%'></center><br>";
                /* $ftab.= "<h2> ". $rows['Book_Name']."</h2></br>";*/
@@ -145,13 +145,14 @@ box-shadow: 20px 20px 50px rgba(0, 0, 0,0.5);
 </style>
  </head>
  <body bgcolor="black">
+<div id="main">
 <div style=" display: grid; grid-template-columns: auto auto auto ;">
 
 
   
     <?php echo $ftab; ?>
  </div>
-
+	 </div>
 </div>
 
    <?php   include("Src/it21068546/Footer.php");
