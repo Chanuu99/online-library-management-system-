@@ -22,7 +22,7 @@ $ftab="";
     border-bottom: 1px solid rgba(255,255,255,0.2);
     backdrop-filter: blur(25px);'>";
                 $ftab.="<div class='row'> <div class='column'>";
-                $ftab.= "<center><img style=' margin-left:100%;' class='apps' src='Src/it20029586/image/$image' width='10%' height='5%'></center><br>";
+                $ftab.= "<center><img style=' margin-left:50%;' class='apps' src='Src/it20029586/image/$image' width='10%' height='5%'></center><br>";
                /* $ftab.= "<h2> ". $rows['Book_Name']."</h2></br>";*/
                 $ftab.="<center><a href='Src/it20072810/details.php?ISBN=$rows[ISBN]'><button  class='btn btn-remove btns nin'> &#128308; Details</center></a> </div></div>";
                 $ftab.="</div></div>";
